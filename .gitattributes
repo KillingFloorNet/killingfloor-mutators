@@ -1,0 +1,15 @@
+*.bmp filter=lfs diff=lfs merge=lfs -binary
+*.png filter=lfs diff=lfs merge=lfs -binary
+*.jpg filter=lfs diff=lfs merge=lfs -binary
+*.rar filter=lfs diff=lfs merge=lfs -binary
+*.zip filter=lfs diff=lfs merge=lfs -binary
+*.7z filter=lfs diff=lfs merge=lfs -binary
+*.exe filter=lfs diff=lfs merge=lfs -binary
+*.u filter=lfs diff=lfs merge=lfs -binary
+*.ucl filter=lfs diff=lfs merge=lfs -binary
+*.utx filter=lfs diff=lfs merge=lfs -binary
+*.usx filter=lfs diff=lfs merge=lfs -binary
+*.uax filter=lfs diff=lfs merge=lfs -binary
+*.ukx filter=lfs diff=lfs merge=lfs -binary
+*.rom filter=lfs diff=lfs merge=lfs -binary
+*.ogg filter=lfs diff=lfs merge=lfs -binary
