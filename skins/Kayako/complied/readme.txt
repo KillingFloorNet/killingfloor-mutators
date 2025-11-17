@@ -1,0 +1,1 @@
+CustomCharacters=Kayako.Kayako

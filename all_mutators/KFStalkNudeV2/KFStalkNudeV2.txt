@@ -1,0 +1,5 @@
+Uncensored Stalkers v2
+
+This is a mutator that changes the Stalker's texture to its original uncensored form as originally created and intended by TWI.
+
+Extract the files to your "C:\Program Files\Steam\steamapps\common\killingfloor\System" directory. Select the "Uncensored Stalkers v2" mutator to be used in-game.

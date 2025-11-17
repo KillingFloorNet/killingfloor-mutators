@@ -1,0 +1,1 @@
+ucc server TOY-DevilsDollhouse.rom?game=KFCharPuppets.ToyGameInfo?VACSecured=true?MaxPlayers=6?AdminName=Admin?AdminPassword=123 -ini=toygame.ini -log=server.log

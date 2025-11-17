@@ -1,0 +1,190 @@
+#!/bin/sh
+#
+# script to start up a dedicated unix ut2004 server 
+#
+# author: John "PsychoChihuahua" Salmi | psycho@jsalmi.com 
+#
+# this can (should) be used together with the "Stop" script, which will do
+# proper shutdown/cleanup.  it can be found at 'http://jsalmi.com/ut2004/Stop'
+
+#
+# available game types
+#
+# XGame.xDeathMatch			Standard DeathMatch
+# BonusPack.xLastManStandingGame	Last Man Standing
+# XGame.xTeamGame			Team DeathMatch
+# Onslaught.ONSOnslaughtGame		Onslaught
+# XGame.xBombingRun			Bombing Run
+# SkaarjPack.Invasion			Invasion
+# XGame.xVehicleCTFGame			Vehicle CTF
+# UT2K4Assault.ASGameInfo		Assault
+# XGame.xDoubleDom			Double Domination
+# BonusPack.xMutantGame			Mutant
+# XGame.xCTFGame			Capture The Flag
+
+#
+# a few game types
+#
+DEATHMATCH='DM-Rankin?game=XGame.xDeathMatch'
+LASTMANSTANDING='DM-Morpheus3?game=BonusPack.xLastManStandingGame'
+TEAMDEATHMATCH='DM-Rankin?game=XGame.xTeamGame'
+ONSLAUGHT='ONS-DRIA?game=Onslaught.ONSOnslaughtGame'
+BOMBINGRUN='BR-Anubis?game=XGame.xBombingRun'
+INVASION='DM-Antalus?game=SkaarjPack.Invasion'
+ASSAULT='AS-CONVOY?UT2K4Assault.ASGameInfo'
+DOUBLEDOM='DOM-SunTemple?game=xGame.xDoubleDom'
+MUTANT='DM-Morpheus3?game=BonusPack.xMutantGame'
+CTF='CTF-Orbital2?game=XGame.xCTFGame'
+
+#
+# some mutators
+#
+# XWeapons.MutArena			Arena
+# UnrealGame.MutBigHead			Big Head
+# XGame.MutHeliumCorpses		Float-Away Corpses
+# XGame.MutInstaGibS			Instagib
+# XGame.MutZoomInstaGib			Zoom Instagib
+# UnrealGame.MutLowGrav			Low Gravity
+# XGame.MutNoAdrenaline			No Adrenaline
+# XWeapons.MutNoSuperWeapon		No Super Weapons
+# XGame.MutQuadJump			Quad Jump
+# XGame.MutRegen			Auto Healing
+# XGame.MutSlomoDeath			Slow Motion Deaths
+# XGame.MutSpeciesStats			Species Specific Stats
+# XGame.MutVampire			Vampire
+
+#
+# a couple of mutators - quad jump, fast weapon switch, onslaught weapons
+#
+MUTATORS='Mutator=MutRandomMap.MutRandomMap'
+
+#
+# directories and files
+#
+# depending on where you install the server, GAMEDIR will have to change
+# to point at that directory
+#
+GAMEDIR=/home/user/unreal
+LOGDIR=${GAMEDIR}/logs
+SERVER=${GAMEDIR}/System/ucc-bin
+LOG=${GAMEDIR}/ut2004-server.log
+RLOG=${GAMEDIR}/ut2004-restart.log
+SLOG=ut2004-server.log
+INIFILE=${GAMEDIR}/System/ut2004.ini
+CACHERECORD=${GAMEDIR}/System/CacheRecords.ucl
+CACHEBACKUP=${GAMEDIR}/System/CacheRecords.bak
+LASTMAP=${GAMEDIR}/UserLogs/lastmap.log
+#
+# system binaries - change as necessary
+#
+MKDIR=/bin/mkdir
+DATE=/bin/date
+NOHUP=/usr/bin/nohup
+MV=/bin/mv
+CP=/bin/cp
+TEE=/usr/bin/tee
+CHMOD=/bin/chmod
+EXPR=/usr/bin/expr
+DOMORE=/bin/cat
+
+#
+# how many times to restart if the server falls down
+#
+LOOPS=22
+
+#
+# admin name and password - change accordingly
+#
+ADMINNAME='AdminName=Admin'
+ADMINPASS='AdminPassword=Password'
+
+#
+# check for one command line argument, which is a gametype
+#
+
+# ensure that the server binary exists
+#
+if [ ! -f ${SERVER} ]; then
+	echo "${SERVER} doesn't seem to exist - exiting."
+	exit 1
+fi
+
+#
+# ensure that the log archive directory exists
+#
+if [ ! -d ${LOGDIR} ]; then
+	${MKDIR} -p ${LOGDIR}
+fi
+
+#
+# start and background the restart loop
+#
+while [ ${LOOPS} -ge 1 ]; do
+
+	#
+	# if a logfile already exists, archive it
+	#
+	if [ -f ${GAMEDIR}/${SLOG} ]; then
+		TIMESTAMP=`${DATE} +%m%d%y-%T`
+		${MV} ${GAMEDIR}/${SLOG} ${LOGDIR}/${SLOG}-${TIMESTAMP}
+	fi
+
+	#
+	# initialize a new log for this instance of the server
+	#
+	${DATE} > ${LOG}
+
+	#
+	# if the initial backup copy of CacheRecords.ucl doesn't exist, 
+	# create it for future use
+	#
+	if [ ! -f ${CACHEBACKUP} ]; then
+		echo "Creating initial backup of CacheRecords.ucl" >> ${LOG}
+		${CP} ${CACHERECORD} ${CACHEBACKUP}
+	fi
+
+	#
+	# copy in a fresh CacheRecords.ucl to address the linux server
+	# file corruption issue
+	#
+	# if a fresh copy of CacheRecords.ucl is needed, it can be found at
+	# http://jsalmi.com/ut2004/CacheRecords.zip
+	#
+	cd ${GAMEDIR}/System
+	echo "Fresh copy of CacheRecords.ucl" >> ${LOG}
+	${CHMOD} 644 ${CACHEBACKUP} ${CACHERECORD}
+	${CP} ${CACHEBACKUP} ${CACHERECORD}
+	${CHMOD} 444 ${CACHEBACKUP} ${CACHERECORD}
+
+	#
+	# start the server
+	#
+	# ensure that the server binary is executable (it is not when
+	# initially extracted from the distribution zipfile).  
+	#
+	STARTMODE=""
+        STARTMODE=`${DOMORE} $LASTMAP` 
+	echo $STARTMODE
+	echo "Starting ut2004 server ( $1 )" 2>&1 | ${TEE} -a ${LOG}
+	${CHMOD} 755 ${SERVER}
+	${NOHUP} ${SERVER} server \
+		"${STARTMODE}?${ADMINNAME}?${ADMINPASS}?${MUTATORS}?GameStats=True \
+		ini=${INIFILE} -nohomedir" >> ${LOG} 2>&1 
+
+	#
+	# if we've reached this point, the server has failed.  log the
+	# failure and restart the server, unless we've reached "LOOPS"
+	# iterations.
+	#
+	NOW=`${DATE}`
+	echo "-----------------" >> ${RLOG}
+	echo "Server failure ( ${NOW} ), restarting ( ${LOOPS} )" >> ${RLOG}
+	echo "" >> ${RLOG}
+
+	#
+	# decrement the loop counter
+	#
+	LOOPS=`${EXPR} ${LOOPS} - 1`
+
+done &
+

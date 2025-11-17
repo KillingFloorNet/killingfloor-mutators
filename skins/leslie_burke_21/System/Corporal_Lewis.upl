@@ -1,0 +1,4 @@
+[Public]
+Player=(DefaultName="Corporal_Lewis",Race="DRF",Mesh=lb.lb,species=KFmod.SoldierSpecies,BodySkin=lbtex.wear,FaceSkin=lbtex.hair,Portrait=lbtex.leslie,Text="Name:  Leslie Burke|Age: 12|Race: Human||Data:|Leslie Burke is a junior class student. Corporal Lewis in hospital.||",Sex=Male,Accuracy=+2.0,Aggressiveness=+2.0,StrafingAbility=+2.0,CombatStyle=-1,Tactics=+2.5,FavoriteWeapon=XWeapons.RocketLauncher,Ragdoll=British_Soldier1,Skeleton=KFSoldiers.Soldier,Menu="SP",BotUse=1,VoiceClassName=KFmod.KFVoicePackFemale)
+
+

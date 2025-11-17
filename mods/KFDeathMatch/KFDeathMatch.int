@@ -1,0 +1,40 @@
+[DMHUDKillingFloor]
+LostMatchStr="You've have lost the match!"
+WonMatchStr="You've have won the match!"
+OtherWinnerStr=" is the winner!"
+
+[DMSyringeFire]
+NoHealTargetMessage="You must be near another team member to heal them!"
+
+[DamTypeSingle]
+DeathString="%k was gunned down by %o's 9mm."
+
+[KFDM]
+GameName="KF DeathMatch"
+Description="DeathMatch Gameplay."
+
+[KFDMScoreBoard]
+HealthText="Deaths"
+
+[KFDMTimeMessage]
+TimeMessages[0]="20 seconds..."
+TimeMessages[1]="30 seconds left..."
+TimeMessages[2]="1 minute remains..."
+TimeMessages[3]="2 minutes..."
+TimeMessages[4]="3 minutes..."
+TimeMessages[5]="5 minutes left in the game!"
+TimeMessages[6]="10 minutes left in the game!"
+OvertimeMessage="Overtime!"
+
+[KFTDM]
+GameName="KF TeamDeathMatch"
+Description="TeamDeathMatch Gameplay."
+
+[KFTDMScoreBoard]
+OutText="Dead"
+
+[KFTDMWinMessage]
+RedWin="Red wins!"
+BlueWin="Blue wins!"
+Draw="Round draw!"
+

@@ -1,0 +1,53 @@
+# Clang-Format configuration for UnrealScript (.uc files)
+# Based on UDK 2004 SDK code style
+
+BasedOnStyle: Microsoft
+Language: Cpp
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
+ContinuationIndentWidth: 4
+IndentCaseLabels: true
+IndentCaseBlocks: false
+
+# Braces
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Never
+
+# Spacing
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceBeforeAssignmentOperators: true
+SpacesBeforeTrailingComments: 1
+
+# Line breaks
+MaxEmptyLinesToKeep: 2
+KeepEmptyLinesAtTheStartOfBlocks: false
+AllowAllParametersOfDeclarationOnNextLine: true
+
+# Comments
+ReflowComments: false
+
+# Alignment
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+AlignTrailingComments: false
+
+# Other
+ColumnLimit: 0
+PointerAlignment: Left
+
+# Don't sort includes or reformat comments
+SortIncludes: Never
+
+# Preserve UnrealScript-specific blocks by treating them as raw strings
+CommentPragmas: '(defaultproperties|replication)'

@@ -1,0 +1,22 @@
+name: Maintenance:Stale-Marker
+
+on:
+  schedule:
+  - cron: '33 12 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/stale@v4
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Marking issue as stale'
+        stale-pr-message: 'Marking PR as stale'
+        stale-issue-label: 'no-issue-activity'
+        stale-pr-label: 'no-pr-activity'

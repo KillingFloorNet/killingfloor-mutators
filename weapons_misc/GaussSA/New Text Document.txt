@@ -1,0 +1,8 @@
+Gause Sabot Rifle - From Crysis Game
+
+A weapon for SharpShooter, enjoy it!
+
+Pickup: GaussSAMut.GaussSAPickup
+
+Note:The Original-Author: SecreT_AgenT , published in the killing-floor.ru forum.
+I just carry it over here;

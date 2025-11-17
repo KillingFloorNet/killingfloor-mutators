@@ -1,0 +1,245 @@
+[AK47H]
+ItemName="Heavy AK47 SE"
+
+[AK47HAmmo]
+ItemName="AK47 bullets"
+
+[AK47HPickup]
+ItemName="Heavy AK47 SE"
+ItemShortName="Heavy AK47"
+PickupMessage="You got the Heavy AK47"
+
+[AUG_A1AR]
+Description="Steyr AUG  1977 Steyr-Daimler-Puch AG & Co KG)"
+ItemName="Steyr AUG A1 SE"
+
+[AUG_A1ARAmmo]
+ItemName="5.56mm NATO"
+
+[AUG_A1ARAmmoPickup]
+PickupMessage="5.56mm NATO"
+
+[AUG_A1ARPickup]
+ItemName="Steyr AUG A1 SE"
+ItemShortName="AUG A1"
+PickupMessage="You picked up the Steyr AUG A1"
+
+[Ak47HAmmoPickup]
+PickupMessage="Rounds 7.62mm"
+
+[BruteGunnerPerkProg]
+ProgressName="Heavy MG Damage"
+
+[ChainGun]
+Description="Chaingun ripped from dead Patriarch's hand. Or maybe ripped WITH. Or even WITH ALIVE. It works and nothing else matters."
+ItemName="Patriarch's Chaingun SE"
+
+[ChainGunAmmo]
+ItemName="Chaingun bullets"
+
+[ChainGunAmmoPickup]
+PickupMessage="Chaingun Bullets"
+
+[ChainGunPickup]
+SecondaryAmmoShortName="-- Rockets"
+
+[ChainGunPrimaryPickup]
+ItemName="Pat's Chaingun SE"
+ItemShortName="Chaingun SE"
+PickupMessage="You got the Patriarch's Chain Gun."
+
+[DamTypeAK47H]
+DeathString="%k killed %o (Heavy AK47)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeAUG_A1AR]
+DeathString="%k killed %o (Steyr AUG A1)."
+
+[DamTypeCG]
+DeathString="%k killed %o (Pat's Chain Gun)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeM249SAW]
+DeathString="%k killed %o (M249 SAW)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeM41AAssaultRifle]
+DeathString="%k killed %o (Pulse Rifle)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypePKM]
+DeathString="%k killed %o (PKM)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeRPK47MG]
+DeathString="%k killed %o (RPK47)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeSA80LSW]
+DeathString="%k killed %o (SA80 LSW)."
+
+[DamTypeStinger]
+DeathString="%k killed %o (Stinger)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeStingerAlt]
+DeathString="%k killed %o (Stinger)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeThompsonH]
+DeathString="%k killed %o (Heavy Tommy Gun)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeXMV850M]
+DeathString="%k killed %o (XMV850 Minigun)."
+
+[M249Ammo]
+ItemName="Rounds 5.56x45mm NATO"
+
+[M249AmmoPickup]
+PickupMessage="Rounds 5.56x45mm NATO"
+
+[M249Pickup]
+ItemName="M249 SAW SE"
+ItemShortName="M249 SAW SE"
+PickupMessage="You picked up the M249 SAW SE"
+
+[M249SAW]
+Description="The M249 SAW/LMG is the US produced version of the the Belgian-made FN Minimi. The M249 uses the 5.56x45mm NATO round, which lowers the weight of the gun when loaded yet grants the user with highly accurate yet reasonably powerful fire."
+ItemName="M249 SAW SE"
+
+[M41AAmmo]
+ItemName="M41A 10 mm caseless ammunition"
+
+[M41AAmmoPickup]
+PickupMessage="M41A 10 mm caseless ammunition"
+
+[M41AAssaultRifle]
+Description="M41A Pulse Rifle. Designed to kill Aliens. Looks especially cool in Sigourney Weaver's hands."
+ItemName="M41A Pulse Rifle SE"
+
+[M41APickup]
+SecondaryAmmoShortName="-- M41A Grenades"
+
+[M41APrimaryPickup]
+ItemName="M41A Pulse Rifle SE"
+ItemShortName="Pulse Rifle"
+PickupMessage="You got the M41A"
+
+[M41AProjectileAmmo]
+ItemName="M41A Grenades"
+
+[M41AProjectileAmmoPickup]
+PickupMessage="M41A Grenades"
+
+[PKM]
+Description="The PKM (Kalashnikov's Machine-gun Modernized) adopted to service in 1969. It is a modernized, product-improved version of the PK (Pulemyot Kalashnikova)."
+ItemName="PKM SE"
+
+[PKMAmmo]
+ItemName="Rounds 7.62mm"
+
+[PKMAmmoPickup]
+PickupMessage="7.62mm"
+
+[PKMPickup]
+ItemName="PKM SE"
+ItemShortName="PKM"
+PickupMessage="You picked up the PKM"
+
+[RPK47Ammo]
+ItemName="Rounds 7.62mm"
+
+[RPK47AmmoPickup]
+PickupMessage="7.62mm"
+
+[RPK47MachineGun]
+Description="The RPK (Russian: Ruchnoy Pulemyot Kalashnikova, Kalashnikov hand-held machine gun) is a 7.62x39mm light machine gun of Soviet design, developed by Mikhail Kalashnikov in the late 1950s, parallel with the AKM assault rifle."
+ItemName="RPK-47 SE"
+
+[RPK47Pickup]
+ItemName="RPK-47 SE"
+ItemShortName="RPK-47"
+PickupMessage="You picked up the RPK-47"
+
+[RocketAmmo]
+ItemName="L.A.W Rockets"
+
+[RocketAmmoPickup]
+PickupMessage="Rockets"
+
+[SA80LSW]
+Description="The SA80 (Small Arms for the 1980s) is a British family of 5.56mm small arms. It is a selective fire, gas-operated assault rifle. Elements of its design, in particular the bullpup configuration, come from the earlier EM-2 rifle."
+ItemName="SA80 LSW SE"
+
+[SA80LSWAmmo]
+ItemName="5.56x45"
+
+[SA80LSWAmmoPickup]
+PickupMessage="5.56x45"
+
+[SA80LSWPickup]
+ItemName="SA80 LSW SE"
+ItemShortName="SA80 LSW"
+PickupMessage="You picked up the SA80 LSW"
+
+[ScrnVetHeavyMG]
+SkillInfo="PERK SKILLS (HMg v4.00):|75% less recoil with all guns|10 extra weight slots|10% slower movement"
+CustomLevelInfo="PERK BONUSES (LEVEL %L):|%x more damage with Heavy Guns|%m larger Heavy Gun clips|%a extra Heavy ammo|%$ discount on Heavy Huns"
+VeterancyName="Heavy Machinegunner"
+Requirements[0]="Deal %x damage with Heavy Guns"
+
+[Stinger]
+Description="Stinger Minigun first was designed by Liandri corp. as a mining tool, but later converted into military service. Fires shards of unprocessed Tarydium crystal."
+ItemName="Stinger Minigun SE"
+
+[StingerAmmo]
+ItemName="Tarydium Crystals"
+
+[StingerAmmoPickup]
+PickupMessage="Tarydium Crystals"
+
+[StingerPickup]
+ItemName="Stinger Minigun SE"
+ItemShortName="Stinger SE "
+PickupMessage="You've picked up a Stinger Minigun"
+
+[ThompsonH]
+Description="The Thompson is an American submachine gun, invented by John T. Thompson in 1919, that became infamous during the Prohibition era. It was a common sight in the media of the time, being used by both law enforcement officers and criminals."
+ItemName="Heavy Tommy Gun SE"
+
+[ThompsonHAmmo]
+ItemName="45. ACP bullets"
+
+[ThompsonHAmmoPickup]
+PickupMessage="Rounds 45. ACP"
+
+[ThompsonHPickup]
+ItemName="Heavy Tommy Gun SE"
+ItemShortName="Heavy Tommy"
+PickupMessage="You've got the Thompson Submachine Gun"
+
+[XMV850Ammo]
+ItemName="XMV850 bullets"
+
+[XMV850AmmoPickup]
+PickupMessage="Rounds 7.62x51mm"
+
+[XMV850M]
+Description="Minigan with reduced fire rate down to 950RPM. But still badass and has laser sight."
+ItemName="XMV850 Minigun SE"
+
+[XMV850Pickup]
+ItemName="XMV850 Minigun SE"
+ItemShortName="XMV850 Minigun"
+PickupMessage="You got the XMV850 Minigun."
+

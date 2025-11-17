@@ -1,0 +1,93 @@
+Disable HUD effects that might be annoying for some:
+
+[b]HUD Related[/b]
+- Grain Spectator overlay
+- Near Death overlay (Red Screen)
+- Buring/On Fire overlay
+- Sepia color overlay (Check Screenshots, it's a whole neeewwwww woooorld)
+- Door Use Messages
+- Door Welding Messages
+- ZED Time Messages
+
+[b]Monster Related[/b]
+- Bloat Vomit overlay
+- Siren/Stalker red scratch overlay
+
+[b]Weapon Related[/b]
+- Smoke Trail from Rocket/Grenade Launchers
+[code]
+M79 + Golden
+M32 + Camo
+M203
+LAW
+Flare + Dual Flare revolvers
+[/code]
+
+[b]Community Requested Weapon Related[/b]
+
+[code]
+- Steam Punk Thompson (Dr.) Muzzle Smoke
+[/code]
+
+[h1][b][u]Important Notes[/u][/b][/h1]
+
+- You might still see the film grain ONLY when you are in lobby, once you start the game it will be gone from spectator/death screen
+- Client logs might be polluted with 'No Material Found' messages. Server Logs won't have this issue because the mutator doesn't run on the servers at all
+
+[h1][b][u]Whitelist Status[/u][/b][/h1]
+
+- NO
+
+[h1][b][u]Credits[/u][/b][/h1]
+
+- Flame, Essence, Dr.TerV & Me
+
+[h1][b][u]Number Of Files[/u][/b][/h1]
+
+- 3
+
+[h1][b][u]Sample Config[/u][/b][/h1]
+
+[code]
+[HUDEffects.HUDEffects]
+aHUD_Effects[0]=(bSpectatorOverlay=false,bNearDeath=false,bFireOverlay=false,bShittySepia=false,bDoorUseMessage=false,bDoorSealedMessage=false,bZedTimeMessage=false)
+aZED_Effects[0]=(bVomitScreen=false,bSlashOverlay=false)
+aWeapon_Effects[0]=(bSmokeTrail=false)
+aRequested_Weapons_Effects[0]=(bSPThompsonNoSmoke=false)
+############# Explanation of Variables down below #############
+############# HUD Related #############
+# bSpectatorOverlay: Removes the Grain filter that shows when you die, or in lobby, or in spectator mode
+# bNearDeath: Removes the 'Red' pulsating colors if you are almost dead
+# bFireOverlay: Removes buring overlay, if it's there
+# bShittySepia: IMHO Best one yet. This removes the 'Sepia' overlay that shows after you start the match
+# bDoorUseMessage: Removes "Press XXX to open door" message
+# bDoorSealedMessage: Removes "Door is welded" message
+# bZedTimeMessage: Removes 'Zed Time Activated' message
+############# Monster related #############
+# bVomitScreen: Removes Bloat vomit overlay
+# bSlashOverlay: Removes Siren/Stalker slash overlay
+############# Weapon Related #############
+# bSmokeTrail: Smoke that shows after e.g. M32 Grenade Launcher, M79 Grenade Launcher, LAW
+############# Community Requested Weapons Related #############
+# SPThompsonNoSmoke: Removes the barrel smoke when you are firing witht the weapon
+[/code]
+
+[h1][b][u]File Names[/u][/b][/h1]
+
+- \System\HUDEffects.u
+- \System\HUDEffects.ucl
+- \System\HUDEffects_Config.ini
+
+[h1][b][u]Usage[/u][/b][/h1]
+
+1- Subscribe or download manually (Recommended)
+2- Launch the game and wait to see 'Completed'
+3- Restart the game and you can see the mutators in your list
+
+[h1][b][u]Class Names[/u][/b][/h1]
+
+- Mut: HUDEffects.HUDEffects
+
+[h1][b][u]Manual Download Links (Recommended)[/u][/b][/h1]
+
+Github: https://github.com/Vel-San/HUDEffects/releases/

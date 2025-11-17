@@ -1,0 +1,155 @@
+[Archvile]
+MenuName="ArchVile"
+
+[Boney]
+MenuName="Boney"
+
+[BossExt]
+strHelp=("%n: Creatures of Hell, come and help me to defeat mortals!","%n: Say 'Hello!' to my little friends!","%n: Help me, my children, to bring Hell on the Earth!","%n: This Fight is only just begun!","%n: Welcome to your Death, mortals!","%n: Worthless humans, your souls will belong to me!")
+strRest=("%n: Time to rest","%n: I'm out. See you later.")
+
+[Bruiser]
+MenuName="Bruiser"
+
+[Cacodemon]
+MenuName="Cacodemon"
+
+[Cherub]
+MenuName="Cherub"
+
+[Commando]
+MenuName="Commando"
+
+[CyberDemon]
+MenuName="CyberDemon"
+
+[DamTypeArchvileFireWall]
+DeathString="%o was sent to hell by %k."
+
+[DamTypeArchvileFlames]
+DeathString="%o was melted by %k's flames."
+
+[DamTypeBFG]
+DeathString="%o was obliterated by %k's BFG."
+
+[DamTypeBruiserProj]
+DeathString="%o was wasted by %k."
+
+[DamTypeCacodemonProj]
+DeathString="%o was obliterated by %k."
+
+[DamTypeCyberDemonRocket]
+DeathString="%o was destroyed by %k."
+
+[DamTypeD3Melee]
+DeathString="%o was hacked by %k."
+
+[DamTypeGuardianShockWave]
+DeathString="%o had their legs shattered by %k."
+
+[DamTypeHellKnightProj]
+DeathString="%o was wasted by %k."
+
+[DamTypeHunterInvulShockWave]
+DeathString="%o was electrocuted by %k."
+
+[DamTypeHunterProj]
+DeathString="%o was burned down by %k."
+
+[DamTypeImpFireBall]
+DeathString="%o was scorched by %k."
+
+[DamTypeMaledict]
+DeathString="%o was oblittered by %k."
+
+[DamTypeMancubusProj]
+DeathString="%o was blasted by %k."
+
+[DamTypeRevenantProjectile]
+DeathString="%o rode %k's rocket into oblivion."
+
+[DamTypeSabaothProj]
+DeathString="%o was obliterated by %k's BFG."
+
+[DamTypeVagaryClassicProj]
+DeathString="%o was destroyed by %k."
+
+[DamTypeVulgarProj]
+DeathString="%o was scorched by %k."
+
+[Doom3Mutator]
+strVersion="v%m.%n"
+FriendlyName="Doom 3 Monsters Mode - ScrN Edition"
+Description="Do invasion of doom 3 creatures. Mod altered by [ScrN]PooSH. Original authors: Marco, INIQUITOUS."
+RulesGroup="DoomIII"
+
+[DoomMonster]
+strFUPiper=("%n: Setting landmines and hiding like a pussy? How 'bout to come out and fight face to face?","%n: Oh, another pipebomb. Do you really think I'm so stupid to walk on it?","%n: What's that interesting thing on the ground with blinking red light? Let's shoot it!")
+strRetardedDemonsArray=("%n: Damned retards, stop hitting me, attack those mortals!","%n: Bad doggy, %a, bad!","%n: %a, what the hell are you doing? You're supposed to help be, not kill me!")
+
+[FatZombie]
+MenuName="Fat Zombie"
+
+[Forgotten]
+MenuName="Forgotten"
+
+[Guardian]
+MenuName="Guardian"
+
+[HellKnight]
+MenuName="Hell Knight"
+
+[HunterBerserk]
+MenuName="Berserk Hunter"
+
+[HunterHellTime]
+MenuName="HellTime Hunter"
+
+[HunterInvul]
+MenuName="Invulnerability Hunter"
+
+[Imp]
+MenuName="Imp"
+
+[LostSoul]
+MenuName="Lost Soul"
+
+[Maggot]
+MenuName="Maggot"
+
+[Maledict]
+MenuName="Maledict"
+
+[Mancubus]
+MenuName="Mancubus"
+
+[MiniPat]
+MenuName="Patriarch Jr."
+
+[Pinky]
+MenuName="Pinky"
+
+[Revenant]
+MenuName="Revenant"
+
+[Sabaoth]
+MenuName="Sabaoth"
+
+[Seeker]
+MenuName="Seeker"
+
+[Tick]
+MenuName="Tick"
+
+[Trite]
+MenuName="Trite"
+
+[Vagary]
+MenuName="Vagary"
+
+[Vulgar]
+MenuName="Vulgar"
+
+[Wraith]
+MenuName="Wraith"
+

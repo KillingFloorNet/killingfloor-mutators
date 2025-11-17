@@ -1,0 +1,81 @@
+<html>
+<head>
+<Title>ServerColor</title>
+</head>
+
+<body topmargin="0" leftmargin="0" bgcolor="#e0e0e0" text="Black">
+
+<table width="750" border="0" cellspacing="0" cellpadding="5" align="center">
+  <tr>
+    <td>
+
+<div align="center"><font color="Black" size="6"><br>
+<b>Server Color</b></font></font><br>
+  <font color="Black" size="3">for<br><b>UnrealTournament 2004</b></font><br>
+
+<br>
+<hr size="1" width="300" color="#101010">
+<br>
+
+</center></font>
+
+<p align="Left"><font>
+<font color="Red">
+<b>Information</b></font><br><br>
+ServerColor is a dedicated Editor and includes a comprehensive color chart for
+ editing the ini files that contain Servernames.<br>
+It works on all files, all servernames, vanilla servers, and all voting systems.<br>
+It will generate a file: <b>ServerColor.u</b> which you will need to add to your server.<br>
+It will now also generate a <b>ServerColor.ucl</b>.<br>
+In the Server.ini file add:<br>
+<b>[Engine.GameEngine]<br>
+ServerActors=ServerColor.ServerColorActor</b><br><br>
+
+You can create your own <b>Global ServerName</b>, color it and it will get saved in the ServerColor.ini
+ which will be read by ServerColor.<br>
+There is also an option to view the Servername in the selected colors.<br>
+Just unzip to your UT2004 System folder and use it from there.<br><br>
+
+Here is a step by step description on how to setup a coloed Servername for your Server.<br>
+Lets say your servername is <b>Joes CFT Server</b> and you want each word a different color, say
+ <font color="Red">Red</font>, <font color="Green">Green</font>, <font color="Blue">Blue</font>.<br><br>
+
+1. Start it up<br>
+2. Click on the GS (Global Servername) button.<br>
+3. Type in a servername: <b>Joes CFT Server</b><br>
+4. Bring down the color box and click on a <font color="Red">Red</font> square.<br>
+&nbsp; &nbsp; Now with the mouse place the cursor directly in front of the J for Joes.<br>
+&nbsp; &nbsp; Now click the Color select button (the one with the colors on it)<br>
+&nbsp; &nbsp; This will place the code into the Servername directly in front of the J.<br>
+5. Again bring down the color box and click on <font color="Green">Green</font>.<br>
+&nbsp; &nbsp; Place the cursor directly in front of the C for CTF.<br>
+&nbsp; &nbsp; Click on the Color select button.<br>
+6. Do the same for the S for Server.<br>
+&nbsp; &nbsp; Now click on the <b>Save</b> button.<br>
+&nbsp; &nbsp; Click on the Test button to see that its the right colors.<br>
+7. Next click on the <b>U</b> button at the top right which will generate a ServerColor.u and ServerColor.ucl<br>
+8. There should now be 3 files in your system folder:<br>
+&nbsp; &nbsp; <b>ServerColor.u<br>
+&nbsp; &nbsp; ServerColor.ucl<br>
+&nbsp; &nbsp; ServerColor.ini</b><br><br>
+
+In the Server.ini file add:<br>
+<b>[Engine.GameEngine]<br>
+ServerActors=ServerColor.ServerColorActor</b><br><br>
+
+Now when you look at your server from the UT2004 Browser it will be in color.<br>
+<b><font color="Red">Joes</font><font color="Green"> CTF</font><font color="Blue"> Server</font>.</b><br><br>
+
+The same can be achieved for different servernames using UT2Vote GameType Servernames as well.<br>
+Start ServerColors and load in the UT2Vote55.ini file into the Editor.<br>
+Go down to the GameTypes and do the same for each GameType Servername using the above technique.<br>
+When you are done, save the UT2Vote55.ini file, generate the .u file, add the above and start your server.<br><br>
+
+<hr size="1" width="300" color="#101010">
+<br>
+    </td>
+  </tr>
+</table>
+</font>
+</body>
+</html>

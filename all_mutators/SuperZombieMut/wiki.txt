@@ -1,0 +1,67 @@
+Specimen Changes:
+
+Bloat
+
+He will always move when puking.
+The puking animation will spawn 2 sets of 3 bile pellets.
+Absorbs shotgun bullets.
+
+Clot
+
+2 or more clots can grab a berserker.
+Takes 50% less damage from body shots.
+
+Crawler
+
+Negates all speed bonuses when hitting the target. The lost speed is regained over 10 seconds
+A poison icon will appear on the HUD until the speed is regained.
+Randomized PounceSpeed and MeleeRange to be between the base crawler and shade
+Increased GroundSpeed and WaterSpeed to be halfway between the base crawler and shade
+
+Stalker
+
+Has the charging melee ability of the gorefast
+The cool down timer has been removed so she will use her quick strikes in rapid succession.
+On hit, causes bleed effect which deals [2-3] damage every 1.5 seconds, lasting 9.5 seconds.
+A blood drop will appear on the HUD until the bleed effect is over.
+Bleed damage ignores armor
+
+Gorefast
+
+Will always do the charging melee attack.
+Minimum range to trigger his charge has been doubled to 1400 Unreal units.
+
+Siren
+
+Her scream will hit through all objects.
+The damage dealt through welded doors is only 60% of the base damage.
+The pull in effect is increased 33%.
+
+Husk
+
+He will randomly fire between two and five consecutive shots before the cool down timer kicks in.
+Made him more reliable at hitting jumping targets at close range.
+Projectile can land direct hits on targets
+
+Scrake
+
+He can only be stunned (actual stun, not flinch) once.
+The stun timer can be reset if another stunning blow is landed before the stun ends.
+Stun is immediately canceled if he is hit with a weak attack or a body shot from an attack that can head shot.
+LAW will not break stun on body shots because it does not trigger head shot checks.
+Buzzsaw bow and M99 will break stun on body shots
+Only berserkers can interrupt scrake attacks with melee weapons.
+
+Fleshpound
+
+Breaking LOS or avoiding a frag will only pause the rage timer.
+If the target dodges any "hits" from a fleshpound attack, the rage timer is not reset.
+When enraged, if the fleshpound does not deal out a certain amount of damage (i.e. zerker or armored medic), he will rage again.
+Added second damage accumulator that does not reset until it exceeds 1440 damage. When it does, the fleshpound rages
+
+Patriarch
+
+The Patriarch will automatically destroy any welded door in his path if he is escaping to heal
+If he takes over 1000 damage in under 10 seconds, the patriarch will charge whoever is within 700 uu of him
+Deals with pipe bombs more intelligently.
+Much more aggressive, charging players more often and having reduced cool down between attacks.

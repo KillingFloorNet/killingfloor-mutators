@@ -1,0 +1,7 @@
+[KFJasonMut]
+FriendlyName="Add Jason Voorhees"
+Description="Adds Jason Voorhess to spawn list."
+
+[ZombieJasonBase]
+MenuName="Jason"
+

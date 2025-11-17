@@ -1,0 +1,4 @@
+[Public]
+Player=(DefaultName="Soldier_Powers",Mesh=KFSoldiers.Powers,species=KFmod.SoldierSpecies,BodySkin=KFCharacters.PowersSkin,FaceSkin=KFCharacters.PowersSkin,Portrait=KFPortraits.PowersPortrait,Text="Cpl. Powers has a reputation as a mean motherfucker.",Sex=Male,Accuracy=+2.0,Aggressiveness=+1.0,StrafingAbility=+2.0,CombatStyle=-1,Tactics=+2.5,FavoriteWeapon=XWeapons.RocketLauncher,Ragdoll="",Skeleton=KFSoldiers.Soldier,Menu="SP",BotUse=1)
+
+

@@ -1,0 +1,19 @@
+[MutMRWTF]
+FriendlyName="Mutador de LAW Nuclear"
+Description="Agrega el LAW modificado del WTF Mod - Por Mistery"
+
+[RocketLauncher]
+Description="UN ARMA MORTAL."
+ItemName="Nuclear WTF"
+
+[RocketLauncherPickup]
+Description="UN ARMA MORTAL."
+ItemName="Nuclear WTF"
+ItemShortName="Nuclear WTF"
+AmmoItemName="Cohetes Nucleares"
+PickupMessage="Has encontrado el lanzacohetes WTF"
+
+[DamTypeRocketLauncher]
+DeathString="%k Mato a %o (WTF Explosion)."
+FemaleSuicide="%o Se mato en su propia explosion nuclear."
+MaleSuicide="%o Se mato en su propia explosion nuclear."

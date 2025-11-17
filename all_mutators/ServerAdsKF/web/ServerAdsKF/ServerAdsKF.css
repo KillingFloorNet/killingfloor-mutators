@@ -1,0 +1,77 @@
+BODY {
+	background-color: #5b2721;	
+}
+
+TD { 
+	color: #FFCC66;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	border-bottom: 1px solid #5b2721;
+}
+
+TABLE { 
+	border: 2px solid #5b2721;
+	width: 500px;
+}
+
+TH { 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16pt;  
+	font-weight: bold;  
+	font-style: italic;
+	color: #FFCC66;
+	background-color: #5b2721;
+  background: url("/images/ServerAdsKF-bg.gif");
+}
+
+INPUT.text {
+	color: #FFCC66;
+	background-color: #431d18;
+	border: 1px solid #927439;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10pt;
+	width: 100%;
+}
+
+INPUT.text:Focus {
+	background-color: #5b2721;
+}
+TEXTAREA {
+	color: #FFCC66;
+	background-color: #431d18;
+	border: 1px solid #927439;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10pt;
+	width: 100%;
+}
+
+TEXTAREA:Focus {
+	background-color: #5b2721;
+}
+
+INPUT.button {
+	color: #FFCC66;
+	background-color: #431d18;
+	border-color: #431d18;
+}
+
+INPUT.button:Hover {
+	background-color: #5b2721;
+}
+
+SELECT {
+	color: #FFCC66;
+	background-color: #431d18;
+	border: 1px solid #927439;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10pt;
+	width: 100%;
+}
+
+SELECT:Focus {
+	background-color: #5b2721;
+}
+
+A {
+	color: #D48F06;
+}

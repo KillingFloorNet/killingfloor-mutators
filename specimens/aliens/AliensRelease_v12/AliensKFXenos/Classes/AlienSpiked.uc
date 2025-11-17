@@ -1,0 +1,65 @@
+
+
+defaultproperties
+{
+     BurnDamageScale=0.250000
+     SpitAnimation="DodgeB"
+     RangedProjectile=Class'AliensKFXenos.SpitProjectile'
+     MeleeAnims(0)="Strike"
+     MeleeAnims(1)="Strike"
+     MeleeAnims(2)="Strike"
+     MoanVoice=SoundGroup'AlienRunnerSnd.Speech'
+     MeleeDamage=20
+     damageForce=5000
+     KFRagdollName="Burns_Trip"
+     MeleeAttackHitSound=SoundGroup'KF_EnemiesFinalSnd.clot.Clot_HitPlayer'
+     JumpSound=SoundGroup'AlienRunnerSnd.Jump'
+     CrispUpThreshhold=9
+     Intelligence=BRAINS_Mammal
+     bUseExtendedCollision=True
+     ColOffset=(Z=36.000000)
+     ColRadius=30.000000
+     ColHeight=33.000000
+     ExtCollAttachBoneName="Collision_Attach"
+     OriginalGroundSpeed=100.000000
+     SeveredArmAttachScale=1.100000
+     SeveredLegAttachScale=1.200000
+     SeveredHeadAttachScale=1.500000
+     PlayerCountHealthScale=0.750000
+     OnlineHeadshotOffset=(X=20.000000,Z=37.000000)
+     OnlineHeadshotScale=1.300000
+     MotionDetectorThreat=0.340000
+     HitSound(0)=SoundGroup'AlienRunnerSnd.Pain'
+     DeathSound(0)=SoundGroup'AlienRunnerSnd.Death'
+     ChallengeSound(0)=SoundGroup'AlienRunnerSnd.Speech'
+     ChallengeSound(1)=SoundGroup'AlienRunnerSnd.Speech'
+     ChallengeSound(2)=SoundGroup'AlienRunnerSnd.Speech'
+     ChallengeSound(3)=SoundGroup'AlienRunnerSnd.Speech'
+     ScoringValue=30
+     SightRadius=2000.000000
+     PeripheralVision=0.700000
+     MeleeRange=20.000000
+     GroundSpeed=150.000000
+     WaterSpeed=100.000000
+     JumpZ=340.000000
+     HealthMax=1500.000000
+     Health=1000
+     MovementAnims(0)="WalkF"
+     MovementAnims(1)="WalkB"
+     MovementAnims(2)="WalkL"
+     MovementAnims(3)="WalkR"
+     WalkAnims(1)="WalkB"
+     WalkAnims(2)="WalkL"
+     WalkAnims(3)="WalkR"
+     IdleCrouchAnim="Idle"
+     IdleWeaponAnim="Idle"
+     IdleRestAnim="Idle"
+     AmbientSound=SoundGroup'AlienRunnerSnd.Idle'
+     Mesh=SkeletalMesh'AliensKFXeno_A.AlienSpitter'
+     DrawScale=1.400000
+     PrePivot=(Z=22.000000)
+     Skins(0)=Combiner'AliensKFXeno_T.AlienSpiked_cmb'
+     SoundVolume=200
+     Mass=400.000000
+     RotationRate=(Yaw=45000,Roll=0)
+}

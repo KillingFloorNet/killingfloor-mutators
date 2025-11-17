@@ -1,0 +1,12 @@
+Cryo Mass Driver 14:
+From the makers of the Community Weapon Packs 1-3 now comes the brand new CMD 14 with new game mechanics. Thanks to the inovative code made by [ScrN]PooSH, freezing zeds now is possible and more fun than ever.
+
+The CMD14 is a modern multi purpose assault rifle, which accelerates cryo projectiles through an high energy electric field. A Stanag sized magazine holds the Nano-Tech Cryo Liquid, which at the same time provides energy for the weapon system.
+
+Even though the magazines are built for high durability they should be handled with extreme care. During the development phase of the CMD14 a faulty magazine broke, spilling the highly reactive liquid. In this incident 2 scientists were injured. The operator of the weapon was frozen instantaneously. He is still kept in cryo stasis until we find ways to unfreeze him safely. The new magazines however are built to last and are able to withstand immense punishment.
+
+The secondary fire of the gun releases the cryo liquid through a high pressure valve. Opponents within its range will freeze up in seconds.
+
+Code for the Server Perks Version:
+
+IJC_Project_Santa_SP.FreezerPickup

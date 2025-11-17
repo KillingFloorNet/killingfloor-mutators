@@ -1,0 +1,61 @@
+
+
+ Unreal skeletal exporter for 3DS MAX - Model information for [Siren.psk] 
+
+ Skin faces:   2632
+ Skin vertices:   1475
+ Skin wedges (vertices with unique U,V):   2218
+ Total bone-to-vertex linkups:   2863
+ Reference bones:     35
+ Unique materials:      2
+
+ = materials =
+ * Index: [ 0]  name: 22 - Default  
+   Original bitmap: SirenSkin.bmp  Path: G:\Killing Floor\Player Models\NewNEWzombies
+    - Skin Index:  0
+   - render mode flags:
+ * Index: [ 1]  name: 08 - Default  
+   Original bitmap: SirenHair.tga  Path: G:\Killing Floor\Player Models\NewNEWzombies
+    - Skin Index:  0
+   - render mode flags:
+ 
+
+ BONE LIST        [35] total bones in reference skeleton. 
+  number     name                           (parent) 
+  [  0 ]    [Bip01                          ]      (  0 ) 
+  [  1 ]    [Bip01 Pelvis                   ]      (  0 ) 
+  [  2 ]    [Bip01 Spine                    ]      (  1 ) 
+  [  3 ]    [Bip01 Spine1                   ]      (  2 ) 
+  [  4 ]    [Bip01 Spine2                   ]      (  3 ) 
+  [  5 ]    [Bip01 Neck                     ]      (  4 ) 
+  [  6 ]    [Bip01 Head                     ]      (  5 ) 
+  [  7 ]    [Bip01 HeadNub                  ]      (  6 ) 
+  [  8 ]    [JawBone                        ]      (  6 ) 
+  [  9 ]    [Bip01 L Clavicle               ]      (  5 ) 
+  [ 10 ]    [Bip01 L UpperArm               ]      (  9 ) 
+  [ 11 ]    [Bip01 L Forearm                ]      ( 10 ) 
+  [ 12 ]    [Bip01 L Hand                   ]      ( 11 ) 
+  [ 13 ]    [Bip01 L Finger0                ]      ( 12 ) 
+  [ 14 ]    [Bip01 L Finger0Nub             ]      ( 13 ) 
+  [ 15 ]    [Bip01 R Clavicle               ]      (  5 ) 
+  [ 16 ]    [Bip01 R UpperArm               ]      ( 15 ) 
+  [ 17 ]    [Bip01 R Forearm                ]      ( 16 ) 
+  [ 18 ]    [Bip01 R Hand                   ]      ( 17 ) 
+  [ 19 ]    [Bip01 R Finger0                ]      ( 18 ) 
+  [ 20 ]    [Bip01 R Finger0Nub             ]      ( 19 ) 
+  [ 21 ]    [Bip01 L Thigh                  ]      (  2 ) 
+  [ 22 ]    [Bip01 L Calf                   ]      ( 21 ) 
+  [ 23 ]    [Bip01 L Foot                   ]      ( 22 ) 
+  [ 24 ]    [Bip01 L Toe0                   ]      ( 23 ) 
+  [ 25 ]    [Bip01 L Toe01                  ]      ( 24 ) 
+  [ 26 ]    [Bip01 L Toe02                  ]      ( 25 ) 
+  [ 27 ]    [Bip01 L Toe0Nub                ]      ( 26 ) 
+  [ 28 ]    [Bip01 R Thigh                  ]      (  2 ) 
+  [ 29 ]    [Bip01 R Calf                   ]      ( 28 ) 
+  [ 30 ]    [Bip01 R Foot                   ]      ( 29 ) 
+  [ 31 ]    [Bip01 R Toe0                   ]      ( 30 ) 
+  [ 32 ]    [Bip01 R Toe01                  ]      ( 31 ) 
+  [ 33 ]    [Bip01 R Toe02                  ]      ( 32 ) 
+  [ 34 ]    [Bip01 R Toe0Nub                ]      ( 33 ) 
+ 
+

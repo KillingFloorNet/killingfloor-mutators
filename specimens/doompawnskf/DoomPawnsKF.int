@@ -1,0 +1,349 @@
+[BFGZapped]
+DeathString="%o was blown apart and elecrified by %k's BFG 9000"
+FemaleSuicide="%o was elecrified by someones BFG plasma ball.."
+MaleSuicide="%o was elecrified by someones BFG plasma ball.."
+
+[Backpack]
+PickupMessage="You got an ammo backpack"
+
+[Baron]
+MenuName="Baron of Hell"
+
+[BerserkPack]
+PickupMessage="You got the Berserk pack!"
+
+[Caco]
+MenuName="Cacodemon"
+
+[CacoBurned]
+DeathString="%o was smitted by %k"
+FemaleSuicide="%o was burned by a Cacodemon's fireball"
+MaleSuicide="%o was burned by a Cacodemon's fireball"
+
+[Cyber]
+MenuName="Cyberdemon"
+
+[CyberBlown]
+FemaleSuicide="%o put a Cyberdemon's rocket in her ass"
+MaleSuicide="%o put a Cyberdemon's rocket in his ass"
+
+[DKeysB]
+ItemName="Blue key card"
+
+[DKeysG]
+ItemName="Green key card"
+
+[DKeysR]
+ItemName="Red key card"
+
+[DKeysY]
+ItemName="Yellow key card"
+
+[DOOMLoginControls]
+TeamSwitchButton.Caption="Join monsters"
+TeamSwitchButton.Hint="Join the monsters side"
+
+[DOOMLoginMenu]
+Panels=((Caption="Game",Hint="Game Controls"),(Caption="Perks",Hint="Select your current Perk"),(Caption="Communication",Hint="Manage communication with other players"),(Caption="Help",Hint="How to survive in Killing Floor"),(Caption="Help",Hint="Helpful hints"))
+
+[Demon]
+MenuName="Pinky"
+
+[DemonAte]
+DeathString="%o was eaten by %k"
+
+[DoomArmor]
+PickupMessage="Security armor +"
+
+[DoomArmorBonus]
+PickupMessage="Spiritual armor +"
+
+[DoomBFG]
+Description="BFG 9000: The 'Big Fucking Gun'. Somewhat counterintuitive to operate at first, but kills almost any monster in one shot."
+ItemName="BFG9000"
+
+[DoomBFGPickup]
+ItemName="BFG 9000"
+PickupMessage="You got the BFG9000."
+
+[DoomBlueKey]
+PickupMessage="You got the blue key card"
+
+[DoomChaingun]
+Description="Chaingun: Very good against large crowds, but uses up a lot of ammo if not handled carefully."
+ItemName="Chaingun"
+
+[DoomChaingunPickup]
+ItemName="Chaingun"
+PickupMessage="You got the Chaingun."
+
+[DoomChainsaw]
+Description="Chainsaw: Does damage like the normal fist, but four times faster."
+ItemName="Chainsaw"
+
+[DoomChainsawPickup]
+ItemName="Chainsaw"
+PickupMessage="You got the Chainsaw, go find some fresh meat."
+
+[DoomFist]
+Description="Fists: Extremely basic close-range weapon. Never runs out of ammo, but only about as powerful as a pistol shot; normally used only as a last resort or with a berserk pack."
+ItemName="Fist"
+
+[DoomFistPickup]
+ItemName="Fists"
+PickupMessage="You found a fist"
+
+[DoomGameType]
+GameName="Doom SinglePlayer"
+Description="Doom Story Based Cooperative Gameplay."
+
+[DoomGreenKey]
+PickupMessage="You got the green key card"
+
+[DoomHealthBonus]
+PickupMessage="You picked up a health bonus +"
+
+[DoomHealthPack]
+PickupMessage="You got a health pack +"
+
+[DoomMeleeDmg]
+DeathString="%o was slayed by %k"
+FemaleSuicide="%o was slayed"
+MaleSuicide="%o was slayed"
+
+[DoomMonMut]
+FriendlyName="Doom Monsters Mode!"
+Description="Only do invasion of doom creatures."
+
+[DoomPistol]
+Description="Pistol: The default long-range weapon. Not too effective."
+ItemName="Pistol"
+
+[DoomPistolAmmo]
+ItemName="Pistol Clip"
+
+[DoomPistolAmmoBox]
+PickupMessage="You picked up an ammo box."
+
+[DoomPistolAmmoPickup]
+PickupMessage="You picked up a clip."
+
+[DoomPistolPickup]
+ItemName="Pistol"
+PickupMessage="You got a Pistol."
+
+[DoomPlasmaAmmo]
+ItemName="Plasma Energy"
+
+[DoomPlasmaAmmoPickup]
+PickupMessage="You picked up a plasma cell."
+
+[DoomPlasmaBattery]
+PickupMessage="You picked up a plasma battery."
+
+[DoomPlasmaGun]
+Description="Plasma gun: Shoots pulses of blue-hot plasma at high speed, which can take down groups of incoming enemies easily — if aimed properly."
+ItemName="Plasma Gun"
+
+[DoomPlasmaPickup]
+ItemName="Plasma gun"
+PickupMessage="You got the Plasma Gun."
+
+[DoomRL]
+Description="Rocket launcher: Fires explosive rockets. Does a lot of damage, but can also seriously hurt the player if used indiscriminately at close range."
+ItemName="Rocket Launcher"
+
+[DoomRLAmmo]
+ItemName="Rocket Round"
+
+[DoomRLAmmoBox]
+PickupMessage="You picked up a box full of rockets."
+
+[DoomRLAmmoPickup]
+PickupMessage="You picked up a rocket round."
+
+[DoomRLPickup]
+ItemName="Rocket launcher"
+PickupMessage="You got the Rocket Launcher."
+
+[DoomRedKey]
+PickupMessage="You got the red key card"
+
+[DoomSShotgun]
+Description="Super Shotgun: A double-barrelled, sawed-off shotgun which takes even longer to reload, but at close range is even more deadly than the regular shotgun."
+ItemName="Super Shotgun"
+
+[DoomSShotgunPickup]
+ItemName="Super Shotgun"
+PickupMessage="You got the Super Shotgun."
+
+[DoomShotgun]
+Description="Shotgun: A good general-purpose weapon, especially at close range. Reload time is slightly longer than normal."
+ItemName="Shotgun"
+
+[DoomShotgunAmmo]
+ItemName="Shotgun shells"
+
+[DoomShotgunAmmoPickup]
+PickupMessage="You picked up some shotgun shells."
+
+[DoomShotgunBox]
+PickupMessage="You picked up a shotgun shellbox"
+
+[DoomShotgunPickup]
+ItemName="Shotgun"
+PickupMessage="You got the Shotgun."
+
+[DoomStimPack]
+PickupMessage="You got a stim pack +"
+
+[DoomSuperArmor]
+PickupMessage="Combat armor +"
+
+[DoomWepsMut]
+FriendlyName="Doom Weapons Mode!"
+Description="Use classic ol' Doom '95 weapons."
+
+[DoomYellowKey]
+PickupMessage="You got the yellow key card"
+
+[HeavyTrooper]
+MenuName="Chaingun Bob"
+
+[Imp]
+MenuName="Imp"
+
+[ImpBurned]
+DeathString="%o was burned by %k's fireball"
+FemaleSuicide="%o was burned by a Imp's fireball"
+MaleSuicide="%o was burned by a Imp's fireball"
+
+[InvisSphere]
+PickupMessage="Invisibility!"
+
+[InvulnSphere]
+PickupMessage="Invulnerability!"
+
+[KeyUseTrigger]
+RequiredMsg="is required to open this door."
+
+[KniExploded]
+DeathString="%o got some green shit up on their ass by %k"
+FemaleSuicide="%o got hit by a flameball by some monster"
+MaleSuicide="%o got hit by a flameball by some monster"
+
+[Knight]
+MenuName="Hell Knight"
+
+[LightTrooper]
+MenuName="Zombieman"
+
+[Mancub]
+MenuName="Mancubus"
+
+[MancubBlown]
+DeathString="%o was squished by %k"
+FemaleSuicide="%o let a Mancubus' flameball get her"
+MaleSuicide="%o let a Mancubus' flameball get him"
+
+[Marine]
+MenuName="Marine"
+
+[MasterMindDmg]
+DeathString="%o stood in awe of %k"
+FemaleSuicide="%o was gunned down by a Spider"
+MaleSuicide="%o was gunned down by a Spider"
+
+[MediumTrooper]
+MenuName="Shotgun Dude"
+
+[MegaSphere]
+PickupMessage="You got a Mega sphere"
+
+[NaziDmg]
+DeathString="%o met %k"
+FemaleSuicide="%o was gunned down by a Nazi"
+MaleSuicide="%o was gunned down by a Nazi"
+
+[NightmareSpectre]
+MenuName="Nightmare Spectre"
+
+[PainHead]
+MenuName="Pain Elemental"
+
+[PlasmaTrooper]
+MenuName="Plasma Zombie"
+
+[PlasmaZapped]
+DeathString="%o was elecrified by %k"
+FemaleSuicide="%o was elecrified by some plasma ball.."
+MaleSuicide="%o was elecrified by some plasma ball.."
+
+[RLBlown]
+DeathString="%o was splattered by %k"
+FemaleSuicide="%o should have stood back"
+MaleSuicide="%o should have stood back"
+
+[RevenBlown]
+DeathString="%o couldn't evade %k's fireball"
+FemaleSuicide="%o was orally pleasured by a Revenant's fireball"
+MaleSuicide="%o was orally pleasured by a Revenant's fireball"
+
+[Romero]
+MenuName="John Romero"
+
+[SawedDmg]
+DeathString="%o was cut down into pieces by %k"
+
+[ShotDmg]
+DeathString="%o was mowed down by %k"
+FemaleSuicide="%o somehow managed get shot"
+MaleSuicide="%o somehow managed get shot"
+
+[Skeleton]
+MenuName="Revenant"
+
+[Skull]
+MenuName="Lost Soul"
+
+[SoulSphere]
+PickupMessage="You picked up a Soul sphere +"
+
+[Spectre]
+MenuName="Spectre"
+
+[SpiBurned]
+DeathString="%o let %k get him"
+FemaleSuicide="%o let an Arachnotron's plasmaball get her"
+MaleSuicide="%o let an Arachnotron's plasmaball get him"
+
+[Spider]
+MenuName="Arachnotron"
+
+[SpiderMM]
+MenuName="Spider MasterMind"
+
+[SpookedDmg]
+DeathString="%o was spooked by %k"
+FemaleSuicide="%o was spooked by a Lost Soul"
+MaleSuicide="%o was spooked by a Lost Soul"
+
+[ToxinSuit]
+PickupMessage="You got the toxin suit"
+
+[Vile]
+MenuName="Arch-Vile"
+
+[VileCursed]
+DeathString="%o burned in hell with the curse from %k"
+FemaleSuicide="%o let a curse from a dead Arch-Vile get her"
+MaleSuicide="%o let a curse from a dead Arch-Vile get him"
+
+[WolfSS]
+MenuName="Nazi"
+
+[ZomBurned]
+DeathString="%o was elecrified by %k"
+FemaleSuicide="%o was elecrified by a Plasma Zombie's plasma ball"
+MaleSuicide="%o was elecrified by a Plasma Zombie's plasma ball"
+

@@ -1,0 +1,2 @@
+Implementing as a seperate package so that other people can use the database without linking to the admin hax during compilation.
+Allows me to update them as seperate tools, so that the database code doesn't need to be updated as often as the admin hax code.

@@ -1,0 +1,219 @@
+[DamTypeBGravGunKill]
+DeathString="%o had their head ripped off and flushed down toilet by %k's Organic Gravity Gun."
+FemaleSuicide="%o was taken out by her own Organic Gravity Gun."
+MaleSuicide="%o was taken out by his own Organic Gravity Gun."
+
+[DamTypeCrossbow]
+DeathString="%o was pinned to the wall by %k's crossbow."
+
+[DamTypeCrowbar]
+DeathString="%o was beat to death by %k's crowbar."
+
+[DamTypeFGrenade]
+DeathString="%o was blown into oblivion by %k's fragmentation grenade."
+FemaleSuicide="%o blew herself into oblivion with a fragmentation grenade."
+MaleSuicide="%o blew himself into oblivion with a fragmentation grenade."
+
+[DamTypeGravGunKill]
+DeathString="%o was pushed around by %k's Gravity Gun."
+
+[DamTypeIRifle]
+DeathString="%o was put to sleep by %k's Combine Pulse Rifle."
+
+[DamTypeIRifleOrb]
+DeathString="%o was VAPOURIZED by %k's Combine Pulse Rifle orb."
+FemaleSuicide="%o was VAPOURIZED by her own Combine Pulse Rifle orb."
+MaleSuicide="%o was VAPOURIZED by his own Combine Pulse Rifle orb."
+
+[DamTypeMagnum]
+DeathString="%k put a big hole in %o's chest with a .357 magnum."
+
+[DamTypeRPG]
+DeathString="%o was blown up by %k's RPG missile."
+FemaleSuicide="%o blew herself up with a RPG missile."
+MaleSuicide="%o blew himself up with a RPG missile."
+
+[DamTypeSMG]
+DeathString="%o was turned into swiss cheese by %k's Submachine gun."
+
+[DamTypeSMGGrenade]
+DeathString="%o was blown into pieces by %k's SMG grenade."
+FemaleSuicide="%o blew herself up with a SMG grenade."
+MaleSuicide="%o blew himself up with a SMG grenade."
+
+[DamTypeShotty]
+DeathString="%o was punctured multiple holes by %k's Shotgun."
+
+[DamTypeUSP]
+DeathString="%o was gunned down by %k's USP Match."
+
+[HL_BlueGravityGun]
+Description="An Organic Zero Point Energy Manipulator."
+ItemName="Organic Zero Point Energy Manipulator"
+
+[HL_BlueGravityGunPickup]
+ItemName="Blue Gravity Gun"
+ItemShortName="Blue Gravity Gun"
+PickupMessage="You found an Organic Gravity Gun"
+
+[HL_BugBait]
+Description="Bug bait."
+ItemName="Pheropod"
+
+[HL_BugBaitAmmo]
+ItemName="Pheropods"
+
+[HL_BugBaitPickup]
+ItemName="Pheropod"
+ItemShortName="Pheropod"
+PickupMessage="You found a Pheropod"
+
+[HL_Crossbow]
+Description="A crossbow."
+ItemName="Crossbow"
+
+[HL_CrossbowAmmo]
+ItemName="Rebar"
+
+[HL_CrossbowAmmoPickup]
+PickupMessage="3 rebar"
+
+[HL_CrossbowPickup]
+ItemName="Crossbow"
+ItemShortName="Crossbow"
+PickupMessage="You found a Crossbow"
+
+[HL_Crowbar]
+Description="A steel crowbar."
+ItemName="Crowbar"
+
+[HL_CrowbarPickup]
+ItemName="Crowbar"
+ItemShortName="Crowbar"
+PickupMessage="You found a crowbar"
+
+[HL_GravityGun]
+Description="A Zero Point Energy Manipulator."
+ItemName="Zero Point Energy Manipulator"
+
+[HL_GravityGunPickup]
+ItemName="Gravity Gun"
+ItemShortName="Gravity Gun"
+PickupMessage="You found a Gravity Gun"
+
+[HL_Grenade]
+Description="A fragmentation grenade."
+ItemName="Frag Grenade"
+
+[HL_GrenadeAmmo]
+ItemName="Grenades"
+
+[HL_GrenadePickup]
+ItemName="Frag Grenade"
+ItemShortName="Frag Grenade"
+PickupMessage="You found a fragmentation grenade"
+
+[HL_IRifle]
+Description="An assault rifle with an attached grenade launcher."
+ItemName="Overwatch Standard Issue Pulse Rifle"
+
+[HL_IRifleAmmo]
+ItemName="Pulse ammo"
+
+[HL_IRifleAmmoAlt]
+ItemName="Pulse Rifle orbs"
+
+[HL_IRifleAmmoAltPickup]
+PickupMessage="Combine Pulse Rifle orb"
+
+[HL_IRifleAmmoPickup]
+PickupMessage="Combine Pulse Rifle ammo"
+
+[HL_IRiflePickup]
+ItemName="Pulse Rifle"
+ItemShortName="Combine Assault Rifle"
+SecondaryAmmoShortName="Pulse Rifle orbs"
+PickupMessage="You got the Combine Assault Rifle"
+
+[HL_Magnum]
+Description="A powerful magnum."
+ItemName=".357 Magnum"
+
+[HL_MagnumAmmo]
+ItemName="Submachine gun rounds"
+
+[HL_MagnumAmmoPickup]
+PickupMessage=".357 cal magnum ammo"
+
+[HL_MagnumPickup]
+ItemName=".357 Magnum"
+ItemShortName="Magnum"
+PickupMessage="You got a .357 cal Magnum"
+
+[HL_RPG]
+Description="RPG"
+ItemName="Rocket propelled grenade launcher"
+
+[HL_RPGAmmo]
+ItemName="Rockets"
+
+[HL_RPGAmmoPickup]
+PickupMessage="1 rocket"
+
+[HL_RPGPickup]
+ItemName="RPG"
+ItemShortName="RPG"
+PickupMessage="Rocket propelled grenade launcher"
+
+[HL_SMG]
+Description="An assault rifle with an attached grenade launcher."
+ItemName="Submachine Gun"
+
+[HL_SMGAmmo]
+ItemName="Submachine gun rounds"
+
+[HL_SMGAmmoAlt]
+ItemName="Submachine grenades"
+
+[HL_SMGAmmoAltPickup]
+PickupMessage="Submachine gun grenade"
+
+[HL_SMGAmmoPickup]
+PickupMessage="Submachine gun round"
+
+[HL_SMGPickup]
+ItemName="Submachine Gun"
+ItemShortName="Machine Gun"
+SecondaryAmmoShortName="SMG1 grenades"
+PickupMessage="You got a Submachine Gun"
+
+[HL_Shotgun]
+Description="A shotgun."
+ItemName="Shotgun"
+
+[HL_ShotgunAmmo]
+ItemName="Shotgun shells"
+
+[HL_ShotgunAmmoPickup]
+PickupMessage="Shotgun shells"
+
+[HL_ShotgunPickup]
+ItemName="Shotgun"
+ItemShortName="Shotgun"
+PickupMessage="You got the Shotgun"
+
+[HL_USP]
+Description="A pistol."
+ItemName="USP Match"
+
+[HL_USPAmmo]
+ItemName="USP 9mm clips"
+
+[HL_USPAmmoPickup]
+PickupMessage="9mm USP Match clip"
+
+[HL_USPPickup]
+ItemName="USP Match"
+ItemShortName="USP"
+PickupMessage="You got the USP Match"
+

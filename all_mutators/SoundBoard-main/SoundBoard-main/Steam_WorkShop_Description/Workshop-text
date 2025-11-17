@@ -1,0 +1,98 @@
+Play custom sounds with key binds / mutate commands!
+
+- Anti-Spam features (Delay, Timeout)
+- Easy configuration
+- Easy to use (Best way is to bind keys with your most likable sounds)
+- 17x Base Sounds (Can increase without the need of editing code)
+- Fun ? ;p
+
+[h1][b][u]Notes[/u][/b][/h1]
+
+- Mut is [b]WHITELISTED[/b] on dedicated servers
+
+[h1][b][u]Number Of Files[/u][/b][/h1]
+
+- 4
+
+[h1][b][u]Sample Config[/u][/b][/h1]
+
+[code]
+[KFSoundBoard.KFSoundBoard]
+bDebug=True
+# If True, every time a sound is used it will be displayed as a server message in the chat like this
+# e.g. Meow! (Vel-San)
+bNotifyOnSoundUsed=True
+# Delay between 2 consecutive sounds (to avoid spam)
+# Recommended 5 in case a souns lasts longer than 5 seconds :)
+iDelay=5
+# Number of times a player can use sounds consecutively, before they get timedout
+# To bypass the timeout, simply let another played use play a sound :)
+# This is intended to avoid players always hijacking the sounds and not letting others
+# play anything
+iTimeOut=3
+# Command that will activate a sound
+# Usage: mutate do meow
+# meow is case insensitive, so you can do meow or MeOw etc..
+sPlaySoundCMD=do
+# List that holds all custom sounds
+SoundList=(Sound="SoundBoardSND.Animals.Meow",SoundTag="Cat",SoundBind="Meow")
+SoundList=(Sound="SoundBoardSND.Animals.Bark",SoundTag="Dog",SoundBind="Woof")
+SoundList=(Sound="SoundBoardSND.Human.Sneeze",SoundTag="Baby",SoundBind="Sneeze")
+SoundList=(Sound="SoundBoardSND.Human.Kiss",SoundTag="Baby",SoundBind="Kiss")
+SoundList=(Sound="SoundBoardSND.SMITE.Joki_Laugh",SoundTag="Loki-Laugh",SoundBind="Laugh")
+SoundList=(Sound="SoundBoardSND.SMITE.AhPuch_NanuNanu",SoundTag="AhPuch-Nanu",SoundBind="Nanu")
+SoundList=(Sound="SoundBoardSND.SMITE.Aphro_Laugh",SoundTag="Aphro-Laugh",SoundBind="Laugh2")
+SoundList=(Sound="SoundBoardSND.SMITE.ArchonThanatos_FearNothing",SoundTag="Thana-Fear",SoundBind="FearNothing")
+SoundList=(Sound="SoundBoardSND.SMITE.HalloweenAwilix_MissMe",SoundTag="Awilix-MissMe",SoundBind="MissMe")
+SoundList=(Sound="SoundBoardSND.SMITE.KawaiiBastet_Senpai",SoundTag="Bastet-Senpai",SoundBind="Senpai")
+SoundList=(Sound="SoundBoardSND.SMITE.KingBacchus_Freakout",SoundTag="Bacchus-Freak",SoundBind="Freakout")
+SoundList=(Sound="SoundBoardSND.SMITE.KingBacchus_Silly",SoundTag="Bacchus-Silly",SoundBind="Silly")
+SoundList=(Sound="SoundBoardSND.SMITE.LunarTango_Ayayay",SoundTag="Change-Ayayay",SoundBind="Ayayay")
+SoundList=(Sound="SoundBoardSND.SMITE.OperaBacchus_CryForMe",SoundTag="Bacchus-CryForMe",SoundBind="CryForMe")
+SoundList=(Sound="SoundBoardSND.SMITE.RagnarokFenrir_Pathetic",SoundTag="Fenrir-Pathetic",SoundBind="Pathetic")
+SoundList=(Sound="SoundBoardSND.SMITE.RagnarokFenrir_Silence",SoundTag="Fenrir-Silence",SoundBind="Silence")
+SoundList=(Sound="SoundBoardSND.SMITE.Thanatos_Laugh",SoundTag="Thana-Laugh",SoundBind="Laugh3")
+# Color Tags for messages | Do not change :)
+ColorList=(ColorName="Red",ColorTag="%r",Color=(B=0,G=0,R=200,A=0))
+ColorList=(ColorName="Orange",ColorTag="%o",Color=(B=0,G=127,R=255,A=0))
+ColorList=(ColorName="Yellow",ColorTag="%y",Color=(B=0,G=255,R=255,A=0))
+ColorList=(ColorName="Green",ColorTag="%g",Color=(B=0,G=200,R=0,A=0))
+ColorList=(ColorName="Blue",ColorTag="%b",Color=(B=200,G=100,R=0,A=0))
+ColorList=(ColorName="Teal",ColorTag="%t",Color=(B=113,G=179,R=60,A=0))
+ColorList=(ColorName="Violet",ColorTag="%v",Color=(B=139,G=0,R=255,A=0))
+ColorList=(ColorName="White",ColorTag="%w",Color=(B=200,G=200,R=200,A=0))
+[/code]
+
+[h1][b][u]File Names[/u][/b][/h1]
+
+- \System\KFSoundBoard.u
+- \System\KFSoundBoard.ucl
+- \System\SoundBoardConfig.ini
+
+- \Sounds\SoundBoardSND.uax
+
+[h1][b][u]Usage[/u][/b][/h1]
+
+1- Subscribe or download manually (Recommended)
+2- Launch the game and wait to see 'Completed'
+3- Restart the game and you can see the mutators in your list
+
+[i]How to add more sounds ?[/i]
+
+- Open SoundBoardSND.uax with Killing Floor SDK
+- Import the sound (.wav) you want under the SoundGroup you would like
+- Save the .uax (Overwrite, it's fine)
+- Add the new sound in the config!
+- Profit!
+
+[h1][b][u]Class Names[/u][/b][/h1]
+
+- Mut: KFSoundBoard.KFSoundBoard
+
+[h1][b][u]Manual Download Links (Recommended)[/u][/b][/h1]
+
+You can find it under 'Whitelisted' folder named 'KF-SoundBoard-v1.1'
+
+- MEGA Link: https://mega DOT nz/folder/YDoEmKiC#s6FGAtgh40-TvB4bHsLaMQ
+
+- Github: https://github.com/Vel-San/KF-SoundBoard/releases/tag/v1.1

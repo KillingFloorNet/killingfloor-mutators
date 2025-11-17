@@ -1,0 +1,158 @@
+[KF_DialogueSpot1]
+Dialogues=((Display=(Dialogue_Header="Creepy Doll",Dialogue_Text="Come play with us...forever...")),(Display=(Dialogue_Header="Creepy Doll",Dialogue_Text="Protect the chests...protect the chests...don't let it get out...")),(Display=(Dialogue_Header="Creepy Doll",Dialogue_Text="Jack is watching...")),(Display=(Dialogue_Header="Creepy Doll",Dialogue_Text="Submit to us...become one of us...")),(Display=(Dialogue_Header="Creepy Doll",Dialogue_Text="Jack is waiting...")))
+
+[KF_DialogueSpot3]
+Dialogues=((Display=(Dialogue_Header="Jack",Dialogue_Text="Peek-a-boo!")),(Display=(Dialogue_Header="Jack",Dialogue_Text="Hot potato!")),(Display=(Dialogue_Header="Jack",Dialogue_Text="Ouchies!")),(Display=(Dialogue_Header="Jack",Dialogue_Text="Play nice!")))
+
+[KF_DialogueSpot4]
+Dialogues=((Display=(Dialogue_Header="Jack",Dialogue_Text="Welcome to my happy-time theatre! Let's play a little game...")),(Display=(Dialogue_Header="Jack",Dialogue_Text="You may have defeated me tonight, but you'll have to fall asleep again sometime...")))
+
+[KF_StoryNPC_Jack2]
+NPCName="Jack In The Box"
+
+[KF_StoryObjective0]
+HUD_Header.Header_Text="Wave 1"
+ObjectiveHint="Defend the Pipe"
+ObjectiveInProgressMusic="KFh2_StiltWalker"
+
+[KF_StoryObjective1]
+HUD_Header.Header_Text="JACK"
+ObjectiveInProgressMusic="KFh4_Ground"
+
+[KF_StoryObjective10]
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective11]
+HUD_Header.Header_Text="Get to the Next Area"
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective12]
+HUD_Header.Header_Text="DANCE WITH THE DEVIL"
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective14]
+ObjectiveInProgressMusic="KFh2_OrganGrinder"
+
+[KF_StoryObjective15]
+HUD_Header.Header_Text="Wave 4"
+ObjectiveInProgressMusic="KFh2_TerrorGoRound"
+
+[KF_StoryObjective16]
+HUD_Header.Header_Text="Shop at the Trader"
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective18]
+HUD_Header.Header_Text="Get to the Next Area"
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective2]
+HUD_Header.Header_Text="Shop at the Trader"
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective3]
+HUD_Header.Header_Text="GO INTO THE LIGHT"
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective4]
+HUD_Header.Header_Text="Wave 2"
+ObjectiveInProgressMusic="KFh2_StiltWalker"
+
+[KF_StoryObjective5]
+HUD_Header.Header_Text="Shop at the Trader"
+ObjectiveInProgressMusic="KFh4_NextAct"
+
+[KF_StoryObjective6]
+HUD_Header.Header_Text="Wave 3"
+ObjectiveInProgressMusic="KFh2_TerrorGoRound"
+
+[KF_StoryObjective7]
+HUD_Header.Header_Text="Shop at the Trader"
+ObjectiveInProgressMusic="KFh2_OrganGrinder"
+
+[KF_StoryObjective9]
+HUD_Header.Header_Text="Kill the Toys!"
+ObjectiveInProgressMusic="KFh4_Ground"
+
+[LevelInfo0]
+Title="Devil's Dollhouse"
+
+[LevelSummary]
+Title="Devil's Dollhouse"
+Description="Work your way through a surreal puppet theatre. Four waves and a boss fight against living nightmare killer toys."
+
+[ObjCondition_ActorHealth0]
+HUD_World.World_Hint="Don't Let It Out!"
+HUD_Screen.Screen_Hint="Lower Chest Health"
+
+[ObjCondition_ActorHealth1]
+HUD_World.World_Hint="Don't Let It Out!"
+HUD_Screen.Screen_Hint="Upper Chest Health"
+
+[ObjCondition_ActorHealth2]
+HUD_World.World_Hint="Don't Let It Out!"
+HUD_Screen.Screen_Hint="Lower Chest Health"
+
+[ObjCondition_ActorHealth3]
+HUD_World.World_Hint="Don't Let It Out!"
+HUD_Screen.Screen_Hint="Upper Chest Health"
+
+[ObjCondition_ActorHealth9]
+HUD_World.World_Hint="DESTROY!"
+HUD_Screen.Screen_Hint="Toy Box Life::::::::"
+
+[ObjCondition_Area0]
+HUD_World.World_Hint="Proceed"
+
+[ObjCondition_Area2]
+HUD_World.World_Hint="Proceed"
+
+[ObjCondition_Area3]
+HUD_World.World_Hint="Wake Up"
+HUD_Screen.Screen_Hint="Escape the Dollhouse"
+
+[ObjCondition_Area4]
+HUD_World.World_Hint="Enter the Circle"
+HUD_Screen.Screen_Hint="Enter the Dollhouse"
+
+[ObjCondition_Triggered1]
+HUD_Screen.Screen_Hint="Kill the Uber Dummy"
+
+[ObjCondition_Triggered12]
+HUD_World.World_Hint="Trader"
+
+[ObjCondition_Triggered13]
+HUD_World.World_Hint="Trader"
+
+[ObjCondition_Triggered2]
+HUD_Screen.Screen_Hint="Kill the Uber Dummy"
+
+[ObjCondition_Triggered3]
+HUD_Screen.Screen_Hint="Kill the Uber Dummy"
+
+[ObjCondition_Triggered4]
+HUD_Screen.Screen_Hint="Kill the Uber Dummy"
+
+[ObjCondition_WaveCounter0]
+HUD_Screen.Screen_Hint="Kill the Toys!  : "
+
+[ZoneInfo1]
+LocationName="Hallway2"
+
+[ZoneInfo2]
+LocationName="Room2"
+
+[ZoneInfo3]
+LocationName="Hallway3"
+
+[ZoneInfo4]
+LocationName="Room3"
+
+[ZoneInfo5]
+LocationName="Hallway1"
+
+[ZoneInfo6]
+LocationName="CleanBedroom"
+
+[ZoneInfo7]
+LocationName="Room1"
+

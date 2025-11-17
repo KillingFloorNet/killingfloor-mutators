@@ -1,0 +1,19 @@
+Brings back the UT2004 zeds from KFMod 2.5 to Retail! Includes bonus zed "Fleshpound Chaingunner" as a Husk replacement and "Fleshpound Explosive Gunner", a bonus zed inspired by the Quake 1 Ogre(Chainsaw arm, grenade launcher!) and Quake 2 Gunner(Fires multiple nades!).
+
+To play, select "Killing Floor" Game, enable the mutator in the mutator page and configure as desired.
+
+For server owners: Mutator=KFOldSchoolZeds.KF25OSMut
+
+You may configure variables in the KFOldSchoolZeds.ini or the mutator options page. As of now, Zed corpses in solo cannot be shot as it was a bit buggy to begin with and resulted in people wasting ammo trying to kill crawlers. You can still shoot them online, but it will not eat your shots.
+
+Download: https://drive.google.com/file/d/1q00gJcN9xz2mK9JM2wc2y9KFXv_TdKk4/view
+
+Source: https://github.com/theengineertcr/KFOldSchoolZeds
+
+Many thanks to #NikC- for helping me out with various bugs, improving my code and work efficiency, and a lot of other stuff.
+
+Latest release: Ver. 1.54 
+
+Change: Fixed crash issue related to headshotting Clots. 
+
+P.S: As of Version 1.5, the mod is "Feature complete". Updates beyond this point will be bug fixes. Thanks for playing! And be on the look out for future mods :)

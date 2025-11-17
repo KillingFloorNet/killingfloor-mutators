@@ -1,0 +1,63 @@
+class AxeEboniteAttachment extends KFMeleeAttachment;
+
+defaultproperties
+{
+     Mesh=SkeletalMesh'AxeEbonite_A.EXE_wsb_3rd'
+
+    MovementAnims(0)=JogF_Axe
+    MovementAnims(1)=JogB_Axe
+    MovementAnims(2)=JogL_Axe
+    MovementAnims(3)=JogR_Axe
+    CrouchAnims(0)=CHwalkF_Axe
+    CrouchAnims(1)=CHwalkB_Axe
+    CrouchAnims(2)=CHwalkL_Axe
+    CrouchAnims(3)=CHwalkR_Axe
+    AirStillAnim=JumpF_Mid
+    AirAnims(0)=JumpF_Mid
+    AirAnims(1)=JumpF_Mid
+    AirAnims(2)=JumpL_Mid
+    AirAnims(3)=JumpR_Mid
+    TakeoffStillAnim=JumpF_Takeoff
+    TakeoffAnims(0)=JumpF_Takeoff
+    TakeoffAnims(1)=JumpF_Takeoff
+    TakeoffAnims(2)=JumpL_Takeoff
+    TakeoffAnims(3)=JumpR_Takeoff
+    LandAnims(0)=JumpF_Land
+    LandAnims(1)=JumpF_Land
+    LandAnims(2)=JumpL_Land
+    LandAnims(3)=JumpR_Land
+
+    TurnRightAnim=TurnR_Axe
+    TurnLeftAnim=TurnL_Axe
+    CrouchTurnRightAnim=CH_TurnR_Axe
+    CrouchTurnLeftAnim=CH_TurnL_Axe
+    IdleRestAnim=Idle_Axe//Idle_Rest
+    IdleCrouchAnim=CHIdle_Axe
+    IdleSwimAnim=Swim_Tread
+    IdleWeaponAnim=Idle_Axe//Idle_Rifle
+    IdleHeavyAnim=Idle_Axe//Idle_Biggun
+    IdleRifleAnim=Idle_Axe//Idle_Rifle
+    IdleChatAnim=Idle_Axe
+    FireAnims(0)=Attack1_Axe
+    FireAnims(1)=Attack2_Axe
+    FireAnims(2)=Attack3_Axe
+    FireAnims(3)=Attack3_Axe
+    FireAltAnims(0)=HardAttack1_Scythe
+    FireAltAnims(1)=HardAttack1_Scythe
+    FireAltAnims(2)=HardAttack1_Scythe
+    FireAltAnims(3)=HardAttack1_Scythe
+    FireCrouchAnims(0)=CHAttack1_Axe
+    FireCrouchAnims(1)=CHAttack2_Axe
+    FireCrouchAnims(2)=CHAttack3_Axe
+    FireCrouchAnims(3)=CHAttack3_Axe
+    FireCrouchAltAnims(0)=CHHardAttack1_Scythe
+    FireCrouchAltAnims(1)=CHHardAttack1_Scythe
+    FireCrouchAltAnims(2)=CHHardAttack1_Scythe
+    FireCrouchAltAnims(3)=CHHardAttack1_Scythe
+    HitAnims(0)=HitF_Axe
+    HitAnims(1)=HitB_Axe
+    HitAnims(2)=HitL_Axe
+    HitAnims(3)=HitR_Axe
+    PostFireBlendStandAnim=Blend_Axe
+    PostFireBlendCrouchAnim=CHBlend_Axe
+}

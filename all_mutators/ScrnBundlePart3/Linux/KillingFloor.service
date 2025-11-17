@@ -1,0 +1,20 @@
+[Unit]
+Description=Killing Floor Server
+# before starting KF server, ensure that network service is up
+After=network.target
+
+[Service]
+# The lower is the Nice value the higher priority process gets.
+# 0 - Normal, <0 - high priority, >0 - low prioritys
+Nice=-5
+Type=simple
+# The PID file is optional, but recommended in the manpage
+# "so that systemd can identify the main process of the daemon"
+PIDFile=/var/run/kfserver.pid
+ExecStartPre=/bin/rm -f /var/run/kfserver.pid
+ExecStart=/usr/bin/kfserver start
+ExecStop=/usr/bin/kfserver stop
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

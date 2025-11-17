@@ -1,0 +1,46 @@
+#!/bin/sh
+#Title: RandomMap v1.0 Ini Generator
+#Author: DarkStarX
+#Website: http://ut2k4.game-server.cc
+#Forum: http://forum.ut2k4.game-server.cc
+#At the moment you cannot exclude in this scripts any maps, so you must
+#remove them manually from the ini after generation
+#
+#each time you use this script the old ini will be overwritten at the moment
+
+#Enter the path to your gamedir with / at the end!
+GameDir="/home/users/unreal/"
+
+
+#Just remove the # at the line beginning to include the mode 
+#or put a # again there to exclude it
+
+#Onslaught="?game=Onslaught.ONSOnslaughtGame|ONS-"
+#Assault="?game=UT2k4Assault.ASGameInfo|AS-"
+#CTF="?game=XGame.xCTFGame|CTF-"
+#BombingRun="?game=XGame.xBombingRun|BR-"
+#DoubleDomination="?game=xGame.xDoubleDom|DOM-"
+#DeathMatch="?game=XGame.xDeathMatch|DM-"
+#TeamDeathMatch="?game=XGame.xTeamGame|DM-"
+#Mutant="?game=BonusPack.xMutantGame|DM-"
+#Invasion="?game=SkaarjPack.Invasion|DM-"
+#LastManStanding="?game=BonusPack.xLastManStandingGame|DM-"
+
+ModeList=(Onslaught Assault CTF BombingRun DoubleDomination DeathMatch TeamDeathMatch Mutant Invasion LastManStanding)
+rm "${GameDir}System/MutRandomMap.ini" 
+echo "[MutRandomMap.MutRandomMap]" >> ${GameDir}System/MutRandomMap.ini
+for x in $(seq 0 $((${#ModeList[@]} - 1)))
+do
+
+if [ "${!ModeList[$x]}" != "" ]; then 
+  oldIFS=$IFS
+  IFS="|"
+  set dummy ${!ModeList[$x]}
+  ls "${GameDir}Maps" | grep "$3" | while read fname; do
+   echo "aAllMaps=${fname%.ut2}$2" >> ${GameDir}System/MutRandomMap.ini
+done
+fi	
+
+done;
+
+

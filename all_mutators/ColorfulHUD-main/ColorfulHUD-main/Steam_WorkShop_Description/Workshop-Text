@@ -1,0 +1,66 @@
+Replaces the HUD with a beautiful, simple: Green, Dark & White HUD; [Server-Side]
+
+Elements Replaced:
+
+[code]
+- All Ammo Types
+- HP
+- Armor
+- Syringe
+- Welder
+- Text Colors
+- Border/Box Colors
+- Wave Indicator
+- Time Indicator
+- Trader Arrow
+- Magazine Clip
+- Grenades
+- PipeBombs
+- Perk Stars/Levels
+- Inventory Overlay
+[/code]
+
+Elements Fixed:
+
+[code]
+- All Text alignments
+- All Icons aligned on same Y-Axis
+- Fix for Weight numbers being so wonky from TWI code (Made them as Numeric Widgets)
+[/code]
+
+Elements that haven't been changed yet:
+
+[code]
+- Perk Icons[/strike]
+[/code]
+
+[H1][b][u]Whitelist Status[/u][/b][/H1]
+
+- NO | Requires client-side modifications
+
+[H1][b][u]Number Of Files[/u][/b][/H1]
+
+- 4
+
+[H1][b][u]File Names[/u][/b][/H1]
+
+- \System\ColorfulHUD.u
+- \System\ColorfulHUD.ucl
+
+- \Textures\ColorfulHUD.utx
+
+- \StaticMeshes\GreenShopArrow.usx
+
+[H1][b][u]Usage[/u][/b][/H1]
+
+1- Subscribe or download manually (recommended)
+2- Launch the game and wait to see 'Completed'
+3- Restart the game and you can see the mutators in your list
+
+[H1][b][u]Class Names[/u][/b][/H1]
+
+- ColorfulHUD.ColorfulHUD
+
+[H1][b][u]Manual Download Links (Recommended)[/u][/b][/H1]
+
+- Github: https://github.com/Bleeding-Action-Man/ColorfulHUD/releases

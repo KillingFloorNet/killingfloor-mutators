@@ -1,0 +1,2 @@
+Simply place the HK416c.u file into the System folder of the game's directory, and the .ukx file into the Animations folder (same directory, typically in "C:\Program Files (x86)\Steam\steamapps\common\KillingFloor" on Win 7 or higher)
+In Solo mode, go to the Mutators tab and select the mutator(s) you want to use. There are three in total: one for adding the regular 416c to your starting inventory, another for adding the iridescent one, and a final one for adding both to the Commando section of the Trader menu.

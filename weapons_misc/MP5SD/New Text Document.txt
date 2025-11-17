@@ -1,0 +1,17 @@
+Ру:
+Код для SP:MP5SD.MP5SDPickup
+Код для добавления в начало волны:MP5SD.MutMP5SD
+Огромное Спасибо "AnRouge" за неоценимою помощь в редактировании кода!
+
+En:
+Code for SP: MP5SD.MP5SDPickup
+The code to add to the top of the wave: MP5SD.MutMP5SD
+Many thanks "AnRouge" for their invaluable help in editing the code!
+
+Ру:
+Как установить различные моды, ищем тут:
+http://killingfloor.ru/forum/index.php?/forum/1-killing-floor/
+
+En:
+tutorial on how to install mods:
+http://forums.tripwireinteractive.com/showthread.php?t=50243

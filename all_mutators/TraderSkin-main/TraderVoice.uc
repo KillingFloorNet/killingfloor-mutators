@@ -1,0 +1,59 @@
+﻿//-----------------------------------------------------------
+//		RaideN- ||  Dead Zone Server ip: 109.195.103.47:9507  || Trader Skin + Trader Voice |||| From KFLMod v93 || 
+//-----------------------------------------------------------
+
+class TraderVoice extends KFVoicePackTwo;
+
+defaultproperties
+{
+     SupportSound(0)=SoundGroup'KF_Trader.TooHeavy'
+     SupportSound(1)=SoundGroup'KF_Trader.TooHeavy'
+     SupportSound(2)=SoundGroup'KF_Trader.TooHeavy'
+     SupportSound(3)=SoundGroup'KF_Trader.TooHeavy'
+     SupportSound(4)=SoundGroup'KF_Trader.TooHeavy'
+     SupportString(4)="Почините мой бронник!"
+     SupportAbbrev(4)="Бронежилет"
+     numSupports=5
+     AcknowledgmentSound(0)=SoundGroup'KF_Trader.Welcome'
+     AcknowledgmentSound(1)=SoundGroup'KF_Trader.Welcome'
+     AcknowledgmentSound(2)=SoundGroup'KF_Trader.Welcome'
+     AcknowledgmentSound(3)=SoundGroup'KF_Trader.Welcome'
+     AlertSound(0)=SoundGroup'KF_Trader.Radio_Moving'
+     AlertSound(1)=SoundGroup'KF_Trader.Radio_Moving'
+     AlertSound(2)=SoundGroup'KF_Trader.Radio_Moving'
+     AlertSound(3)=SoundGroup'KF_Trader.Radio_Moving'
+     AlertSound(4)=SoundGroup'KF_Trader.Radio_Moving'
+     AlertSound(5)=SoundGroup'KF_Trader.Radio_Moving'
+     DirectionSound(0)=SoundGroup'KF_Trader.Radio_ShopsOpen'
+     DirectionSound(1)=SoundGroup'KF_Trader.Radio_ShopsOpen'
+     DirectionSound(2)=SoundGroup'KF_Trader.Radio_ShopsOpen'
+     DirectionSound(3)=SoundGroup'KF_Trader.Radio_ShopsOpen'
+     DirectionSound(4)=SoundGroup'KF_Trader.Radio_ShopsOpen'
+     InsultSound(0)=SoundGroup'KF_Trader.TooExpensive'
+     InsultSound(1)=SoundGroup'KF_Trader.TooExpensive'
+     AutomaticSound(0)=SoundGroup'KF_Trader.Radio_AlmostOpen'
+     AutomaticSound(1)=SoundGroup'KF_Trader.Radio_AlmostOpen'
+     AutomaticSound(2)="None"
+     AutomaticSound(3)=SoundGroup'KF_Trader.ThirtySeconds'
+     AutomaticSound(4)=SoundGroup'KF_Trader.ThirtySeconds'
+     AutomaticSound(5)=SoundGroup'KF_Trader.ThirtySeconds'
+     AutomaticSound(6)=SoundGroup'KF_Trader.TenSeconds'
+     AutomaticSound(7)=SoundGroup'KF_Trader.TooExpensive'
+     AutomaticSound(8)=SoundGroup'KF_Trader.TooExpensive'
+     AutomaticSound(9)=SoundGroup'KF_Trader.TooExpensive'
+     AutomaticSound(10)=SoundGroup'KF_Trader.TooHeavy'
+     AutomaticSound(11)=SoundGroup'KF_Trader.TooHeavy'
+     AutomaticSound(12)=SoundGroup'KF_Trader.TooHeavy'
+     AutomaticSound(13)=SoundGroup'KF_Trader.TooHeavy'
+     AutomaticSound(14)=SoundGroup'KF_Trader.TooHeavy'
+     AutomaticSound(15)=SoundGroup'KF_Trader.TooHeavy'
+     AutomaticSound(16)=SoundGroup'KF_Trader.TooHeavy'
+     AutomaticSound(17)=SoundGroup'KF_Trader.Radio_AlmostOpen'
+     AutomaticSound(18)=SoundGroup'KF_Trader.Radio_AlmostOpen'
+     AutomaticSound(19)=SoundGroup'KF_Trader.Radio_AlmostOpen'
+     AutomaticSound(20)=SoundGroup'KF_Trader.Radio_AlmostOpen'
+     AutomaticSound(21)=SoundGroup'KF_Trader.ThirtySeconds'
+     AutomaticSound(22)=SoundGroup'KF_Trader.ThirtySeconds'
+     AutomaticSound(23)=SoundGroup'KF_Trader.ThirtySeconds'
+     AutomaticSound(24)=SoundGroup'KF_Trader.ThirtySeconds'
+}

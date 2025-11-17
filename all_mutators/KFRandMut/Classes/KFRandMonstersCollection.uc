@@ -1,0 +1,1 @@
+class KFRandMonstersCollection extends KFMod.KFMonstersCollection;

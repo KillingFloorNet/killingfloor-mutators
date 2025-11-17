@@ -1,0 +1,7 @@
+Part 3 is required only for server to create compressed files (.uz2) for
+Fast-Redirect server.
+
+Usage:
+put "uz2" folder inside your KillingFloor folder.
+run make_ScrnBundle_uz2.cmd uz2 folder.
+Upload cmd\OUTPUT\*.uz2 files to your Fast-Redirect server.

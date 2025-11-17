@@ -1,0 +1,56 @@
+
+
+ Unreal skeletal exporter for 3DS MAX - Model information for [Clot.psk] 
+
+ Skin faces:   2278
+ Skin vertices:   1187
+ Skin wedges (vertices with unique U,V):   1707
+ Total bone-to-vertex linkups:   2071
+ Reference bones:     34
+ Unique materials:      1
+
+ = materials =
+ * Index: [ 0]  name: 22 - Default  
+   Original bitmap: ClotSkin.bmp  Path: G:\Killing Floor\Player Models\NewNEWzombies
+    - Skin Index:  0
+   - render mode flags:
+ 
+
+ BONE LIST        [34] total bones in reference skeleton. 
+  number     name                           (parent) 
+  [  0 ]    [Bip01                          ]      (  0 ) 
+  [  1 ]    [Bip01 Pelvis                   ]      (  0 ) 
+  [  2 ]    [Bip01 Spine                    ]      (  1 ) 
+  [  3 ]    [Bip01 Spine1                   ]      (  2 ) 
+  [  4 ]    [Bip01 Spine2                   ]      (  3 ) 
+  [  5 ]    [Bip01 Neck                     ]      (  4 ) 
+  [  6 ]    [Bip01 Head                     ]      (  5 ) 
+  [  7 ]    [Bip01 HeadNub                  ]      (  6 ) 
+  [  8 ]    [Bip01 L Clavicle               ]      (  5 ) 
+  [  9 ]    [Bip01 L UpperArm               ]      (  8 ) 
+  [ 10 ]    [Bip01 L Forearm                ]      (  9 ) 
+  [ 11 ]    [Bip01 L Hand                   ]      ( 10 ) 
+  [ 12 ]    [Bip01 L Finger0                ]      ( 11 ) 
+  [ 13 ]    [Bip01 L Finger0Nub             ]      ( 12 ) 
+  [ 14 ]    [Bip01 R Clavicle               ]      (  5 ) 
+  [ 15 ]    [Bip01 R UpperArm               ]      ( 14 ) 
+  [ 16 ]    [Bip01 R Forearm                ]      ( 15 ) 
+  [ 17 ]    [Bip01 R Hand                   ]      ( 16 ) 
+  [ 18 ]    [Bip01 R Finger0                ]      ( 17 ) 
+  [ 19 ]    [Bip01 R Finger0Nub             ]      ( 18 ) 
+  [ 20 ]    [Bip01 L Thigh                  ]      (  2 ) 
+  [ 21 ]    [Bip01 L Calf                   ]      ( 20 ) 
+  [ 22 ]    [Bip01 L Foot                   ]      ( 21 ) 
+  [ 23 ]    [Bip01 L Toe0                   ]      ( 22 ) 
+  [ 24 ]    [Bip01 L Toe01                  ]      ( 23 ) 
+  [ 25 ]    [Bip01 L Toe02                  ]      ( 24 ) 
+  [ 26 ]    [Bip01 L Toe0Nub                ]      ( 25 ) 
+  [ 27 ]    [Bip01 R Thigh                  ]      (  2 ) 
+  [ 28 ]    [Bip01 R Calf                   ]      ( 27 ) 
+  [ 29 ]    [Bip01 R Foot                   ]      ( 28 ) 
+  [ 30 ]    [Bip01 R Toe0                   ]      ( 29 ) 
+  [ 31 ]    [Bip01 R Toe01                  ]      ( 30 ) 
+  [ 32 ]    [Bip01 R Toe02                  ]      ( 31 ) 
+  [ 33 ]    [Bip01 R Toe0Nub                ]      ( 32 ) 
+ 
+

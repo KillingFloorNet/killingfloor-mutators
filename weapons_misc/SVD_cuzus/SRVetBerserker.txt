@@ -1,0 +1,55 @@
+static function int AddDamage(KFPlayerReplicationInfo KFPRI, KFMonster Injured, KFPawn DamageTaker, int InDamage, class<DamageType> DmgType)
+{
+	local float mult;
+	local int perkLevel;
+
+	perkLevel = GetPerkLvl(KFPRI);
+
+	// Reduce damage for particular weapons due to abusing
+	// NOTE: Change also SRVetFieldMedic:10
+	if (class<DamTypeM79Grenade>(DmgType) != none
+	|| class<DamTypeM32Grenade>(DmgType) != none
+	|| class<DamTypeLAW>(DmgType) != none
+	|| class<DamTypeLawRocketImpact>(DmgType) != none
+	|| class<DamTypeRocketImpact>(DmgType) != none // LAW
+	|| class<DamTypeCrossbow>(DmgType) != none
+	|| class<DamTypeCrossbowHeadShot>(DmgType) != none
+	|| class<DamTypeM99SniperRifle>(DmgType) != none
+	|| class<DamTypeM99HeadShot>(DmgType) != none
+	|| class<DamTypeBurned>(DmgType) != none
+	// custom
+	//|| class<DamTypeM134DT>(DmgType) != none
+	|| class<DamTypeSVDc>(DmgType) != none)
+	{
+		return float(InDamage) * 0.7;
+	}
+	else if (class<KFWeaponDamageType>(DmgType) != none
+	&& class<KFWeaponDamageType>(DmgType).default.bIsMeleeDamage)
+	{
+		mult = 1.0 + (0.14 * float(perkLevel));
+		/*
+		Lv 0 - 1
+		Lv 1 - 1.14
+		Lv 2 - 1.28
+		Lv 3 - 1.42
+		Lv 4 - 1.56
+		Lv 5 - 1.7
+		Lv 6 - 1.84
+		Lv 7 - 1.98
+		Lv 8 - 2.12
+		Lv 9 - 2.26
+		Lv 10 - 2.4
+		*/
+
+		return float(InDamage) * mult;
+
+		//if (KFPRI.ClientVeteranSkillLevel < 6)
+		//	return float(InDamage) * (1.1 + (0.1 * KFPRI.ClientVeteranSkillLevel)); // 1.6 max
+		//if (KFPRI.ClientVeteranSkillLevel > 6 && KFPRI.ClientVeteranSkillLevel < 10)
+		//	return float(InDamage) * (1.2 + (0.1 * KFPRI.ClientVeteranSkillLevel)); // 2.1 max
+		//if (KFPRI.ClientVeteranSkillLevel >= 10)
+		//	return float(InDamage) * 2.4; // 2.4 max
+	}
+
+	return super.AddDamage(KFPRI, Injured, DamageTaker, InDamage, DmgType);
+}

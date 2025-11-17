@@ -1,0 +1,6 @@
+
+
+defaultproperties
+{
+     TextName="Sniper Man"
+}

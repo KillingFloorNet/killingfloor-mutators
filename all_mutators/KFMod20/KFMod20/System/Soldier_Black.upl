@@ -1,0 +1,4 @@
+[Public]
+Player=(DefaultName="Soldier_Black",Mesh=KFSoldiers.Soldier,species=KFmod.SoldierSpecies,BodySkin=KFCharacters.GasMaskFinal,FaceSkin=KFCharacters.SoldierSkin3,Portrait=KFPortraits.SoldierPortrait,Text="DRF commando. When the outbreak struck London, these courageous soldiers were among the first to hit the streets in defense of the public.",Sex=Male,Accuracy=+2.0,Aggressiveness=+1.0,StrafingAbility=+2.0,CombatStyle=-1,Tactics=+2.5,FavoriteWeapon=XWeapons.RocketLauncher,Ragdoll="",Skeleton=KFSoldiers.Soldier,Menu="SP",BotUse=1)
+
+

@@ -1,0 +1,57 @@
+static function float AddExtraAmmoFor(KFPlayerReplicationInfo KFPRI, Class<Ammunition> AmmoType)
+{
+	local int perkLevel;
+
+	perkLevel = GetPerkLvl(KFPRI);
+
+	// Grenades (Electro)
+	if (AmmoType == class'FragAmmo')
+	{
+		return 1.0; // 5 grenades
+	}
+	else if (AmmoType == class'AmmoCraftGunAmmo')
+	{
+		if (perkLevel > 0)
+		{
+			return FMin(perkLevel * 1.0, 10.0);
+		}
+		else
+		{
+			return 1.0;
+		}
+	}
+
+	return super.AddExtraAmmoFor(KFPRI, AmmoType);
+}
+
+static function AddDefaultInventory(KFPlayerReplicationInfo KFPRI, Pawn P)
+{
+	if (KFPRI.ClientVeteranSkillLevel > 0)
+	{
+		AddPerkedWeapon(class'AmmoCraftGun',KFPRI,P);
+	}
+
+	switch (KFPRI.ClientVeteranSkillLevel)
+	{
+		case 4:
+		case 5:
+			AddPerkedWeapon(class'Shotgun',KFPRI,P);
+			break;
+		case 6:
+		case 7:
+			AddPerkedWeapon(class'BenelliShotgun',KFPRI,P);
+			break;
+		case 8:
+		case 9:
+			AddPerkedWeapon(class'KSGShotgun',KFPRI,P);
+			break;
+		case 10:
+		case 11:
+		case 12:
+		case 13:
+		case 14:
+		case 15:
+			AddPerkedWeapon(class'BoomStick',KFPRI,P);
+			break;
+	}
+}

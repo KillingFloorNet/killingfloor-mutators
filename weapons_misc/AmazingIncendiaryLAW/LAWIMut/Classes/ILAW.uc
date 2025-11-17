@@ -1,0 +1,45 @@
+
+
+defaultproperties
+{
+     MagCapacity=1
+     ReloadRate=3.000000
+     WeaponReloadAnim="Reload_LAW"
+     MinimumFireRange=300
+     Weight=13.000000
+     bHasAimingMode=True
+     IdleAimAnim="AimIdle"
+     StandardDisplayFOV=75.000000
+     SleeveNum=3
+     TraderInfoTexture=Texture'KillingFloorHUD.Trader_Weapon_Images.Trader_Law'
+     bIsTier3Weapon=True
+     MeshRef="KF_Weapons_Trip.LAW_Trip"
+     SkinRefs(0)="ILAWJ.ILAWJ"
+     SelectSoundRef="KF_LAWSnd.LAW_Select"
+     HudImageRef="KillingFloorHUD.WeaponSelect.LAW_unselected"
+     SelectedHudImageRef="KillingFloorHUD.WeaponSelect.LAW"
+     PlayerIronSightFOV=90.000000
+     ZoomTime=0.260000
+     ZoomedDisplayFOV=65.000000
+     FireModeClass(0)=Class'KFMod.LAWFire'
+     FireModeClass(1)=Class'KFMod.NoFire'
+     PutDownAnim="PutDown"
+     SelectForce="SwitchToRocketLauncher"
+     AIRating=1.500000
+     CurrentRating=1.500000
+     bSniping=False
+     Description="The Light Anti Tank Weapon is, as its name suggests, a military grade heavy weapons platform designed to disable or outright destroy armored vehicles."
+     EffectOffset=(X=50.000000,Y=1.000000,Z=10.000000)
+     DisplayFOV=75.000000
+     Priority=195
+     HudColor=(G=0)
+     InventoryGroup=4
+     GroupOffset=9
+     PickupClass=Class'KFMod.LAWPickup'
+     PlayerViewOffset=(X=30.000000,Y=30.000000)
+     BobDamping=7.000000
+     AttachmentClass=Class'KFMod.LAWAttachment'
+     IconCoords=(X1=429,Y1=212,X2=508,Y2=251)
+     ItemName="L.A.W"
+     AmbientGlow=2
+}

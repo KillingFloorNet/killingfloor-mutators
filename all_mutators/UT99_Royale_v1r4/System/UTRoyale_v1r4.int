@@ -1,0 +1,3 @@
+[Public]
+Object=(Name=UTRoyale_v1r4.UTRoyale,Class=Class,MetaClass=Botpack.TournamentGameInfo)
+Preferences=(Caption="UT Royale v1r4",Parent="Game Types",Class=UTRoyale_v1r4.UTRoyale,Immediate=True)

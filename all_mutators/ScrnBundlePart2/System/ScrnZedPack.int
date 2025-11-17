@@ -1,0 +1,74 @@
+[DamTypeEMP]
+DeathString="%o watched %k's Self-Destruct Sequence too close."
+
+[DamTypeTesla]
+DeathString="%o accepts %k's shaft."
+FemaleSuicide="%o rode the lighting."
+MaleSuicide="%o rode the lighting."
+
+[FemaleFP]
+MenuName="Female FleshPound"
+
+[FemaleFP_MKII]
+MenuName="Female FleshPound MKII"
+
+[HardPat]
+MenuName="Hard Pat"
+
+[HardPat_CIRCUS]
+MenuName="Hard Ringmaster"
+
+[HardPat_GRITTIER]
+MenuName="Hard Grittier Pat"
+
+[HardPat_HALLOWEEN]
+MenuName="Hard Sheriff"
+
+[HardPat_XMAS]
+MenuName="Hard Santa"
+
+[TeslaHusk]
+MenuName="Tesla Husk"
+
+[ZombieBloat_GRITTIER]
+MenuName="Bloat.se"
+
+[ZombieBoss_GRITTIER]
+MenuName="Grittier Patriarch"
+
+[ZombieBrute]
+MenuName="Brute.se"
+
+[ZombieClot_GRITTIER]
+MenuName="Grittier Clot"
+
+[ZombieCrawler_GRITTIER]
+MenuName="Crawler.se"
+
+[ZombieFleshpound_GRITTIER]
+MenuName="Grittier Fleshpound"
+
+[ZombieGhost]
+MenuName="Ghost"
+
+[ZombieGorefast_GRITTIER]
+MenuName="Gorefast.se"
+
+[ZombieHusk_GRITTIER]
+MenuName="Husk.se"
+
+[ZombieJason]
+MenuName="Jason.se"
+
+[ZombieScrake_GRITTIER]
+MenuName="Grittier Scrake"
+
+[ZombieShiver]
+MenuName="Shiver.se"
+
+[ZombieSiren_GRITTIER]
+MenuName="Grittier Siren"
+
+[ZombieStalker_GRITTIER]
+MenuName="Grittier Stalker"
+

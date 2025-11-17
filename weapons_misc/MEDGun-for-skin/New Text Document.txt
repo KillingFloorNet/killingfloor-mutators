@@ -1,0 +1,11 @@
+code:
+ServerPackages=KFMedicBeamGun
+
+weapon code: KFMedicBeamGun.MBeamGunPickup
+
+step1 link : https://drive.google.com/open?id=1Q8AHzps3UyiY_a3LNE5zntzsJovEFYAj
+
+step2 {ССЫЛКА УДАЛЕНА}
+
+for unlock:
+remplace KFMedicBeamGun.u step2 , Killingfloor/system.

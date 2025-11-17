@@ -1,0 +1,4 @@
+[Public]
+Player=(DefaultName="Soldier_Davin",Mesh=KFSoldiers.Davin,species=KFmod.SoldierSpecies,BodySkin=KFCharacters.DavinSkin,FaceSkin=KFCharacters.DavinSkin,Portrait=KFPortraits.DavinPortrait,Text="Private Davin is a new recruit in the Disaster Response force. He grew up in a poor Irish community and learned some of lifes lessons the hard way. Despite his rank, he is one of the more reserved, and mature members in his squad.",Sex=Male,Accuracy=+2.0,Aggressiveness=+1.0,StrafingAbility=+2.0,CombatStyle=-1,Tactics=+2.5,FavoriteWeapon=XWeapons.RocketLauncher,Ragdoll="",Skeleton=KFSoldiers.Soldier,Menu="SP",BotUse=1)
+
+

@@ -1,0 +1,18 @@
+[CFChangeNick]
+WindowName="Chat Filter: Bad Name"
+BadCancel.Caption="Cancel"
+BadOK.Caption="OK"
+NewNickTitle.Caption="New nickname"
+
+[ChatFilterMsg]
+Messages[0]="Your nickname contains foul language||To play on this server you MUST change your nickname."
+Messages[1]="You have been kicked from the server because of abusive chatting."
+Messages[2]="You have been banned from the server because of abusive chatting."
+Messages[3]="You have been banned from this game because of abusive chatting."
+Messages[4]="You have been kicked from the server because of abusive chatting.|As requested by the the players."
+Messages[5]="You have been banned from the server because of abusive chatting.|As requested by the the players."
+Messages[6]="You have been banned from this game because of abusive chatting.|As requested by the the players."
+Messages[7]="Your nickname is not allowed||To play on this server you MUST change your nickname."
+WindowName="chat Filter"
+BadOK.Caption="OK"
+

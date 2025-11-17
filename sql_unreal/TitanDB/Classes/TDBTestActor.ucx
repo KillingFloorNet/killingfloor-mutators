@@ -1,0 +1,258 @@
+Class TDBTestActor extends Actor
+	dependson(TitanDatabase);
+
+var TitanDatabase DBRef;
+
+struct TestPlayerData
+{
+	var string TestIP;
+	var string TestGamespyID;
+	var string TestGUID;
+	var string TestName;
+};
+
+var array<TestPlayerData> TestPlayers;
+
+struct ExtraPlayerData
+{
+	var array<TitanDatabase.PlayerProperty> ExtraData;
+};
+
+var array<ExtraPlayerData> TestPlayerProperties;
+
+var array<PlayerController> JoinedPlayers;
+
+
+var array<PlayerController> QueriedPlayers;
+var int CurQueryType;
+var bool bQueryComplete;
+
+var deprecated bool bRemoveTestActor;
+
+
+function PostBeginPlay()
+{
+	DBRef = Class'TitanDB.TitanDatabase'.static.GetDBRef(Self);
+
+	//SetTimer(RandRange(1, 20), False, 'PlayerJoinTimer');
+	PlayerJoinTimer();
+
+	bRemoveTestActor = True;
+}
+
+function PlayerJoinTimer()
+{
+	local int i;
+	local bool bPreDebug;
+
+	// Make a fake player join
+	i = JoinedPlayers.Length;
+	JoinedPlayers.AddItem(Spawn(Class'PlayerController'));
+
+	LogInternal("Adding a player, '"$TestPlayers[i].TestName$"' ("$i$"/"$(TestPlayers.Length-1)$")", 'TitanDBDebug');
+
+	DBRef.DebugIP = TestPlayers[i].TestIP;
+	DBRef.DebugGamespyID = TestPlayers[i].TestGamespyID;
+	DBRef.DebugGUID = TestPlayers[i].TestGUID;
+	DBRef.DebugName = TestPlayers[i].TestName;
+
+	// Set the database to a debug instance and set the player data
+	bPreDebug = DBRef.bDebugInstance;
+	DBRef.bDebugInstance = True;
+
+	DBRef.SetPlayerData(JoinedPlayers[i], TestPlayerProperties[i].ExtraData);
+
+
+	DBRef.bDebugInstance = bPreDebug;
+
+
+	// Either reset the timer or request player data back
+	if (JoinedPlayers.Length < TestPlayers.Length)
+		SetTimer(RandRange(1, 3), False, 'PlayerJoinTimer');
+	else
+		StartQueries();
+}
+
+function StartQueries()
+{
+	local int i;
+	local bool bPreDebug;
+
+	bPreDebug = DBRef.bDebugInstance;
+	DBRef.bDebugInstance = True;
+
+
+	switch (CurQueryType)
+	{
+	case 0:
+		LogInternal("Querying for player data. Querying by GUID", 'TitanDBDebug');
+		break;
+
+	case 1:
+		LogInternal("Querying for player data. Querying by GamespyID", 'TitanDBDebug');
+		break;
+
+	case 2:
+		LogInternal("Querying for player data. Querying by IP", 'TitanDBDebug');
+		break;
+
+	case 3:
+		LogInternal("Querying for player data. Querying by Name", 'TitanDBDebug');
+		break;
+	}
+
+
+	for (i=0; i<JoinedPlayers.Length; ++i)
+	{
+		DBRef.DebugIP = TestPlayers[i].TestIP;
+		DBRef.DebugGamespyID = TestPlayers[i].TestGamespyID;
+		DBRef.DebugGUID = TestPlayers[i].TestGUID;
+		DBRef.DebugName = TestPlayers[i].TestName;
+
+		if (!QueryPlayer(JoinedPlayers[i], (CurQueryType == 2), (CurQueryType == 1), (CurQueryType == 0), (CurQueryType == 3)))
+			SetTimer(2, True, 'QueryTimer');
+	}
+
+
+	DBRef.bDebugInstance = bPreDebug;
+
+
+	// If all queries were instant, then begin timing for the next query
+	if (!IsTimerActive('QueryTimer'))
+		QueryTimer();
+}
+
+function bool QueryPlayer(PlayerController PC, optional bool bMatchIP, optional bool bMatchGamespyID, optional bool bMatchGUID, optional bool bMatchName)
+{
+	if (QueriedPlayers.Length == 0)
+	{
+		DBRef.ReceiveSuccess.AddItem(ReceivedPlayerData);
+		DBRef.ReceiveFail.AddItem(MissingPlayerData);
+	}
+
+	QueriedPlayers.AddItem(PC);
+	bQueryComplete = False;
+
+	return DBRef.GetPlayerData(PC, bMatchIP, bMatchGamespyID, bMatchGUID, bMatchName, True);
+}
+
+function QueryTimer()
+{
+	if (bQueryComplete)
+	{
+		++CurQueryType;
+
+		if (CurQueryType < 4)
+			SetTimer(10, False, 'StartQueries');
+
+		ClearTimer('QueryTimer');
+	}
+}
+
+function QueryComplete()
+{
+	bQueryComplete = True;
+}
+
+
+function ReceivedPlayerData(PlayerController PC, string Names, string GUIDs, string GamespyIDs, string IPs,
+				optional array<TitanDatabase.PlayerProperty> ExtraData, optional bool bGotExtraData)
+{
+	local int idx, i;
+
+	idx = QueriedPlayers.Find(PC);
+
+	if (idx == -1)
+		return;
+
+
+
+	LogInternal("Received back player data:", 'TitanDBDebug');
+	LogInternal("--- Names:"@Names, 'TitanDBDebug');
+	LogInternal("--- GUIDs:"@GUIDs, 'TitanDBDebug');
+	LogInternal("--- GamespyIDs:"@GamespyIDs, 'TitanDBDebug');
+	LogInternal("--- IPs:"@IPs, 'TitanDBDebug');
+
+	if (bGotExtraData)
+	{
+		LogInternal("--- Extra Data:", 'TitanDBDebug');
+
+		for (i=0; i<ExtraData.Length; ++i)
+			LogInternal("------ Key:"@ExtraData[i].Key$", Value:"@ExtraData[i].Value, 'TitanDBDebug');
+	}
+	else
+	{
+		LogInternal("--- No Extra Data", 'TitanDBDebug');
+	}
+
+
+
+	QueriedPlayers.Remove(idx, 1);
+
+	// If all queries have returned (n.b. this will happen on EVERY GetPlayerData call when using a runtime/config database) then disable the delegates
+	if (QueriedPlayers.Length == 0)
+	{
+		DBRef.ReceiveSuccess.RemoveItem(ReceivedPlayerData);
+		DBRef.ReceiveFail.RemoveItem(MissingPlayerData);
+
+		QueryComplete();
+	}
+}
+
+function MissingPlayerData(PlayerController PC)
+{
+	local int idx;
+
+	idx = QueriedPlayers.Find(PC);
+
+	if (idx == -1)
+		return;
+
+
+	LogInternal("Player data missing", 'TitanDBDebug');
+
+
+	QueriedPlayers.Remove(idx, 1);
+
+	// If all queries have returned (n.b. this will happen on EVERY GetPlayerData call when using a runtime/config database) then disable the delegates
+	if (QueriedPlayers.Length == 0)
+	{
+		DBRef.ReceiveSuccess.RemoveItem(ReceivedPlayerData);
+		DBRef.ReceiveFail.RemoveItem(MissingPlayerData);
+
+		QueryComplete();
+	}
+}
+
+
+defaultproperties
+{
+	TestPlayers(0)=(TestIP="192.168.0.1",TestGamespyID="AB",TestGUID="12345678912345678912345678912345",TestName="\"w%f&c(o)O,z/f;\\")
+	TestPlayers(1)=(TestIP="192.168.0.2",TestGamespyID="RE",TestGUID="54321123456789012345678901234567",TestName="FCFK")
+	TestPlayers(2)=(TestIP="192.168.0.3",TestGamespyID="5FPE",TestGUID="54321123456789123456789123456789",TestName="SH")
+	TestPlayers(3)=(TestIP="192.168.0.4",TestGamespyID="CF",TestGUID="12345123456789123456789123456789",TestName="CT")
+	TestPlayers(4)=(TestIP="192.168.0.5",TestGamespyID="SR",TestGUID="98765123456789123456789123456789",TestName="SR")
+	TestPlayers(5)=(TestIP="192.168.0.6",TestGamespyID="DH",TestGUID="23456123456789123456789123456789",TestName="JJ")
+
+	TestPlayers(6)=(TestIP="192.168.0.6",TestGamespyID="A",TestGUID="12345678912345678912345678912345",TestName="FCFK")
+	TestPlayers(7)=(TestIP="192.168.0.5",TestGamespyID="R",TestGUID="54321123456789012345678901234567",TestName="FO")
+	TestPlayers(8)=(TestIP="192.168.0.4",TestGamespyID="5FP",TestGUID="54321123456789123456789123456789",TestName="CT")
+	TestPlayers(9)=(TestIP="192.168.0.3",TestGamespyID="C",TestGUID="12345123456789123456789123456789",TestName="SH")
+	TestPlayers(10)=(TestIP="192.168.0.2",TestGamespyID="S",TestGUID="98765123456789123456789123456789",TestName="JJ")
+	TestPlayers(11)=(TestIP="192.168.0.1",TestGamespyID="D",TestGUID="23456123456789123456789123456789",TestName="SR")
+
+
+	TestPlayerProperties(0)=(ExtraData=((Key="Key1",Value="Val1")))
+	TestPlayerProperties(1)=(ExtraData=((Key="Key1",Value="Val1"),(Key="Key2",Value="Val2")))
+	TestPlayerProperties(2)=(ExtraData=((Key="Key1",Value="Val1"),(Key="Key2",Value="Val2"),(Key="Key1",Value="a")))
+	//TestPlayerProperties(3)=(ExtraData(0)=(Key="Key1",Value="Val1"),ExtraData(1)=(Key="Key2",Value="Val2"))
+	TestPlayerProperties(4)=(ExtraData=((Key="Key1",Value="Val1"),(Key="Key2",Value="Val2")))
+	//TestPlayerProperties(5)=(ExtraData(0)=(Key="Key1",Value="Val1"),ExtraData(1)=(Key="Key2",Value="Val2"))
+
+	TestPlayerProperties(6)=(ExtraData=((Key="Key1",Value="Val1"),(Key="Key2",Value="Val2"),(Key="Key3",Value="a")))
+	//TestPlayerProperties(7)=(ExtraData(0)=(Key="Key1",Value="Val1"),ExtraData(1)=(Key="Key2",Value="Val2"))
+	TestPlayerProperties(8)=(ExtraData=((Key="Key1",Value="Val1"),(Key="Key2",Value="Val2")))
+	//TestPlayerProperties(9)=(ExtraData(0)=(Key="Key1",Value="Val1"),ExtraData(1)=(Key="Key2",Value="Val2"))
+	TestPlayerProperties(10)=(ExtraData=((Key="Key1",Value="Val1"),(Key="Key2",Value="Val2"),(Key="Key1",Value="a")))
+	//TestPlayerProperties(11)=(ExtraData(0)=(Key="Key1",Value="Val1"),ExtraData(1)=(Key="Key2",Value="Val2"))
+}

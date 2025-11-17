@@ -1,0 +1,6 @@
+
+
+defaultproperties
+{
+     TextName="Tor Anderson"
+}

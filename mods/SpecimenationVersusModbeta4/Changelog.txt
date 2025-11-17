@@ -1,0 +1,25 @@
+Changes since beta 3:
+
+-updated for 1046 patch
+-remove useless text from hud
+-remove zed flashlight
+-add crosschair for husk and pat
+-add alternative attacks for husk and bloat
+-add stalker cloak as alt attack
+-add all attacks, invisibility, speed to patriarch
+-patriarch calls buddy squad when healing
+-patriarch and gorefast can strafe
+-add perk level bonus weapons at spawn
+-remove xray vision for humans
+-change human respawn way
+-dix some log spam
+
+Boss abilities binds:
+F=BossHide
+U=BossSwapWeapons
+Shift=BossSpeedUp | Onrelease BossSpeedDown
+
+
+25.02.2013 update
+-change balance
+ 

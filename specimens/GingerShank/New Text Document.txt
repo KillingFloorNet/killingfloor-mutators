@@ -1,0 +1,10 @@
+The Goreshank never has had different model variants and I've thought it would be great to start with the christmas variant. There will be multiple other variants for other events released soon. So let's start off with some information This mod comes with a mutator that replaces Gorefasts with a Mini Christmas Goreshank.
+
+To get the mutator working you need to turn on the Christmas Variant of the zeds which can be done so in the KillingFloor.ini file. Go to your Killing Floor  Systems folder and open KillingFloor.ini file. Find the line SpecialEventType= and change it to SpecialEventType=ET_TwistedChristmas. This will allow Christmas zeds to spawn and the mutator to replace the Gingerfast with the Gingershank.
+
+It also comes with the Standard Size variant(original goreshank size) which can be added with Poosh's Zed Manager mutator. You can use the summoning codes below to choose which of them you would like spawned. Enjoy!
+
+Summoning codes
+
+GingerShank.ZombieGingerShank
+GingerShank.ZombieGingerShankMini

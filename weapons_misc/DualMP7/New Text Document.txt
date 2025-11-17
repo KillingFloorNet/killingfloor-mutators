@@ -1,0 +1,21 @@
+Note: This was created by Yomommassis over at the Tripwire Interactive Forums. I do not take claim ownership of these files. I am simply uploading them to the Workshop for all to enjoy.
+
+Forum Link: http://forums.tripwireinteractive.com/showthread.php?t=43324
+
+Direct Download Link: {?????? ???????}
+
+ServerPerks Code: TraderInventory=4:KFDualMP7Mut.MP7DPickup
+
+Background: The MP7s in the vanilla Killing Floor game, but dual-wielded. Several model changes are apparent: stocks are closed, red dot is removed, and healing dart is gone.
+
+Specifications:
+
+Cost: £400
+Damage: Min 40 - Max 50
+MagCapacity: 80 Rounds
+InitialAmount: 160 Rounds
+MaxAmmo: 240 Rounds
+AmmoCost: £10
+BuyClipSize: 40 Rounds
+ReloadRate: 2.6
+Weight: 4 Blocks

@@ -1,0 +1,21 @@
+// Written by Marco.
+Class ZEDMut extends Mutator;
+
+function PreBeginPlay()
+{
+	if( KFGameType(Level.Game)==None )
+		Error("This mutator is only for KFGameType!");
+	else
+	{
+		Spawn(Class'ZEDManagerMut');
+		AddToPackageMap();
+	}
+}
+
+defaultproperties
+{
+     GroupName="KF-ZEDMUT"
+     FriendlyName="ZED Infected Soldiers"
+     Description="Add armed and infected soldiers to the game."
+     LifeSpan=0.100000
+}

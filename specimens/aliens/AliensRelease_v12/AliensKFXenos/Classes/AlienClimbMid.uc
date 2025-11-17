@@ -1,0 +1,6 @@
+
+
+defaultproperties
+{
+     bForcedOnly=True
+}

@@ -1,0 +1,74 @@
+class SV98Attachment extends KFWeaponAttachment;
+
+defaultproperties
+{
+    mMuzFlashClass=Class'ROEffects.MuzzleFlash3rdMP'
+    mTracerClass=Class'KFMod.KFNewTracer'
+    mShellCaseEmitterClass=Class'KFMod.KFShellSpewer'
+    bRapidFire=True
+    bAltRapidFire=True
+    SplashEffect=Class'BulletSplashEmitter'
+    CullDistance=5000.000000
+    Mesh=SkeletalMesh'SV98_A.SV98_3rd'
+
+    MovementAnims(0)=JogF_M14
+    MovementAnims(1)=JogB_M14
+    MovementAnims(2)=JogL_M14
+    MovementAnims(3)=JogR_M14
+    CrouchAnims(0)=CHwalkF_M14
+    CrouchAnims(1)=CHwalkB_M14
+    CrouchAnims(2)=CHwalkL_M14
+    CrouchAnims(3)=CHwalkR_M14
+    WalkAnims(0)=WalkF_M14
+    WalkAnims(1)=WalkB_M14
+    WalkAnims(2)=WalkL_M14
+    WalkAnims(3)=WalkR_M14
+    AirStillAnim=JumpF_Mid
+    AirAnims(0)=JumpF_Mid
+    AirAnims(1)=JumpF_Mid
+    AirAnims(2)=JumpL_Mid
+    AirAnims(3)=JumpR_Mid
+    TakeoffStillAnim=JumpF_Takeoff
+    TakeoffAnims(0)=JumpF_Takeoff
+    TakeoffAnims(1)=JumpF_Takeoff
+    TakeoffAnims(2)=JumpL_Takeoff
+    TakeoffAnims(3)=JumpR_Takeoff
+    LandAnims(0)=JumpF_Land
+    LandAnims(1)=JumpF_Land
+    LandAnims(2)=JumpL_Land
+    LandAnims(3)=JumpR_Land
+
+    TurnRightAnim=TurnR_M14
+    TurnLeftAnim=TurnL_M14
+    CrouchTurnRightAnim=CH_TurnR_M14
+    CrouchTurnLeftAnim=CH_TurnL_M14
+    IdleRestAnim=Idle_M14
+    IdleCrouchAnim=CHIdle_M14
+    IdleSwimAnim=Swim_Tread
+    IdleWeaponAnim=Idle_M14
+    IdleHeavyAnim=Idle_M14
+    IdleRifleAnim=Idle_M14
+    IdleChatAnim=Idle_M14
+    FireAnims(0)=Fire_M14
+    FireAnims(1)=Fire_M14
+    FireAnims(2)=Fire_M14
+    FireAnims(3)=Fire_M14
+    FireAltAnims(0)=Fire_M14
+    FireAltAnims(1)=Fire_M14
+    FireAltAnims(2)=Fire_M14
+    FireAltAnims(3)=Fire_M14
+    FireCrouchAnims(0)=CHFire_M14
+    FireCrouchAnims(1)=CHFire_M14
+    FireCrouchAnims(2)=CHFire_M14
+    FireCrouchAnims(3)=CHFire_M14
+    FireCrouchAltAnims(0)=CHFire_M14
+    FireCrouchAltAnims(1)=CHFire_M14
+    FireCrouchAltAnims(2)=CHFire_M14
+    FireCrouchAltAnims(3)=CHFire_M14
+    HitAnims(0)=HitF_M14
+    HitAnims(1)=HitB_M14
+    HitAnims(2)=HitL_M14
+    HitAnims(3)=HitR_M14
+    PostFireBlendStandAnim=Blend_M14
+    PostFireBlendCrouchAnim=CHBlend_M14
+}

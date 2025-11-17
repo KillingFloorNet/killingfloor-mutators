@@ -1,0 +1,336 @@
+//============================================================
+// TitanMySQLDatabase.uc	- Database which connects to a MySQL server
+//============================================================
+//	TitanDB
+//		- A central database management package for the TitanAdminHax tool
+//
+//	Copyright (C) 2008 John "Shambler" Barrett (JBarrett847@Gmail.com or Shambler@OldUnreal.com)
+//
+//	This program is free software; you can redistribute and/or modify
+//	it under the terms of the Open Unreal Mod License version 1.1.
+//
+//============================================================
+//
+// Implements the database interface to a MySQL server
+//
+//============================================================
+Class TitanMySQLDatabase extends TitanDatabase
+	config(TitanDatabase);
+
+var config string	SQLServerIP;
+var config bool		bResolveIPString;
+var config int		SQLServerPort;
+var config string	SQLUser;
+var config string	SQLPassword;
+var config string	SQLDatabase;
+
+var config string	SQLTableName;
+var config bool		bAutoCreateDatabase;
+var config bool		bAutoCreateTable;
+
+
+var config bool		bCurrentDatabaseExists;
+
+
+// Runtime variables
+var bool		bConnected;
+
+var TitanMySQLLink	SQLLink;
+var byte		SentDBQuery;
+var string		CreateTableQuery;
+
+
+// debug variables
+var deprecated bool bMajorTODO;
+var deprecated bool bRemoveThisDebugCode;
+
+
+function bool GetPlayerData(PlayerController PC, int MatchFlags)
+{
+	// ***
+	bMajorTODO = True;
+	// IMPORTANT: When coding this, IMPLEMENT LOCKING OF ROWS! (so that multiple servers accessing the same database, don't encounter sharing problems)
+	// ***
+}
+
+function bool UpdatePlayerData(PlayerController PC, optional array<PlayerProperty> ExtraData)
+{
+	// ***
+	bMajorTODO = True;
+	// IMPORTANT: When coding this, IMPLEMENT LOCKING OF ROWS! (so that multiple servers accessing the same database, don't encounter sharing problems)
+	// ***
+
+	if (!bConnected)
+		return False;
+}
+
+
+function SQLQueryResult()
+{
+	bMajorTODO = True;
+
+	// N.B. Instead of manually parsing the return packet, use the utility functions at the bottom of TitanMySQLLink!
+}
+
+
+
+// ***** The remaining code in this class is mainly there to manage the SQLLink
+
+function InitializeDatabase()
+{
+	Super.InitializeDatabase();
+
+	SQLLink = Spawn(Class'TitanMySQLLink', Self);
+
+	// ***
+	bMajorTODO = True;
+	// Rewrite 'CreateTableQuery' so that you can input the ExtraData info (maybe as another varchar, if there is no better way?)
+	// NOTE: It would be best for you to convert the ExtraData array into a string, and then back to a struct when receiving a query (rather than redoing
+	//		the way the code works instead)
+	// ***
+
+	// ***
+	bMajorTODO = True;
+	// Once you finalize the way ExtraData works, write a batch file for compiling TitanDB which conforms the package, to ensure compatability
+	// ***
+
+	CreateTableQuery = "create table List (idx mediumint NOT NULL AUTO_INCREMENT, KEY (idx), IPs varchar(65487),"@
+		"GamespyIDs varchar(65487), GUIDs varchar(65487), Names varchar(65487))";
+
+
+	// Hook up delegates to the SQLLink
+	SQLLink.AuthSuccess = SQLConnected;
+	SQLLink.Disconnected = SQLDisconnected;
+	SQLLink.QueryResult = SQLQueryResult;
+	SQLLink.QueryError = SQLQueryError;
+
+
+	// If we are not sure if the SQL database exists, don't specify the database when connecting (instead, check if it exists after connecting)
+	if ((bAutoCreateDatabase && !bCurrentDatabaseExists))
+	{
+		GotoState('CreateDatabase');
+
+		if (!SQLLink.SQLConnect(SQLServerIP, bResolveIPString, SQLServerPort, SQLUser, SQLPassword))
+			return;
+	}
+	else if (bAutoCreateTable && !bCurrentDatabaseExists)
+	{
+		GotoState('CreateDatabase');
+
+		if (!SQLLink.SQLConnect(SQLServerIP, bResolveIPString, SQLServerPort, SQLUser, SQLPassword, SQLDatabase))
+			return;
+	}
+	else if (!SQLLink.SQLConnect(SQLServerIP, bResolveIPString, SQLServerPort, SQLUser, SQLPassword, SQLDatabase))
+	{
+		return;
+	}
+}
+
+function GetPersistentActorList(out array<Actor> List)
+{
+	Super.GetPersistentActorList(List);
+
+	List[List.Length] = SQLLink;
+}
+
+
+
+function SQLConnected()
+{
+	bConnected = True;
+}
+
+function SQLDisconnected()
+{
+	// ***
+	bRemoveThisDebugCode = True;
+	LogInternal("TitanMySQLDatabase::SQLDisconnected: LinkState"@GetEnum(Enum'ELinkState', SQLLink.LinkState), 'TitanMySQL');
+	// ***
+
+	SQLLink.Destroy();
+	Destroy();
+}
+
+function SQLQueryError(string Msg)
+{
+	LogInternal("Received error while waiting for query result:"@Msg, 'TitanDB');
+}
+
+
+// Special state which checks if the specified database (SQLDatabase) or table exists before enabling queries, and will create the specified database if it doesn't already exist
+state CreateDatabase
+{
+	function EndState(Name NextStateName)
+	{
+		Global.SQLConnected();
+	}
+
+	function SQLConnected()
+	{
+		// Send a query to see if the current database exists
+		if (bAutoCreateDatabase)
+		{
+			SQLLink.SendQuery("USE"@SQLDatabase);
+		}
+		else if (bAutoCreateTable)
+		{
+			SentDBQuery = 3;
+		}	SQLLink.SendQuery(CreateTableQuery);
+	}
+
+	//function InternalResultDel()
+	function SQLQueryResult()
+	{
+		if (SQLLink.ResultData.Length < 5)
+		{
+			LogInternal("Received invalid packet, closing connection", 'TitanDB');
+			SQLLink.Close();
+
+			return;
+		}
+
+
+		// Check if an 'OK' packet (database exists) or an 'Error' packet (database doesn't exist) was received
+
+		// OK packet
+		if (SQLLink.ResultData[4] == 0)
+		{
+			if (SentDBQuery == 0)
+			{
+				LogInternal("'"$SQLDatabase$"' database already exists", 'TitanDB');
+
+				bCurrentDatabaseExists = True;
+				SaveConfig();
+
+
+				// UPDATE: I want this to also check that the table exists anyway, even if the database already exists
+				if (bAutoCreateTable)
+				{
+					LogInternal("Requesting creation of table", 'TitanDB');
+
+					SentDBQuery += 3;
+					SQLLink.SendQuery(CreateTableQuery);
+				}
+				else
+				{
+					// Exit this state, now ready to send/receive queries
+					GotoState('');
+				}
+			}
+			else if (SentDBQuery == 1)
+			{
+				bCurrentDatabaseExists = True;
+				SaveConfig();
+
+				LogInternal("'"$SQLDatabase$"' database created, requesting use of that database", 'TitanDB');
+
+
+				++SentDBQuery;
+				SQLLink.SendQuery("USE"@SQLDatabase);
+			}
+			else if (SentDBQuery == 2)
+			{
+				++SentDBQuery;
+
+				if (!bAutoCreateTable)
+				{
+					LogInternal("Successfully set database", 'TitanDB');
+
+					// Exit this state
+					GotoState('');
+					return;
+				}
+
+
+				LogInternal("Successfully set database, now creating table for holding player data", 'TitanDB');
+
+				// Not hardcoded anymore, allows more flexibility
+				SQLLink.SendQuery(CreateTableQuery);
+			}
+			else// if (SentDBQuery == 3)
+			{
+				bCurrentDatabaseExists = True;
+				SaveConfig();
+
+
+				LogInternal("Successfully created player data table", 'TitanDB');
+
+				// Exit this state, now ready to send/receive queries
+				GotoState('');
+			}
+		}
+		// Error packet
+		else if (SQLLink.ResultData[4] == 255)
+		{
+			if (SentDBQuery == 0)
+			{
+				// Determine what the error ID was, if it was not 'database does not exist' then we can't handle the error and the connection must be closed
+				if (SQLLink.ResultData[5] != 25 || SQLLink.ResultData[6] != 4)
+				{
+					LogInternal("Expected a 'database does not exist' error but got:"@Class'TitanMySQLLink'.static.ParseErrorPacket(SQLLink.ResultData), 'TitanDB');
+					SQLLink.Close();
+
+					return;
+				}
+
+				// If the code reaches here, we have received the correct error type...now ask the SQL server to create the new database
+				++SentDBQuery;
+				LogInternal("Requesting creation of '"$SQLDatabase$"' database", 'TitanDB');
+
+				SQLLink.SendQuery("CREATE DATABASE"@SQLDatabase);
+			}
+			else if (SentDBQuery == 1)
+			{
+				LogInternal("Error while attempting to create database, closing connection"@
+						Class'TitanMySQLLink'.static.ParseErrorPacket(SQLLink.ResultData), 'TitanDB');
+
+				SQLLink.Close();
+				return;
+			}
+			else if (SentDBQuery == 2)
+			{
+				LogInternal("Error selecting newly created database, closing connection"@Class'TitanMySQLLink'.static.ParseErrorPacket(SQLLink.ResultData), 'TitanDB');
+				SQLLink.Close();
+
+				return;
+			}
+			else// if (SentDBQuery == 3)
+			{
+				if ((SQLLink.ResultData[6] << 8) + SQLLink.ResultData[5] == 1050)
+				{
+					LogInternal("Table already exists", 'TitanDB');
+					GotoState('');
+				}
+				else
+				{
+					LogInternal("Error while attempting to create table, closing connection"@
+							Class'TitanMySQLLink'.static.ParseErrorPacket(SQLLink.ResultData), 'TitanDB');
+
+					SQLLink.Close();
+				}
+
+				return;
+			}
+		}
+		// Bad packet
+		else
+		{
+			LogInternal("Received invalid response packet, closing connection", 'TitanDB');
+			SQLLink.Close();
+
+			return;
+		}
+	}
+}
+
+
+defaultproperties
+{
+	bResolveIPString=False
+	SQLDatabase="TitanDB"
+	SQLTableName="PlayerAKAData"
+
+	bAutoCreateDatabase=True
+	bAutoCreateTable=True
+	bCurrentDatabaseExists=False
+}

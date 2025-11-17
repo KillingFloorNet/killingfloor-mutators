@@ -1,0 +1,52 @@
+===========================================================================
+Title: RE4 Merchant Trader Replacement 1.23 [LITE]
+Released: 12/13/12
+Authors: Revenant100 aka Marphy Black, Half-Dead
+Email: revenant100@hotmail.com
+Steam: http://steamcommunity.com/id/Revenant100
+
+Description: This is a modification for Killing Floor that replaces the
+Trader with the Merchant from Resident Evil 4. Custom portrait and sounds
+are included. The LITE version does not include the model.
+
+===========================================================================
+
+Making backups:
+(Backups are not required unless you want to uninstall using the manual method)
+
+1. Go to the following directory:
+   C:\Program Files (x86)\Steam\steamapps\common\killingfloor\Sounds
+
+   and make a backup of the following file there:
+    KF_Trader.uax
+
+2. Go to the following directory:
+   C:\Program Files (x86)\Steam\steamapps\common\killingfloor\Textures
+
+   and make a backup of the following file there:
+    KFPortraits.utx
+
+===========================================================================
+
+Installation Instructions:
+
+1. Go to the following directory:
+   C:\Program Files (x86)\Steam\steamapps\common\killingfloor
+
+2. Extract this rar file's contents to the same folder. Overwrite all files
+   when asked.
+   
+===========================================================================
+
+Uninstallation Instructions:
+
+1. (Manual) Restore the original files using the backups you made.
+   
+   OR
+   
+   (Automatic) Run the Verify Integrity Of Game Cache option in Steam to
+   redownload the original files. To do this, right click on Killing Floor
+   while in Steam's Library section, pick Properties, go to the Local Files
+   tab, and click on Verify Integrity Of Game Cache.
+
+===========================================================================

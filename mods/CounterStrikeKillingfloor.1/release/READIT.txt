@@ -1,0 +1,34 @@
+:::::::Killing Floor Team Strikes:::::::
+
+
+
+
+Unzip the contents of the zip into this folder C:\Program Files\Steam\steamapps\common\killingfloor\
+and enjoy!
+
+About:
+
+This a mutator/gametype that allows you to load a map into the Killing Strike game mode with a prefix of "DM-". 
+Be aware of the fact that the map loaded should be made to fit the gameplay and is not for the
+stock coop game mode.
+
+Gameplay: You and your team are face another wipe the other team out and win points, or every kill 
+and round won you get money and the buy menu comes up to select your weapon for the round.
+
+Updates:
+
+
+1.Your Two primary weapons (exp. ak47,shotgun) and Armor bought in a round is kept.
+2.You can press Use button to bring buy window up during time between rounds.
+3.Wait time added Inbetween rounds 
+4. Level Action Rifle replaced with Crossbow!
+5.Able to config settings in "Config mutators" in mutator tab such as Timelimit,score limit,max players
+6. Score Board shows player scores instead of money
+7.Melee speed is faster, weapon speed is slower.
+8.Fixed Spectator that caused players to view others when they are in game.
+9.Fixing player entering game after round started and not allowed to enter after someone exited.
+10.If You are alone in server you are changed to spectator.
+11.Objective based VIP Mod (protect the trader) added in config.
+12.Scoring fixed up.
+13.More options available in config.
+14.Mapvote fixed from not loading the maps.

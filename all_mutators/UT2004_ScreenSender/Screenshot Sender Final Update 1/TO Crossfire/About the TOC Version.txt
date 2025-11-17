@@ -1,0 +1,20 @@
+The following differences between the normal screenshot sender version and the TO:C version exist:
+- The package is named different: ClanSoundsv1h
+- To add the mutator directly, you need to use the following path: ClanSoundsv1h.ClanSoundsv1h
+- To add the mutator via ServerActor, you need to use the following path: ClanSoundsv1h.ScreenSenderServerActor
+- The normal version of the screenshot reader isn't working in TO:C and vice versa.
+- If you don't specify %GUID in the ScreenshotTemplate, it will be automatically added at the end.
+- The source for the converter is missing.
+
+
+For more informations see the Readme, page 18.
+
+
+TO:C homepage: http://www.to-crossfire.net/
+
+
+If you need help with the mutator, feel free to contact me. See last page of the Readme.
+
+
+Copyright (C) 2007-2008 Gugi
+All rights reserved.

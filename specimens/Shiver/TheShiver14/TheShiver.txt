@@ -1,0 +1,18 @@
+The Shiver
+
+Teleporting Zed by Benjamin and Hemi. No this is not just a Stalker variant. This Zed will actually teleport from the end of the corridor to right up to your face...or even worse...behind you! 
+
+When Horzine created the Stalker, they soon found out that it was too easy to be spotted in combat. Some veteran commandos, with their eagle eyes, claimed they spotted her from miles away. Horzine needed a new variant in this genetic pool, and so the Shiver was born. 
+
+One of the scientists called Benjamin Whirton, a nervous little man, volunteered as a testing subject. He was a weird little man, twitching his head back and forth...roaming the corridors of the underground lab. Kevin grew weary of him, and he was more then happy to break open his skull and apply the changes to his genetic material. 
+
+This zed will spawn together with the stalkers.
+
+Sandbox name : Shiver014.ZombieShiver
+
+Subscribe to the item to download. (when you startup KF you will see it downloading in the top-right corner) When finished downloading it could be you have to restart KF to see it in your mutator list. (tab "mutators")
+
+This is not whitelisted
+
+Superior coding by : Benjamin
+Model/Animations/Texture : Hemi

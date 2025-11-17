@@ -1,0 +1,49 @@
+<!-- #include file="header.inc" -->
+<table>
+<colgroup>
+<col width="50*">
+<col width="10*">
+<col width="5*">
+<col width="10*">
+<col width="5*">
+</colgroup>
+<tr>
+	<th>Data</th>
+	<th>Type</th>
+	<th>Spectator&nbsp;Only</th>
+	<th>Method</th>
+	<th></th>
+</tr>
+<%slots%>
+<tr>
+	<td colspan="5">&nbsp;</td>
+</tr>
+<form method="post" action="<%PostAction%>">
+<tr>	
+	<input type="hidden" name="sid" value="-1">
+	<td><input class="textbox" type="text" name="data" style="width: 95%;"></td>
+	<td><select name="type">
+	<option value="0">IP
+	<option value="1">CDKey Hash
+	<option value="2">Nickname
+	<option value="3">Password
+	<option value="4">Connect url
+	</select></td>
+	<td><input type="checkbox" name="speconly" value="true"></td>
+	<td><select name="method">
+	<option value="0">Expand limit
+	<option value="1">Kick random player
+	<option value="2">Kick worst player
+	<option value="3">Kick best player
+	<option value="4">Kick oldest player
+	<option value="5">Kick newest player
+	</select></td>
+	<td><input class="button" type="submit" name="submit" value="new"></td>	
+</tr>
+<tr>
+	<td colspan="4" nowrap><small>Comment:&nbsp;<input class="textbox" type="text" name="comment" value="" style="width: 90%;"></small></td>
+	<td></td>
+</tr>
+</form>
+</table>
+<!-- #include file="footer.inc" -->		

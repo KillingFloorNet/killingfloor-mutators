@@ -1,0 +1,99 @@
+[CryoThrower]
+Description="A leaf blower modified to spray liquid nitrogen."
+ItemName="HTec Cryo Thrower"
+
+[CryoThrowerAmmo]
+ItemName="Liquid Nitrogen"
+
+[CryoThrowerAmmoPickup]
+PickupMessage="ML of Liquid Nitrogen"
+
+[CryoThrowerPickup]
+ItemName="HTec Cryo Thrower"
+ItemShortName="HTec Cryo Thrower"
+PickupMessage="You got the CryoThrower"
+
+[DamTypeFreezerBase]
+DeathString="%o frozen by %k."
+FemaleSuicide="%o froze till death."
+MaleSuicide="%o froze till death."
+
+[DamTypeSirenDart]
+DeathString="%o was pierced by %k's ice shards."
+FemaleSuicide="%o was pierced by ice shards."
+MaleSuicide="%o was pierced by ice shards."
+
+[FreezeAch]
+GroupInfo=((Caption="ALL"),(Caption="Custom Weapons"))
+ProgressName="Cryo Achievements"
+
+[FreezerAmmo]
+ItemName="Liquid Nitrogen"
+
+[FreezerAmmoPickup]
+PickupMessage="ML of Liquid Nitrogen"
+
+[FreezerDartAmmo]
+ItemName="Ice Shards"
+
+[FreezerDartAmmoPickup]
+PickupMessage="Ice Shards"
+
+[FreezerGun]
+ReloadMessage="REL"
+EmptyMessage="---"
+Description="Cryo Mass Driver v014 or simply a 'Freezer Gun' is developed to ... blah blah blah ... freeze zeds"
+ItemName="Cryo Mass Driver 14 SE"
+
+[FreezerPickup]
+SecondaryAmmoShortName="-- Liquid Nitrogen"
+
+[FreezerPrimaryPickup]
+ItemName="Cryo Mass Driver 14 SE"
+ItemShortName="Cryo MD14 SE"
+PickupMessage="You got the Cryo Mass Driver 14"
+
+[HTecMut]
+FriendlyName="ScrN Horzine Technician"
+Description="Horzine Technician featuring IJC Cryo Mass Driver 14. Requires ScrN Balance v9+."
+
+[HTecProg]
+ProgressName="Frozen/Zapped ZEDs"
+
+[HTecZEDGun]
+ItemName="HTec ZED Eradication Device"
+
+[HTecZEDGunPickup]
+ItemName="HTec ZED Gun"
+
+[HTecZEDMKII]
+ItemName="HTec ZED Eradication Device MKII"
+
+[HTecZEDMKIIPickup]
+ItemName="HTec ZED Gun MKII"
+ItemShortName="ZED Gun MKII"
+
+[KVolt]
+Description="Horzine modification of The K-Volt Prototype to fire cryo darts. K-Volt's cryo darts are weaker than Mass Driver's, but they have longer aftereffect and enhanced shattering capability."
+ItemName="HTec K-VOLT Cryo"
+
+[KVoltAmmo]
+ItemName="Cryo darts"
+
+[KVoltAmmoAmmoPickup]
+PickupMessage="Cryo Darts"
+
+[KVoltPickup]
+ItemName="HTec K-VOLT Cryo"
+ItemShortName="HTec K-VOLT"
+PickupMessage="You got the HTec K-VOLT Cryo"
+
+[ScrnVetHTec]
+SkillInfo="PERK SKILLS (HTec v4.00):|Cryo Grenades|Higher frozen dosh value|Armor does not slow you down|60% less damage from Bloat Bile and Siren Scream while Armor > 100"
+CustomLevelInfo="PERK BONUSES (LEVEL %L):|%x more damage with ZED/Cryo Guns|%x faster freezing|%m larger ZED Gun clips|%a more ZED/Cryo Ammo|+%g extra Cryo grenades|%$ discount on HTec Inventory"
+VeterancyName="Horzine Technician"
+Requirements[0]="Freeze or zap %x ZEDs"
+
+[ZombieSirenCryo]
+MenuName="Cryo Siren"
+

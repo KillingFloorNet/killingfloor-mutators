@@ -1,0 +1,4 @@
+[Public]
+Player=(DefaultName="Soldier_Quick",Mesh=KFSoldiers.Quick,species=KFmod.SoldierSpecies,BodySkin=KFCharacters.QuickSkin,FaceSkin=KFCharacters.QuickSkin,Portrait=KFPortraits.QuickPortrait,Text="Canadian Born, Private Quick was one of the few foreign applicants to make it into the DRF on the first try. Despite being almost perpetually intoxicated, his aim never seems to suffer.",Sex=Male,Accuracy=+2.0,Aggressiveness=+1.0,StrafingAbility=+2.0,CombatStyle=-1,Tactics=+2.5,FavoriteWeapon=XWeapons.RocketLauncher,Ragdoll="",Skeleton=KFSoldiers.Soldier,Menu="SP",BotUse=1)
+
+

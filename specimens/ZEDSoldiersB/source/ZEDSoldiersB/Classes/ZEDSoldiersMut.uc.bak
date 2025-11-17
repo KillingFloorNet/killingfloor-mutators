@@ -1,0 +1,99 @@
+class ZEDSoldiersMut extends Mutator;
+
+var config string CustomPackageName;
+
+function PostBeginPlay()
+{
+	local int i;
+	local string MID;
+	local KFGameType KF;
+	
+	if (Level.NetMode != NM_Standalone)
+		AddToPackageMap(CustomPackageName);
+	
+	KF = KFGameType(Level.Game);
+	if (KF == none)
+	{
+		Destroy();
+		return;
+	}
+	
+	// Get new slot in monster list
+	i = KFGameType(Level.Game).StandardMonsterClasses.Length;
+	KFGameType(Level.Game).StandardMonsterClasses.Length = i + 1;
+	MID = Chr(65 + i);
+	
+	// Add monster to monster list
+	KFGameType(Level.Game).StandardMonsterClasses[i].MClassName = CustomPackageName$".ZEDFlamer";
+	KFGameType(Level.Game).StandardMonsterClasses[i].MID = MID;
+	
+	// Get new slot in monster list
+	i = KFGameType(Level.Game).StandardMonsterClasses.Length;
+	KFGameType(Level.Game).StandardMonsterClasses.Length = i + 1;
+	MID = Chr(65 + i);
+	
+	// Get new slot in monster list
+	i = KFGameType(Level.Game).StandardMonsterClasses.Length;
+	KFGameType(Level.Game).StandardMonsterClasses.Length = i + 1;
+	MID = Chr(65 + i);
+	
+	// Add monster to monster list
+	KFGameType(Level.Game).StandardMonsterClasses[i].MClassName = CustomPackageName$".ZEDDemo";
+	KFGameType(Level.Game).StandardMonsterClasses[i].MID = MID;
+	
+	// Get new slot in monster list
+	i = KFGameType(Level.Game).StandardMonsterClasses.Length;
+	KFGameType(Level.Game).StandardMonsterClasses.Length = i + 1;
+	MID = Chr(65 + i);
+	
+	// Add monster to monster list
+	KFGameType(Level.Game).StandardMonsterClasses[i].MClassName = CustomPackageName$".ZEDCommando";
+	KFGameType(Level.Game).StandardMonsterClasses[i].MID = MID;
+	
+	// Get new slot in monster list
+	i = KFGameType(Level.Game).StandardMonsterClasses.Length;
+	KFGameType(Level.Game).StandardMonsterClasses.Length = i + 1;
+	MID = Chr(65 + i);
+	
+	// Add monster to monster list
+	KFGameType(Level.Game).StandardMonsterClasses[i].MClassName = CustomPackageName$".ZEDBerserker";
+	KFGameType(Level.Game).StandardMonsterClasses[i].MID = MID;
+	
+	// Get new slot in monster list
+	i = KFGameType(Level.Game).StandardMonsterClasses.Length;
+	KFGameType(Level.Game).StandardMonsterClasses.Length = i + 1;
+	MID = Chr(65 + i);
+	
+	// Add monster to monster list
+	KFGameType(Level.Game).StandardMonsterClasses[i].MClassName = CustomPackageName$".ZEDSniper";
+	KFGameType(Level.Game).StandardMonsterClasses[i].MID = MID;
+	
+	// Get new slot in monster list
+	i = KFGameType(Level.Game).StandardMonsterClasses.Length;
+	KFGameType(Level.Game).StandardMonsterClasses.Length = i + 1;
+	MID = Chr(65 + i);
+	
+	// Add monster to monster list
+	KFGameType(Level.Game).StandardMonsterClasses[i].MClassName = CustomPackageName$".ZEDSoldier";
+	KFGameType(Level.Game).StandardMonsterClasses[i].MID = MID;
+
+	// Add monster to squads
+	//KFGameType(Level.Game).StandardMonsterSquads[24] $= "1" $ MID;
+	//KFGameType(Level.Game).StandardMonsterSquads[25] $= "2" $ MID;
+	//KFGameType(Level.Game).StandardMonsterSquads[26] $= "1" $ MID;
+	
+	SetTimer(0.1, false);
+}
+
+function Timer()
+{
+	Destroy(); // Destroy here (after mut is loaded) otherwise it won't appear as set in webadmin
+}
+
+defaultproperties
+{
+	GroupName="KF-ZEDSoldiersMut"
+	FriendlyName="ZEDSoldiersMut"
+	Description=""
+	CustomPackageName="ZEDSoldiers"
+}

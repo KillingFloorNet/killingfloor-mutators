@@ -1,0 +1,67 @@
+Remove 'Movies' section from the Lobby
+
+[b]Features[/b]
+
+- Completely hide the Movies panel
+- Replace 'Movies' with a custom Texture (IMGs, GIFs etc..)
+
+[h1][b][u]Credits[/u][/b][/h1]
+
+- Marco & ScaryGhost for code reference
+- Me
+
+[h1][b][u]Whitelist status[/u][/b][/h1]
+
+- NO | Requires Client Interaction
+
+[h1][b][u]Notes[/u][/b][/h1]
+
+- Not tested [b]AT ALL[/b] with [i]ServerPerks[/i] or any other mutator that modifies the Lobby GUI
+
+[h1][b][u]Number Of Files[/u][/b][/h1]
+
+- 3
+
+[h1][b][u]Sample Config[/u][/b][/h1]
+
+[code]
+[MovieAdsRemover.MovieAdsRemover]
+# Removes the 'Movies' section completely
+bCompletelyDisable=true
+# Replace the movies with a texture image/GIF that you can specify below
+bReplaceWithTexture=true
+# Name of the texture Package
+sPackageName=MARTex.utx
+# First, make sure the image you are trying to import is:
+# A power-of-two number of pixels across (e.g. 1x1, 16x4, 64x128, 256x256, ...) up to 1024x1024.
+# Using 8-bit color (256 color indexed) BMP or PCX for UT; 8-bit indexed BMP or PCX, 24 bit or 32 bit TGA or DDS for UT2003.
+# Saved in .pcx or .bmp or .dds
+# Import to KF-SDK. In-game they will automatically be downscaled to fit view of w=320 h=240
+# This is a `GIF`, recommended size is 256x256
+# A guide on how to easily create GIFs as textures will be provided soon
+sTextureName=MARTex.Doro.Blood_a01
+# FPS of the Animated GIF/Texture - if set to 0, FPS will always be same
+# as the Player's own FPS. This is sometimes problematic if you have 60+ FPS
+# then the animation will be super fast!
+fMaxFPS=60
+[/code]
+
+[h1][b][u]File Names[/u][/b][/h1]
+
+- \System\MovieAdsRemover.u
+- \System\MovieAdsRemover.ucl
+- \System\MovieAdsRemover_Config.ini
+
+[h1][b][u]Usage[/u][/b][/h1]
+
+1- Subscribe or download manually (Recommended)
+2- Launch the game and wait to see 'Completed'
+3- Restart the game and you can see the mutators in your list
+
+[h1][b][u]Class Names[/u][/b][/h1]
+
+- Mut: MovieAdsRemover.MovieAdsRemover
+
+[h1][b][u]Manual Download Links (Recommended)[/u][/b][/h1]
+
+- Github: https://github.com/Bleeding-Action-Man/MovieAdsRemover/releases/tag/v1.0

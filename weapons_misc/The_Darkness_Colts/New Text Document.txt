@@ -1,0 +1,8 @@
+Authors: HekuT, G@L
+
+Code in ServerPerks.ini:
+TDColts.TDColtPickup
+TDColts.DualTDColtPickup
+
+Tripwire Interactive: Link[forums.tripwireinteractive.com]
+KF Russian Community: Link[killingfloor.ru]

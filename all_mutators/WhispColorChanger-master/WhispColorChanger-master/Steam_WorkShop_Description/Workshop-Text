@@ -1,0 +1,64 @@
+This Mutator will your trader path color from the lame [b]Red[/b]
+
+[b]Features[/b]
+
+- Custom color support for Whisp head & Whisp tail
+- Custom size support for Whisp head size ^ Whisp tail size
+- Random color support (Show random color every 1 second)
+
+[h1][b][u]Features that might be added[/u][/b][/h1]
+
+- Custom Whisp textures! If you know how to make a Whisp texture, please send it to me and I can add support for it (Need to test)
+- Other Whisp aspects like speed etc...
+
+[h1][b][u]Whitelist status[/u][/b][/h1]
+
+- NO | Requires Client-side interactions
+
+[h1][b][u]Number Of Files[/u][/b][/h1]
+
+- 3
+
+[h1][b][u]File Names[/u][/b][/h1]
+
+- \System\WhispColorChanger.u
+- \System\WhispColorChanger.ucl
+- \System\WhispColorChanger.ini
+
+[h1][b][u]Sample Config[/u][/b][/h1]
+
+[code]
+[WhispColorChanger.WhispColorChanger]
+# Color as RGBA format
+# Make sure there is no 'Space' between each entry in the list
+aColors[0]=(cWhispColorHead=(R=0,G=255,B=255,A=255),cWhispColorTail=(R=255,G=109,B=5,A=255),iHeadSize=25,iTailSize=30)
+# Generate a random color every second
+# This overrides your set colors in the list above, but keeps your custom size
+bRandomColor=False
+###### Example color codes that you can use | Copy paste the code in the list above ######
+; AquaColor = (R=0,G=255,B=255,A=255)
+; GreenColor = (R=0,G=255,B=0,A=255)
+; BlueColor = (R=0,G=0,B=255,A=255)
+; OrangeColor = (R=255,G=109,B=5,A=255)
+; GoldColor = (R=255,G=255,B=0,A=255)
+; PurpleColor = (R=255,G=0,B=255,A=255)
+; WhiteColor = (R=255,G=255,B=255,A=255)
+[/code]
+
+[h1][b][u]Usage[/u][/b][/h1]
+
+1- Subscribe or download manually (recommended)
+2- Launch the game and wait to see 'Completed'
+3- Restart the game and you can see the mutators in your list
+
+[h1][b][u]Class Names[/u][/b][/h1]
+
+- WhispColorChanger.WhispColorChanger
+
+[h1][b][u]Known Bugs[/u][/b][/h1]
+
+You Tell Me.
+
+[h1][b][u]Manual Download Links (Recommended)[/u][/b][/h1]
+
+- Github: https://github.com/Vel-San/KF-WhispColorChanger/releases/

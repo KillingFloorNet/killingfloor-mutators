@@ -1,0 +1,2 @@
+[Public]
+Object=(Name=MutRandomMap.MutRandomMap,Class=Class,MetaClass=Engine.Mutator,Description="Plays random Modes/Maps")

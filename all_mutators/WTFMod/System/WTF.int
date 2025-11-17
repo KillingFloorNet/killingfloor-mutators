@@ -1,0 +1,337 @@
+[WTFEquipAFS12Pickup]
+ItemName="AFS12"
+ItemShortName="AFS12"
+PickupMessage="You picked up the AFS12."
+
+[WTFEquipAFS12a]
+Description="A deadly weapon"
+ItemName="AFS12"
+
+[WTFEquipAK48S]
+Description="A deadly weapon"
+ItemName="AK48S"
+
+[WTFEquipAK48SPickup]
+ItemName="AK48S"
+ItemShortName="AK48S"
+PickupMessage="You picked up an AK48S."
+
+[WTFEquipBanHammer]
+Description="A deadly weapon"
+ItemName="Ban Hammer"
+
+[WTFEquipBanHammerPickup]
+ItemName="Ban Hammer"
+ItemShortName="Ban Hammer"
+PickupMessage="You wield the Ban Hammer."
+
+[WTFEquipBoomStick]
+Description="A deadly weapon"
+ItemName="BOOMSTICK"
+
+[WTFEquipBoomStickPickup]
+ItemName="BOOMSTICK"
+ItemShortName="BOOMSTICK"
+PickupMessage="THIS. IS. MY. BOOMSTICK!"
+
+[WTFEquipBoomstickSwitchMessage]
+SwitchMessage[0]="Loading Slugs..."
+SwitchMessage[1]="Loading Shot..."
+
+[WTFEquipBulldog]
+Description="A deadly weapon"
+ItemName="Bulldog"
+
+[WTFEquipBulldogPickup]
+ItemName="Bulldog"
+ItemShortName="Bulldog"
+PickupMessage="You found the Bulldog."
+
+[WTFEquipBulldogSwitchMessage]
+SwitchMessage[0]="Set to Full Auto."
+SwitchMessage[1]="Set to SUPER Auto."
+SwitchMessage[2]="Set to Semi-Auto."
+
+[WTFEquipChainsaw]
+Description="A deadly weapon"
+
+[WTFEquipChainsawPickup]
+PickupMessage="A Chainsaw! Now find some meat!"
+
+[WTFEquipCrossbow]
+Description="A deadly weapon"
+ItemName="Xbow"
+
+[WTFEquipCrossbowPickup]
+ItemName="Xbow"
+ItemShortName="Xbow"
+PickupMessage="You found an Xbow."
+
+[WTFEquipDamTypeLethalInjection]
+DeathString="%o was poisoned."
+
+[WTFEquipDamTypeSA80a]
+DeathString="%k killed %o (SA80)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[WTFEquipFT]
+Description="A deadly weapon"
+ItemName="Flamethrower II"
+
+[WTFEquipFTPickup]
+ItemName="Flamethrower II"
+ItemShortName="Flamethrower II"
+PickupMessage="You got the Flamethrower II."
+
+[WTFEquipFireAxe]
+Description="A deadly weapon"
+ItemName="FIRE Axe"
+
+[WTFEquipFireAxePickup]
+ItemName="FIRE Axe"
+ItemShortName="FIRE Axe"
+PickupMessage="Firebug's Friend"
+
+[WTFEquipFlaregun]
+Description="A deadly weapon"
+ItemName="Flaregun"
+
+[WTFEquipFlaregunAmmo]
+ItemName="Flares"
+
+[WTFEquipFlaregunPickup]
+ItemName="Flaregun"
+ItemShortName="Flaregun"
+PickupMessage="You got the Flaregun."
+
+[WTFEquipGlowstick]
+Description="A deadly weapon"
+ItemName="Glowstick"
+
+[WTFEquipGlowstickAmmo]
+ItemName="Flares"
+
+[WTFEquipGlowstickPickup]
+ItemName="Glowstick"
+ItemShortName="Glowstick"
+PickupMessage="You got the Glowstick."
+
+[WTFEquipKatana]
+Description="A deadly weapon"
+
+[WTFEquipLethalInjection]
+Description="A deadly weapon"
+ItemName="Lethal Injection"
+
+[WTFEquipLethalInjectionAmmo]
+ItemName="Med-Syringe drugs"
+
+[WTFEquipLethalInjectionPickup]
+ItemName="Lethal Injection"
+ItemShortName="Lethal Injection"
+PickupMessage="You found a Lethal Injection."
+
+[WTFEquipM79CF]
+Description="A deadly weapon"
+ItemName="M79CF"
+
+[WTFEquipM79CFPickup]
+ItemName="M79CF"
+ItemShortName="M79CF"
+PickupMessage="You got the M79CF."
+
+[WTFEquipMP7M2Pickup]
+ItemName="MP7M2 Medic Gun"
+ItemShortName="MP7M2 Medic Gun"
+PickupMessage="You got the MP7M2 Medic Gun."
+
+[WTFEquipMP7M2a]
+Description="A deadly weapon"
+ItemName="Mp7M2 Medic Gun"
+
+[WTFEquipMachineDualies]
+Description="A deadly weapon"
+ItemName="2x Machine Pistols"
+
+[WTFEquipMachineDualiesPickup]
+ItemName="2x Machine Pistols"
+ItemShortName="2x Machine Pistols"
+PickupMessage="You got 2x Machine Pistols."
+
+[WTFEquipMachinePistol]
+Description="A deadly weapon"
+ItemName="Machine Pistol"
+
+[WTFEquipMachinePistolPickup]
+ItemName="Machine Pistol"
+ItemShortName="Machine Pistol"
+PickupMessage="You got a Machine Pistol."
+
+[WTFEquipNadePickup]
+PickupMessage="Found some Grenades."
+
+[WTFEquipNadeWeapon]
+Description="A deadly weapon"
+ItemName="Grenade"
+
+[WTFEquipPipeBomb]
+Description="A deadly weapon"
+ItemName="Pipe Bomb"
+
+[WTFEquipPipeBombPickup]
+PickupMessage="You got some Pipe Bombs."
+
+[WTFEquipRocketLauncher]
+Description="A deadly weapon"
+ItemName="Rocket Launcher"
+
+[WTFEquipRocketLauncherAmmo]
+ItemName="Rockets"
+
+[WTFEquipRocketLauncherPickup]
+ItemName="Rocket Launcher"
+ItemShortName="Rocket Launcher"
+PickupMessage="You got the Rocket Launcher"
+
+[WTFEquipSA80Ammo]
+ItemName="SA80 bullets"
+
+[WTFEquipSA80AmmoPickup]
+PickupMessage="Found (2) Magazines (5.56 NATO)"
+
+[WTFEquipSA80Pickup]
+ItemName="SA80 Sniper Rifle"
+ItemShortName="SA80 Sniper Rifle"
+PickupMessage="You got the SA80 Sniper Rifle"
+
+[WTFEquipSA80SwitchMessage]
+SwitchMessage[0]="Set to semi-automatic."
+SwitchMessage[1]="Set to automatic."
+
+[WTFEquipSA80a]
+Description="a deadly weapon."
+ItemName="SA80 Sniper Rifle"
+
+[WTFEquipSCAR19Pickup]
+ItemName="SCAR19"
+ItemShortName="SCAR19"
+PickupMessage="You picked up a SCAR19."
+
+[WTFEquipSCAR19a]
+Description="A deadly weapon"
+ItemName="SCAR19"
+
+[WTFEquipSawedOffShotgun]
+ItemName="Sawed-Off Shotgun"
+
+[WTFEquipSawedOffShotgunAmmoPickup]
+PickupMessage="12-Gauge Shells"
+
+[WTFEquipSawedOffShotgunPickup]
+ItemName="Sawed-Off Shotgun"
+ItemShortName="Sawed-Off Shotgun"
+PickupMessage="You found a Sawed-Off Shotgun."
+
+[WTFEquipSelfDestruct]
+Description="A deadly weapon"
+ItemName="Self Destruct!"
+
+[WTFEquipSelfDestructAmmo]
+ItemName="Self Destruct!"
+
+[WTFEquipSelfDestructPickup]
+ItemName="Self Destruct!"
+ItemShortName="Self Destruct!"
+PickupMessage="Don't do it man! You got the Suicide Bomb."
+
+[WTFEquipShotgun]
+Description="A deadly weapon"
+
+[WTFEquipUM32Pickup]
+ItemName="UM32"
+ItemShortName="UM32"
+PickupMessage="You got the UM32."
+
+[WTFEquipUM32a]
+Description="A deadly weapon"
+ItemName="UM32"
+
+[WTFEquipWelda]
+Description="A deadly weapon"
+ItemName="Legend of Welda"
+
+[WTFEquipWeldaAmmo]
+ItemName="Welda Fuel"
+
+[WTFEquipWeldaFire]
+NoWeldTargetMessage="Find something to weld first."
+
+[WTFEquipWeldaPickup]
+ItemName="Legend of Welda"
+ItemShortName="Legend of Welda"
+PickupMessage="The Legend of Welda Begins..."
+
+[WTFMut]
+FriendlyName="WTFv1.4: WTFMut"
+Description="Adds revamped perks & equipment. Use the Perk Poker to choose your perks in-game."
+
+[WTFPerksMutGUISelectPerk]
+SelectPerk="Select Class"
+RandomPerk="Random Class"
+ClassSelectButton.Caption="Select Class"
+CloseButton.Caption="Close"
+KFModsLabel.Caption="Perk Replacer - By KFMods.com"
+SelectRandomClassBtn.Caption="Random Class"
+TitleBar.Caption="Select Class"
+
+[WTFPerksMutPerkPoker]
+Description="A deadly weapon"
+ItemName="Perk Poker"
+
+[WTFPerksMutPerkPokerMessages]
+SwitchMessage[0]="Cant poke perks during the wave!"
+SwitchMessage[1]="Use the Perk Poker in equip group 5 to pick your perk."
+
+[WTFPerksMutPerkPokerPickup]
+ItemName="Perk Poker"
+ItemShortName="Perk Poker"
+PickupMessage="You picked up the Perk Poker."
+
+[WTFZombiesBansheeBase]
+MenuName="Banshee"
+
+[WTFZombiesBloatzilla]
+MenuName="Bloatzilla"
+
+[WTFZombiesBroodling]
+MenuName="Broodling"
+
+[WTFZombiesBroodmother]
+MenuName="Broodmother"
+
+[WTFZombiesGoreallyfast]
+MenuName="Goreallyfast"
+
+[WTFZombiesHateriarch]
+MenuName="The Hateriarch"
+
+[WTFZombiesIncinerator]
+MenuName="Incinerator"
+
+[WTFZombiesLeaper]
+MenuName="Leaper"
+
+[WTFZombiesMauler]
+MenuName="Mauler"
+
+[WTFZombiesMeatPounder]
+MenuName="Meat Pounder"
+
+[WTFZombiesMetalClot]
+MenuName="Metal Clot"
+
+[WTFZombiesMut]
+FriendlyName="WTFv1.4: WTFZombiesMut"
+Description="Different variations of zombies appear during the game."
+

@@ -1,0 +1,4 @@
+[Public]
+Player=(DefaultName="Soldier_Lewis",Mesh=KFSoldiers.SoldierFat,species=KFmod.SoldierSpecies,BodySkin=KFCharacters.SoldierSkin2,FaceSkin=KFCharacters.CivHead,Portrait=2k4Menus.LewisPortrait,Text="This is Lewis. He's bald, fat, and angry.",Sex=Male,Accuracy=+2.0,Aggressiveness=+1.0,StrafingAbility=+2.0,CombatStyle=-1,Tactics=+2.5,FavoriteWeapon=XWeapons.RocketLauncher,Ragdoll="",Skeleton=KFSoldiers.Soldier,Menu="SP",BotUse=1)
+
+

@@ -1,0 +1,7 @@
+[RedemptionMessage]
+RedeemMessage="You have been Redeemed!"
+
+[RedemptionMutator]
+FriendlyName="Redemption"
+Description="Gives you a second chance at life."
+

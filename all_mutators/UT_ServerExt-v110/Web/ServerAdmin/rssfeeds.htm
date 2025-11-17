@@ -1,0 +1,64 @@
+<!-- #include file="header.inc" -->
+<form method="post" action="<%PostAction%>">
+	<table width="100%" border="0">
+	<tr>
+		<th colspan="3">Modify RSS Feed</thd>
+	</tr>
+	<tr>
+		<td nowrap>RSS Feed:</td>
+		<td><select name="feedid" style="width: 100%;">
+		<option value="new">-- new --</option>
+		<%feed_select%>
+		</select></td>
+		<td nowrap><input class="button" type="submit" name="submit" value="edit" />
+		<input class="button" type="submit" name="submit" value="delete" /><input id="deleteConfirm" type="checkbox" name="deleteConfirm" value="true"><label for="deleteConfirm">Yes I'm sure</label></td>
+	</tr>
+	</table>
+</form>
+<br />
+
+<form method="post" action="<%PostAction%>">
+	<input type="hidden" name="feedid" value="<%feedid%>" />
+	<table width="100%" border="0">
+	<tr>
+		<th colspan="2"><%feed_action%> RSS Feed</th>
+	</tr>
+	<tr>
+		<td nowrap><label for="rssEnabled">Enabled:</label></td>
+		<td><input id="rssEnabled" type="checkbox" name="rssEnabled" <%rssEnabled%> value="true"></td>
+	</tr>
+	<tr>
+		<td nowrap><label for="rssHost">Name:</label></td>
+		<td><input id="rssHost" class="textbox" type="text" name="rssHost" value="<%rssHost%>" size="100%"></td>
+	</tr>
+	<tr>
+		<td nowrap><label for="rssLocation">Location:</label></td>
+		<td><input id="rssLocation" class="textbox" type="text" name="rssLocation" value="<%rssLocation%>" size="100%"></td>
+	</tr>
+	<tr>
+		<td nowrap><label for="rssUpdateInterval">Update interval:</label></td>
+		<td><input id="rssUpdateInterval" class="textbox" type="text" name="rssUpdateInterval" value="<%rssUpdateInterval%>" size="100%"></td>
+	</tr>
+	<!--
+	<tr>
+		<td nowrap><label for="TextColor">Text color:</label></td>
+		<td><input id="TextColor" class="textbox" type="text" name="TextColor" value="<%TextColor%>" size="100%"></td>
+	</tr>
+	-->
+	<tr>
+		<td nowrap></td>
+		<td><input class="button" type="submit" name="submit" value="<%feed_action%>"></td>
+	</tr>
+	</table>
+</form>
+<br />
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+<tr>
+	<th colspan="3">Feed content</th>
+</tr>
+<%feed_entries%>
+</table>
+
+
+<!-- #include file="footer.inc" -->

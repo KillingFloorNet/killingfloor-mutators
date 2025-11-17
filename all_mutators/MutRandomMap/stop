@@ -1,0 +1,49 @@
+#!/bin/sh
+#
+# script to stop a dedicated unix ut2004 server which was started with
+# the "Start" script, which can be found at 'http://jsalmi.com/ut2004/Start'
+#
+# author: John "PsychoChihuahua" Salmi | psycho@jsalmi.com 
+#
+
+#
+# location of game directory - change as necessary
+#
+GAMEDIR=/home/fendo/unreal
+
+#
+# location of server logfile
+#
+LOG=${GAMEDIR}/ut2004-server.log
+
+#
+# system binaries - change as necessary
+#
+PGREP=/usr/bin/pgrep
+PKILL=/usr/bin/pkill
+DATE=/bin/date
+
+#
+# uid the game runs under - change as necessary - avoid running as root
+#
+OWNER=fendo
+
+#
+# kill the 'Start' script first so it doesn't respawn the game
+#
+for PROC in start ucc-bin
+do
+	PID=`${PGREP} -x -u ${OWNER} ${PROC} > /dev/null 2>&1`
+	if [ $? -eq 0 ]; then
+		#
+		# timestamp
+		#
+		TIMESTAMP=`${DATE} +%m%d%y-%T`
+		echo "stopping ${PROC}"
+		${PKILL} -15 -x -u ${OWNER} ${PROC}
+		echo "stopped ${PROC} - ${TIMESTAMP}" >> ${LOG}
+	else
+		echo "${PROC}: not currently running"
+	fi
+done
+

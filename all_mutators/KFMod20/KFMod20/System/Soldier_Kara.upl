@@ -1,0 +1,4 @@
+[Public]
+Player=(DefaultName="Soldier_Kara",Mesh=KFSoldiers.Kara,species=KFmod.SoldierSpecies,BodySkin=KFCharacters.KaraSkin,FaceSkin=KFCharacters.KaraHairaShadera,Portrait=KFPortraits.KaraPortrait,Text="Liverpool born, Sgt. Kara Barnes was an expert marksman by the age of 18. She joined up with the DRF after flunking out of School.'When this is all over im gonna settle down. Have a family. And then burn the fucking house down.'",Sex=Female,Accuracy=+2.0,Aggressiveness=+1.0,StrafingAbility=+2.0,CombatStyle=-1,Tactics=+2.5,FavoriteWeapon=XWeapons.RocketLauncher,Ragdoll="",Skeleton=KFSoldiers.Soldier,Menu="SP",BotUse=1)
+
+

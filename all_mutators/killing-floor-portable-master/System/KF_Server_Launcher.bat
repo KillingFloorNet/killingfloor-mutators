@@ -1,0 +1,1 @@
+ucc server KF-westlondon.rom?Mutator=MutLoader.MutLoader?game=KFmod.KFGameType?VACSecured=true?MaxPlayers=6? -log=server.log

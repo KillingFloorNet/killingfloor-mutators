@@ -1,0 +1,8 @@
+﻿Place the folders into your Killing Floor directory as-is.
+Поместите папки в каталоге KF как есть.
+
+For those running ServerPerks/etc servers, the lines to use are as follows:
+Линии, чтобы использовать для серверов являются следующие:
+Flares.FlareHandheld
+Flares.FlarePickup
+

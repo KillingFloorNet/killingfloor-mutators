@@ -1,0 +1,165 @@
+Log: Log file open, 08/06/06 10:47:02
+Init: Name subsystem initialized
+Init: Detected: Microsoft Windows XP 5.1 (Build: 2600)
+Init: Version: 3369 (128.29)
+Init: Compiled: Nov 23 2005 16:23:34
+Init: Command line: -mod="KFMod20" -log
+Init: Character set: Unicode
+Init: Base directory: G:\UT2004\system\
+Init: Ini:..\KFMod20\System\KFMod20.ini   UserIni:..\KFMod20\System\KFMod20User.ini
+Init: Build label: UT2004 Build UT2004_Build_[2005-11-23_16.22]
+Init: Object subsystem initialized
+Log: 	ati2dvag.dll/Radeon X1800 Series 
+Log: Game class is 'GameInfo'
+Log: Bringing Level Entry.myLevel up for play (0) appSeconds: 1.933000...
+ScriptLog: GameInfo::InitGame : bEnableStatLogging False
+Warning: Missing Texture Texture 2K4Menus.BkRenders.Char01
+Log: Browse: NvidiaLogo.ut2?Name=Alex?Class=Engine.Pawn?Character=Soldier?team=255?Sex=M?SpectatorOnly=1?Voice=KFCoreVoice.AussieVoice
+Log: Collecting garbage
+Log: Purging garbage
+Log: Garbage: objects: 27739->27737; refs: 285790
+Log: Game class is 'CinematicGame'
+Log: Bringing Level NvidiaLogo.myLevel up for play (0) appSeconds: 3.290000...
+Log: (Karma): Autodetecting CPU for SSE
+Log: (Karma): Using SSE Optimizations
+ScriptLog: GameInfo::InitGame : bEnableStatLogging False
+Log: ALAudio: Using DirectSound to record audio.
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+ScriptLog: New Player Alex id=b78d7e2f4cad5ca6e830cb31eceaa3d5
+Log: Opened viewport
+Log: Couldn't bring window to foreground.
+Log: Enter SetRes: 764x626 Fullscreen 0
+Log: Using back-buffer format 22(32-bit)
+Log: Using depth-buffer format 77(32-bit)
+Log: Creating device
+Log: xD3DHelper::Init (QuadEmulation)
+Log: OS doesn't support IME.
+Log: Startup time: 3.125000 seconds
+ScriptLog: Attempting to close a non-existing menu page
+Log: Browse: KF-Menu?Name=Alex?Class=Engine.Pawn?Character=Soldier?team=255?Sex=M?SpectatorOnly=1?Voice=KFCoreVoice.AussieVoice?Game=unrealgame.cinematicgame
+ScriptLog: No loading hint configured for  CinematicGame
+Log: Collecting garbage
+Log: Purging garbage
+Log: Garbage: objects: 29095->29093; refs: 304770
+Log: Game class is 'CinematicGame'
+Log: Bringing Level KF-Menu.myLevel up for play (0) appSeconds: 4.419000...
+Log: (Karma): Autodetecting CPU for SSE
+Log: (Karma): Using SSE Optimizations
+ScriptLog: GameInfo::InitGame : bEnableStatLogging False
+Log: Spawning new actor for Viewport WindowsViewport
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+ScriptLog: New Player Alex id=b78d7e2f4cad5ca6e830cb31eceaa3d5
+Debug: KFMainMenu.Opened()   Sender:Package.KFMainMenu
+Log: Browse: KF-Menu?Name=Alex?Class=Engine.Pawn?Character=Soldier?team=255?Sex=M?SpectatorOnly=1?Voice=KFCoreVoice.AussieVoice?Game=unrealgame.cinematicgame
+ScriptLog: No loading hint configured for  CinematicGame
+ScriptLog: KFMainMenu NotifyLevelChange  PendingConnection:False
+Log: (Karma): Level Karma Terminated.
+Log: Collecting garbage
+Log: Purging garbage
+Log: (Karma): Level Karma Terminated.
+Log: Garbage: objects: 29824->29553; refs: 313442
+Log: Game class is 'CinematicGame'
+Log: Bringing Level KF-Menu.myLevel up for play (0) appSeconds: 5.056000...
+Log: (Karma): Autodetecting CPU for SSE
+Log: (Karma): Using SSE Optimizations
+ScriptLog: GameInfo::InitGame : bEnableStatLogging False
+Log: Spawning new actor for Viewport WindowsViewport
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+ScriptLog: New Player Alex id=b78d7e2f4cad5ca6e830cb31eceaa3d5
+Debug: KFMainMenu.Opened()   Sender:Package.KFMainMenu
+Log: Precaching: KF-Menu.LevelInfo0
+Log: Static mesh batches: 25776 vertex bytes, 3696 index bytes
+Log: Allocating 16384 byte dynamic index buffer.
+Log: Finished precaching geometry in 0.056 seconds
+Log: Finished precaching textures in 0.062 seconds
+Log: AttemptFullscreen
+Log: Enter SetRes: 1280x1024 Fullscreen 1
+Log: Using back-buffer format 22(32-bit)
+Log: Using depth-buffer format 77(32-bit)
+Log: xD3DHelper::Init (QuadEmulation)
+Log: Precaching: KF-Menu.LevelInfo0
+Log: Allocating 16384 byte dynamic index buffer.
+Log: Finished precaching geometry in 0.069 seconds
+Log: Finished precaching textures in 0.077 seconds
+Log: FIREWALL: Freed XP.SP2 Firewall Object
+ScriptLog: Attempting to close a non-existing menu page
+Log: Browse: KF-Intro?Name=Alex?Class=Engine.Pawn?Character=Soldier?team=255?Sex=M?SpectatorOnly=1?Voice=KFCoreVoice.AussieVoice?Game=unrealgame.cinematicgame
+ScriptLog: No loading hint configured for  CinematicGame
+ScriptLog: KFMainMenu NotifyLevelChange  PendingConnection:False
+Log: Collecting garbage
+Log: Purging garbage
+Log: Garbage: objects: 31140->31118; refs: 345895
+Log: Game class is 'CinematicGame'
+Log: Bringing Level KF-Intro.myLevel up for play (0) appSeconds: 11.425000...
+Log: (Karma): Autodetecting CPU for SSE
+Log: (Karma): Using SSE Optimizations
+ScriptLog: GameInfo::InitGame : bEnableStatLogging False
+Log: PlayAnim: Sequence 'IdleAnim' not found for mesh 'HazmatMan'
+Log: Spawning new actor for Viewport WindowsViewport
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+ScriptLog: New Player Alex id=b78d7e2f4cad5ca6e830cb31eceaa3d5
+Log: Precaching: KF-Intro.LevelInfo0
+Log: Static mesh batches: 1839996 vertex bytes, 300780 index bytes
+Log: Allocating 16384 byte dynamic index buffer.
+Log: Finished precaching geometry in 0.388 seconds
+Log: Finished precaching textures in 0.428 seconds
+Debug: KFMainMenu.Opened()   Sender:Package.KFMainMenu
+Log: URL: Adding default option Name=Alex
+Log: URL: Adding default option Class=Engine.Pawn
+Log: URL: Adding default option Character=Soldier
+Log: URL: Adding default option team=255
+Log: URL: Adding default option Voice=KFCoreVoice.AussieVoice
+Log: Browse: Index.ut2?disconnect?Name=Alex?Class=Engine.Pawn?Character=Soldier?team=255?Voice=KFCoreVoice.AussieVoice
+Log: Failed; returning to Entry
+ScriptLog: KFMainMenu NotifyLevelChange  PendingConnection:False
+Log: GP=FALSE
+Log: Spawning new actor for Viewport WindowsViewport
+ScriptLog: New Player Alex id=b78d7e2f4cad5ca6e830cb31eceaa3d5
+Log: MatchViewportsToActors: KFGUI.KFMainMenu
+Debug: KFMainMenu.Opened()   Sender:Package.KFMainMenu
+Log: Static mesh batches: 0 vertex bytes, 0 index bytes
+Log: appRequestExit(0)
+Exit: Preparing to exit.
+Log: Purging garbage
+Log: Unbound to Window.dll
+Log: Unbound to Core.dll
+Log: Unbound to Engine.dll
+Exit: Game engine shut down
+Log: Unbound to WinDrv.dll
+Exit: Windows client shut down
+Log: Unbound to D3DDrv.dll
+Log: Unbound to XGame.dll
+Log: Unbound to IpDrv.dll
+Log: Unbound to Editor.dll
+Log: Unbound to Fire.dll
+Log: Unbound to XInterface.dll
+Log: Unbound to UWeb.dll
+Log: Unbound to Onslaught.dll
+Log: (Karma): Level Karma Terminated.
+Log: Unbound to ALAudio.dll
+Log: Waiting for file streaming thread to finish...
+Exit: OpenAL Audio subsystem shut down.
+Log: (Karma): Level Karma Terminated.
+Log: Garbage: objects: 31593->0; refs: 345895
+Exit: Object subsystem successfully closed.
+Exit: Exiting.
+Log: FileManager: Reading 0 GByte 89 MByte 145 KByte 815 Bytes from HD took 0.569999 seconds (0.508000 reading, 0.062000 seeking).
+Log: FileManager: 0.894992 seconds spent with misc. duties
+Uninitialized: Name subsystem shut down
+Uninitialized: Memory Allocation Status
+Uninitialized: Curr Memory  0.207M /  3.684M
+Uninitialized: Peak Memory  73.779M /  75.793M
+Uninitialized: Allocs         746 Current /  744615 Total
+Uninitialized: Log file closed, 08/06/06 10:47:25

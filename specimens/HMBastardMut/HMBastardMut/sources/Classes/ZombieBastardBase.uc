@@ -1,0 +1,90 @@
+
+class ZombieBastardBase extends KFMonster
+	hidecategories(AnimTweaks,DeRes,Force,Gib,Karma,UDamage,UnrealPawn)
+	config(User);
+
+var bool bRunning;
+var float RunAttackTimeout;
+
+replication
+{
+	reliable if(Role == 4)
+		bRunning;
+}
+
+defaultproperties
+{
+     HitAnims(1)="HitF"
+     HitAnims(2)="HitF"
+     MoanVoice=Sound'BastardSnd.Entrance.Kev_Entrance_Breath1'
+     KFHitFront="DodgeF"
+     KFHitBack="DodgeB"
+     KFHitLeft="DodgeL"
+     KFHitRight="DodgeR"
+     MeleeDamage=15
+     damageForce=15000
+     KFRagdollName="Patriarch_Trip"
+     MeleeAttackHitSound=SoundGroup'KF_EnemiesFinalSnd.clot.Clot_HitPlayer'
+     JumpSound=Sound'BastardSnd.Kev_Jump1'
+     CrispUpThreshhold=1
+     AdditionalWalkAnims(0)="WalkF"
+     Intelligence=BRAINS_Mammal
+     bUseExtendedCollision=True
+     ColOffset=(Z=65.000000)
+     ColRadius=27.000000
+     ColHeight=25.000000
+     ExtCollAttachBoneName="Collision_Attach"
+     SeveredArmAttachScale=1.100000
+     SeveredLegAttachScale=1.200000
+     SeveredHeadAttachScale=1.500000
+     PlayerCountHealthScale=0.750000
+     OnlineHeadshotOffset=(X=28.000000,Z=75.000000)
+     OnlineHeadshotScale=1.200000
+     MotionDetectorThreat=10.000000
+     HitSound(0)=Sound'BastardSnd.Pain.Kev_Pain6'
+     DeathSound(0)=Sound'BastardSnd.Death.Kev_Death4'
+     ChallengeSound(0)=Sound'BastardSnd.Speech.Kev_Talk1'
+     ChallengeSound(1)=Sound'BastardSnd.Speech.Kev_Talk10'
+     ChallengeSound(2)=Sound'BastardSnd.KnockedDown.Kev_KnockedDown4'
+     ChallengeSound(3)=Sound'BastardSnd.KnockedDown.Kev_KnockedDown6'
+     ScoringValue=10
+     IdleHeavyAnim="BossIdle"
+     IdleRifleAnim="BossIdle"
+     RagDeathVel=80.000000
+     RagDeathUpKick=100.000000
+     MeleeRange=12.000000
+     GroundSpeed=165.000000
+     WaterSpeed=165.000000
+     HealthMax=150.000000
+     MenuName="Bastard"
+     MovementAnims(0)="WalkF"
+     MovementAnims(1)="WalkF"
+     MovementAnims(2)="WalkF"
+     MovementAnims(3)="WalkF"
+     AirAnims(0)="JumpInAir"
+     AirAnims(1)="JumpInAir"
+     AirAnims(2)="JumpInAir"
+     AirAnims(3)="JumpInAir"
+     TakeoffAnims(0)="JumpTakeOff"
+     TakeoffAnims(1)="JumpTakeOff"
+     TakeoffAnims(2)="JumpTakeOff"
+     TakeoffAnims(3)="JumpTakeOff"
+     LandAnims(0)="JumpLanded"
+     LandAnims(1)="JumpLanded"
+     LandAnims(2)="JumpLanded"
+     LandAnims(3)="JumpLanded"
+     AirStillAnim="JumpInAir"
+     TakeoffStillAnim="JumpTakeOff"
+     IdleCrouchAnim="BossIdle"
+     IdleWeaponAnim="BossIdle"
+     IdleRestAnim="BossIdle"
+     AmbientSound=Sound'BastardSnd.Idle.Kev_IdleLoop'
+     Mesh=SkeletalMesh'BastardAnims.Bastard'
+     DrawScale=1.050000
+     PrePivot=(Z=3.000000)
+     Skins(0)=Combiner'BastardTex.Bastard_cmb'
+     SoundVolume=75
+     bNetNotify=False
+     Mass=1000.000000
+     RotationRate=(Yaw=36000,Roll=0)
+}

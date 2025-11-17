@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Makes Killing Floor server to start up automatically on your system startup
+# Created by PooSH, contact via Steam: [ScrN]PooSH
+
+# Run this script as root!
+# Don't forget to change RUN_AS_SERVICE to 1 in kfserver
+
+# Path to KF server's system dir
+DIR=/opt/kfserver/system
+
+
+# Make symlink to kfserver
+ln -sv $DIR/kfserver /usr/bin/
+
+# Copy .service file to the systemd directory:
+cp KillingFloor.service /etc/systemd/system/
+
+# Check if the service works properly:
+systemctl start KillingFloor.service && sleep 1
+# command below should have a string "Active: active (running)" in the output
+systemctl status KillingFloor.service 
+# this should output:
+# KFServer Daemon is [ RUNNING ]
+# PID = XXXX
+kfserver status
+# Now check if service can be stopped
+systemctl stop KillingFloor.service && sleep 1
+# should output:
+# KFServer Daemon is [ NOT RUNNING ]
+kfserver status
+
+# If all tests passed Enable the service for automatic startup
+systemctl enable KillingFloor.service
+# systemctl will create necessary symlinks to start the service automatically
+# Now you can try to reboot the system and check if KF server is up
+
+# To disable autostart run:
+#systemctl fisable KillingFloor.service
+
+

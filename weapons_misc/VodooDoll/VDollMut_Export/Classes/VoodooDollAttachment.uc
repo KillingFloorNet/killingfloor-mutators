@@ -1,0 +1,47 @@
+
+class VoodooDollAttachment extends KFMeleeAttachment;
+
+defaultproperties
+{
+	MovementAnims[0]=JogF_VDoll
+	MovementAnims[1]=JogB_VDoll
+	MovementAnims[2]=JogL_VDoll
+	MovementAnims[3]=JogR_VDoll
+	TurnLeftAnim=TurnL_VDoll
+	TurnRightAnim=TurnR_VDoll
+	CrouchAnims[0]=CHwalkF_VDoll
+	CrouchAnims[1]=CHwalkB_VDoll
+	CrouchAnims[2]=CHwalkL_VDoll
+	CrouchAnims[3]=CHwalkR_VDoll
+	CrouchTurnRightAnim=CH_TurnR_VDoll
+	CrouchTurnLeftAnim=CH_TurnL_VDoll
+	IdleCrouchAnim=CHIdle_VDoll
+	IdleWeaponAnim=Idle_VDoll
+	IdleRestAnim=Idle_VDoll
+	IdleChatAnim=Idle_VDoll
+	IdleHeavyAnim=Idle_VDoll
+	IdleRifleAnim=Idle_VDoll
+	FireAnims[0]=Attack1_VDoll
+	FireAnims[1]=Attack1_VDoll
+	FireAnims[2]=Attack1_VDoll
+	FireAnims[3]=Attack1_VDoll
+	FireAltAnims[0]=Attack2_VDoll
+	FireAltAnims[1]=Attack2_VDoll
+	FireAltAnims[2]=Attack2_VDoll
+	FireAltAnims[3]=Attack2_VDoll
+	FireCrouchAnims[0]=CHAttack1_VDoll
+	FireCrouchAnims[1]=CHAttack1_VDoll
+	FireCrouchAnims[2]=CHAttack1_VDoll
+	FireCrouchAnims[3]=CHAttack1_VDoll
+	FireCrouchAltAnims[0]=CHAttack2_VDoll
+	FireCrouchAltAnims[1]=CHAttack2_VDoll
+	FireCrouchAltAnims[2]=CHAttack2_VDoll
+	FireCrouchAltAnims[3]=CHAttack2_VDoll
+	HitAnims[0]=JogF_VDoll
+	HitAnims[1]=JogB_VDoll
+	HitAnims[2]=JogL_VDoll
+	HitAnims[3]=JogR_VDoll
+	PostFireBlendStandAnim=Blend_VDoll
+	PostFireBlendCrouchAnim=CHBlend_VDoll
+	Mesh=SkeletalMesh'VoodooDoll_A.vdoll_3rd'
+}

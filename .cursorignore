@@ -1,0 +1,27 @@
+# UE1/UE2 binary packages
+*.u
+*.utx
+*.usx
+*.ukx
+*.uax
+
+# Cached / compressed variants
+*.uxx
+*.uz
+*.uz2
+
+# Maps
+*.rom
+
+# UT2004 cache/export metadata
+*.ucl
+
+# Media binaries
+*.jpg
+*.png
+*.bmp
+*.tga
+*.dds
+*.ogg
+*.mp3
+*.wav

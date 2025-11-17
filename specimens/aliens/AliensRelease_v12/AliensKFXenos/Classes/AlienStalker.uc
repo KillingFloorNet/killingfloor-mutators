@@ -1,0 +1,58 @@
+
+
+defaultproperties
+{
+     MeleeAnims(0)="StalkerSpinAttack"
+     MeleeAnims(1)="StalkerAttack1"
+     MeleeAnims(2)="JumpAttack"
+     MoanVoice=SoundGroup'AlienRunnerSnd.Speech'
+     MeleeDamage=12
+     damageForce=5000
+     KFRagdollName="Stalker_Trip"
+     ZombieDamType(0)=Class'KFMod.DamTypeSlashingAttack'
+     ZombieDamType(1)=Class'KFMod.DamTypeSlashingAttack'
+     ZombieDamType(2)=Class'KFMod.DamTypeSlashingAttack'
+     MeleeAttackHitSound=SoundGroup'KF_EnemiesFinalSnd.Stalker.Stalker_HitPlayer'
+     JumpSound=SoundGroup'AlienRunnerSnd.Jump'
+     CrispUpThreshhold=10
+     PuntAnim="ClotPunt"
+     SeveredArmAttachScale=0.800000
+     SeveredLegAttachScale=0.700000
+     OnlineHeadshotOffset=(X=18.000000,Z=33.000000)
+     OnlineHeadshotScale=1.200000
+     MotionDetectorThreat=0.250000
+     HitSound(0)=SoundGroup'AlienRunnerSnd.Pain'
+     DeathSound(0)=SoundGroup'AlienRunnerSnd.Death'
+     ChallengeSound(0)=SoundGroup'AlienRunnerSnd.Speech'
+     ChallengeSound(1)=SoundGroup'AlienRunnerSnd.Speech'
+     ChallengeSound(2)=SoundGroup'AlienRunnerSnd.Speech'
+     ChallengeSound(3)=SoundGroup'AlienRunnerSnd.Speech'
+     ScoringValue=15
+     IdleHeavyAnim="StalkerIdle"
+     IdleRifleAnim="StalkerIdle"
+     MeleeRange=30.000000
+     GroundSpeed=200.000000
+     WaterSpeed=180.000000
+     JumpZ=350.000000
+     Health=300
+     HeadHeight=2.900000
+     MenuName="Stalker Alien"
+     MovementAnims(0)="ZombieRun"
+     MovementAnims(1)="ZombieRun"
+     MovementAnims(2)="ZombieRun"
+     MovementAnims(3)="ZombieRun"
+     WalkAnims(0)="ZombieRun"
+     WalkAnims(1)="ZombieRun"
+     WalkAnims(2)="ZombieRun"
+     WalkAnims(3)="ZombieRun"
+     IdleCrouchAnim="StalkerIdle"
+     IdleWeaponAnim="StalkerIdle"
+     IdleRestAnim="StalkerIdle"
+     AmbientSound=SoundGroup'AlienRunnerSnd.Idle'
+     Mesh=SkeletalMesh'AliensKFXeno_A.AlienStalker'
+     DrawScale=1.100000
+     PrePivot=(Z=5.000000)
+     Skins(0)=Combiner'AliensKFXeno_T.Aliens.AlienBodyColor_cmb'
+     Skins(1)=Combiner'AliensKFXeno_T.Aliens.RiggidHeadColor_cmb'
+     RotationRate=(Yaw=45000,Roll=0)
+}

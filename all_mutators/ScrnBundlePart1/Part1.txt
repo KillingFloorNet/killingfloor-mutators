@@ -1,0 +1,5 @@
+Make sure you have downloaded both ScrnBundle parts:
+https://www.dropbox.com/s/hgon53z2e189ps9/ScrnBundlePart1.zip
+https://www.dropbox.com/s/84uf9msxx5467nw/ScrnBundlePart2.zip
+
+follow ScrN-README.txt instructions included in part 2.

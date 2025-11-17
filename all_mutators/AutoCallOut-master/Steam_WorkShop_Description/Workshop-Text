@@ -1,0 +1,80 @@
+Sick & Tired of no one calling FPs & SCs ? Don't know which key to bind for Call Outs ? Then this mutator is for you.
+
+- Automatically sends a message to all players with the currently 'Spawned' Fleshpounds & Scrakes
+- Customizable message
+- Customizable message colors
+- Sound effects for FP spawn (Same as KF2, easy to add & customize)
+- Sound effects for SC Spawn (Same as KF2, easy to add & customize)
+- Delay & other customizable configs to avoid spamming
+
+[h1][b][u]Whitelist Status[/u][/b][/h1]
+
+- Yes on dedicated Servers
+- Yes on Listen Servers (Except the host)
+
+[h1][b][u]Credits[/u][/b][/h1]
+
+- Credits to DeezNuts & NikC for some parts of the code
+
+[h1][b][u]Number Of Files[/u][/b][/h1]
+
+- 4
+
+[h1][b][u]Sample Config[/u][/b][/h1]
+
+[code]
+[AutoCallOut.AutoCallOut]
+# Replace %g %w %b with any other color you want from the list below
+# After you write your warning message, use %FP and %SC as the number of Fleshpounds and Scrakes
+sWarningMSG=-----|| %gFleshpounds: %w %FPx %o| %bScrakes: %w %SCx ||-----
+# Name of the FP Sound to play | Add your sounds to the ACO_SNDS.uax (.wav formats)
+sFleshSND=ACO_SNDS.FP_Spawn
+# Name of the SC Scount to play | Add your sounds to the ACO_SNDS.uax (.wav formats)
+sScrakeSND=ACO_SNDS.SC_Spawn
+# Change the Delay/Frequency of each sent warning message. I find 10 Seconds to be optimal
+fDelay=5.0
+# Delay between each FP sound | Seconds
+# If old count of SC before the delay is less than count of SC after the delay
+# No sound will be played
+fDelayFP=2.0
+# Delay between each SC sound | Seconds
+# If old count of SC before the delay is less than count of SC after the delay
+# No sound will be played
+fDelaySC=2.0
+# If true, sound for FP will play on spawn
+bPlaySoundFP=True
+# If true, sound for SC will play on spawn
+bPlaySoundSC=True
+# Better to keep debugging False :)
+bDebug=False
+# You can add more colors by using the same format of the below ColorList
+ColorList=(ColorName="Red",ColorTag="%r",Color=(B=0,G=0,R=200,A=0))
+ColorList=(ColorName="Orange",ColorTag="%o",Color=(B=0,G=127,R=255,A=0))
+ColorList=(ColorName="Yellow",ColorTag="%y",Color=(B=0,G=255,R=255,A=0))
+ColorList=(ColorName="Green",ColorTag="%g",Color=(B=0,G=200,R=0,A=0))
+ColorList=(ColorName="Blue",ColorTag="%b",Color=(B=200,G=100,R=0,A=0))
+ColorList=(ColorName="Violet",ColorTag="%v",Color=(B=139,G=0,R=255,A=0))
+ColorList=(ColorName="White",ColorTag="%w",Color=(B=200,G=200,R=200,A=0))
+[/code]
+
+[h1][b][u]File Names[/u][/b][/h1]
+
+- \System\AutoCallOut.u
+- \System\AutoCallOut.ucl
+- \System\AutoCallOut_Config.ini
+
+- \Sounds\ACO_SNDS.uax
+
+[h1][b][u]Usage[/u][/b][/h1]
+
+1- Subscribe or download manually (Recommended)
+2- Launch the game and wait to see 'Completed'
+3- Restart the game and you can see the mutators in your list
+
+[h1][b][u]Class Names[/u][/b][/h1]
+
+- Mut: AutoCallOut.AutoCallOut
+
+[h1][b][u]Manual Download Links (Recommended)[/u][/b][/h1]
+
+Github: https://github.com/Bleeding-Action-Man/AutoCallOut

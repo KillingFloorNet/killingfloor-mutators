@@ -1,0 +1,234 @@
+[Public]
+Object=(Name=KFGUI.KFKeyBindings,Class=Class,MetaClass=XInterface.GUIUserKeyBinding)
+
+
+[Axe]
+Description="A common fire axe."
+ItemName="Axe"
+
+[AxePickup]
+PickupMessage="You got the Fire Axe."
+
+[Bat]
+Description="a hollow pipe. It's rusted and thumpy. "
+ItemName="Bat"
+
+[BatPickup]
+PickupMessage="You got the Broken pipe."
+
+[BoomStick]
+Description="A double barreled shotgun used by big game hunters. It fires two slugs simultaneously and can bring down even the largest targets, quickly."
+ItemName="Hunting Shotgun"
+
+[BoomStickPickup]
+PickupMessage="You got the Hunting Shotgun"
+
+[Bullpup]
+Description="A military grade automatic rifle. "
+ItemName="Bullpup"
+
+[BullpupAmmo]
+ItemName="Bullpup bullets"
+
+
+[BullpupPickup]
+PickupMessage="You got the Bullpup"
+
+[BullpupSwitchMessage]
+SwitchMessage[0]="Set to semi-automatic."
+SwitchMessage[1]="Set to automatic."
+
+[Chainsaw]
+Description="A gas powered industrial strength chainsaw. "
+ItemName="Chainsaw"
+
+[ChainsawPickup]
+PickupMessage="You got the Chainsaw."
+
+[Crossbow]
+Description="A recreational hunting weapon, featuring a powerful integrated scope. "
+ItemName="Xbow"
+
+[CrossbowAmmo]
+ItemName="An arrow"
+
+[CrossbowAmmoPickup]
+PickupMessage="Bolts"
+
+[CrossbowPickup]
+PickupMessage="You got the Xbow."
+
+[DamTypeBullpup]
+DeathString="ÿ%k killed %o (Bullpup)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeCrossbow]
+DeathString="%ÿ%k killed %o (Xbow)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeCrossbowHeadShot]
+DeathString="%ÿ%k put an arrow %o's head."
+FemaleSuicide="%o shot herself in the head."
+MaleSuicide="%o shot himself in the head."
+
+[DamTypeDBShotgun]
+DeathString="ÿ%k killed %o (Shotgun)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeDeagle]
+DeathString="ÿ%k killed %o (Deagle)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeDualies]
+DeathString="ÿ%k killed %o (Dualies)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[DamTypeShotgun]
+DeathString="ÿ%k killed %o (Shotgun)."
+FemaleSuicide="%o shot herself in the foot."
+MaleSuicide="%o shot himself in the foot."
+
+[Deagle]
+Description=".50 calibre action express handgun. Small magazine capacity offsets high damage"
+ItemName="Handcannon"
+
+[DeagleAmmo]
+ItemName="Deagle bullets"
+
+[DeaglePickup]
+PickupMessage="You got the Handcannon"
+
+[Dualies]
+Description="A pair of custom 9mm pistols. What they lack in stopping power, they compensate for with a quick refire."
+ItemName="Dual 9mms"
+
+[DualiesAmmo]
+ItemName="Dualies bullets"
+
+
+[DualiesPickup]
+PickupMessage="You found another 9mm handgun."
+
+[FirstAidKit]
+PickupMessage="You used a First Aid Kit"
+
+[Frag]
+Description="the frag grenade releases a dense cloud of shrapnel in a large area of effect around its detonation zone. Use with caution. "
+ItemName="Frag Grenade"
+
+[FragAmmoPickup]
+PickupMessage="Frag Grenades"
+
+[FragPickup]
+PickupMessage="You got the Frag Grenades"
+
+[HUDKillingFloor]
+WaitingToSpawn="Press [Fire] to Enter the Fray."
+NowViewing="Following"
+ScoreText="Kills"
+
+[KFDeathMessage]
+KilledString="was slaughtered by"
+
+[KFGameReplicationInfo]
+ERW_RedAttackedStr="Humans successfully attacked!"
+ERW_BlueAttackedStr="Humans successfully attacked!"
+ERW_RedDefendedStr="Zombies successfully defended!"
+ERW_BlueDefendedStr="Zombies successfully defended!"
+ERW_RedMoreObjectivesStr="First human team scored (more objectives)."
+ERW_BlueMoreObjectivesStr="Second human team (more objectives)."
+ERW_RedMoreProgressStr="First human team scored (closer to completion)."
+ERW_BlueMoreProgressStr="Second human team scored (closer to completion)."
+ERW_RedGotSameOBJFasterStr="First human team scored (fastest)."
+ERW_BlueGotSameOBJFasterStr="Second human team scored (fastest)."
+
+[KFGameType]
+DefaultPlayerName="Fresh Meat"
+GameName="Survival"
+
+
+[KFInfectedSpecies]
+SpeciesName="Infected"
+
+[KFInstantFire]
+MessageNoAmmo=" is Empty."
+
+[KFInvasionMessage]
+OutMessage="was killed.."
+
+[KFSPGameType]
+DefaultPlayerName="Fresh Meat"
+GameName="Single Player"
+Description="Alone."
+
+[KFSingleplay]
+KFHints=("We ran about seven kilometers that night before setting up camp in a convenience store. All I could hear outside was howling and the wet slap of many feet on the pavement.","I saw one of them take a shotgun blast to the face and he still kept coming...Someone with a science degree had better study this shit.  ","The 50 cal ripped through them like a hot knife through butter..at first. They somehow found a way to circumvent the blockade and circle around. We lost Barry, and the Nest, but god...the amount of blood on the shop front windows...on the road.   ","Dave didn't make it. I couldn't even see what it was that had him because it was too dark to separate his attacker from the shadows in the alley. Almost like it *was* one of em'","They just spilled over the barbed wire...hundreds of them. The ones that got stuck would rip away their flesh to untangle themselves...","I feel as if something snapped in my head when i had to bring down one of them yesterday....a girl. She couldn't have been older than seventeen... She ran like a bat out of hell.. Gore was pouring out of her mouth. It's us or them now, ethics don't exist. I just keep telling myself that. ","It took us almost a half hour to bring down this big ugly son of a bitch that was plodding toward the Police Station. The bullets were hitting him alright, but it was difficult to say whether they were damaging him or making him a studded jacket.","We're running low on rations. Our next meal may be from the beat up local at the end of the street. We can see the Clerk roaming around just outside...howling and coughing up blood.","The Soldiers said they killed my mum because if they didn't, she would bite me. They said she would bite other people as well. She never used to do that.","By the time we arrived at the source of the radio signal, the building was empty. Someone had left a bloodstained jacket on the floor.","We don't know a whole lot about these sons of bitches. They have basic motor functionality and are resistant to gunfire. They sustain themselves by feeding on warm flesh. Everything else is speculation.","I told him reach the rest of his squad down Fourth Street .... That was an hour ago, where the fuck are they?! ","The Bullpup provides steady fire support with decent stopping power, it's going to be your mainstay out there fellas. ","They didn't notice the Frag rolling toward them, or didn't care.  The whole street was caked in entrails and burning limbs... ","This is FireTeam Delta, we have made contact with the hostiles. Tac. Recon estimates somewhere in the range of 400-500 bodies in this area.")
+DefaultPlayerName="Fresh Meat"
+GameName="Single player"
+Description="All alone...."
+
+[KFWeapon]
+Description="This is a very generic weapon."
+
+[Knife]
+Description="A combat knife. "
+ItemName="Knife"
+
+[KnifePickup]
+PickupMessage="You got the Knife."
+
+[L85AmmoPickup]
+PickupMessage="5.56 NATO rounds"
+
+[LAW]
+Description="Launches rocket propelled grenades. Used by the military for disabling Armored vehicles"
+ItemName="L.A.W"
+
+[LAWAmmo]
+ItemName="L.A.W Rockets"
+
+[LAWPickup]
+PickupMessage="You got the L.A.W."
+
+[MountedCal]
+VehiclePositionString="manning a Machine Gun Emplacement"
+VehicleNameString="Machine Gun Emplacement"
+
+[MountedCalAmmo]
+ItemName="50 Cal Ammo"
+
+[MountedCalWeapon]
+ItemName="Turret weapon"
+
+[Shotgun]
+Description="A rugged pump action shotgun. Needs to be manually reloaded"
+ItemName="Shotgun"
+
+[ShotgunAmmoPickup]
+PickupMessage="12-Gauge Shells"
+
+[ShotgunPickup]
+PickupMessage="You got the Shotgun."
+
+[Taxi]
+VehicleNameString="Vehicle"
+
+[Vest]
+PickupMessage="You found a Kevlar Assault Vest"
+
+[Winchester]
+Description="A rugged and reliable single-shot rifle.  "
+ItemName="Winchester Rifle"
+
+[WinchesterAmmo]
+ItemName="Winchester bullets"
+
+[WinchesterPickup]
+PickupMessage="You got the Winchester Rifle"
+
+

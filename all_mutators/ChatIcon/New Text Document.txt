@@ -1,0 +1,29 @@
+This mutator is NOT mine. I just use it and figured that it's not in the steam Workshop, so i uploaded it. There is no change-log for now as it's the same since release.
+
+Number Of Files:
+
+2
+
+File Names:
+
+KFARGChat.u
+KFARGChat.ucl
+
+Class Name:
+
+KFARGChat.KFARGChat
+
+Usage:
+
+1- Subscribe here
+2- Launch KF and wait for the Mut to download
+3- Exit game, check System Files to see if both of the files were downloaded
+4- If yes, you can now add them to your server and yell at people chatting instead of slashing zeds!
+
+White-Listed?:
+
+Yes.
+
+My Personal Collection:
+
+You can find my Personal collection that i use in my server linked above. Feel free to follow it and use those mods as well! Minimal yet effective ;)

@@ -1,0 +1,76 @@
+Mark players as VIP in your server. Shows next to their names in the Scoreboard!
+
+- Unlimited number of Players to add
+- Server Side, players don't have to download anything at all
+- User friendly
+- Customizable Labels
+- Customizable Label Colors
+
+[h1][b][u]Whitelist Status[/u][/b][/h1]
+
+- Yes | Dedicated
+- Yes | Listen Servers (Except the host)
+
+[h1][b][u]Credits[/u][/b][/h1]
+
+- NikC for some parts of the code
+
+[h1][b][u]Number Of Files[/u][/b][/h1]
+
+- 3
+
+[h1][b][u]Sample Config[/u][/b][/h1]
+
+[code]
+[AreYouVIP.AreYouVIP]
+# Replace %g %w with any other color you want from the list below
+# These are default values. To override these, use the below 'SpecialPlayers' List section for them
+sVIPText=%w | %bViP%w
+# Set this ABOVE 0 in case you have CtryTags mutator installed
+# Set this to 0 in case you do not have CtryTags installed !!! IMPORTANT !!!
+# e.g. if your tag is like this: [XXX] NameHere, you need to set this
+# to 6 because it also counts the space between the tag + the player name
+# Don't worry, your CtryTag will stay, but this is very important to do
+# to avoid duplicate tags!
+iCutName=0
+# Add VIP Players here, follow the exact format | Color is for the Player Name as a whole
+# It's best to have only 2 options active at a time, or the scoreboard will
+# act crazy with the fonts and trying to squeeze everything
+# Try to make the label smaller e.g. 3 letters, like VIP
+aSpecialPlayers=(PName="Vel-San",steamID="76561198122568951",Color="%t",isVIP=True,sVIP="%w | %ySeraphiM%w")
+# You can add more colors by using the same format of the below ColorList
+ColorList=(ColorName="Red",ColorTag="%r",Color=(B=0,G=0,R=200,A=0))
+ColorList=(ColorName="Orange",ColorTag="%o",Color=(B=0,G=127,R=255,A=0))
+ColorList=(ColorName="Yellow",ColorTag="%y",Color=(B=0,G=255,R=255,A=0))
+ColorList=(ColorName="Green",ColorTag="%g",Color=(B=0,G=200,R=0,A=0))
+ColorList=(ColorName="Blue",ColorTag="%b",Color=(B=200,G=100,R=0,A=0))
+ColorList=(ColorName="LightBlue",ColorTag="%lb",Color=(B=255,G=128,R=0,A=0))
+ColorList=(ColorName="Teal",ColorTag="%t",Color=(B=113,G=179,R=60,A=0))
+ColorList=(ColorName="Cyan",ColorTag="%c",Color=(B=255,G=255,R=0,A=0))
+ColorList=(ColorName="Violet",ColorTag="%v",Color=(B=139,G=0,R=255,A=0))
+ColorList=(ColorName="White",ColorTag="%w",Color=(B=200,G=200,R=200,A=0))
+ColorList=(ColorName="Pink",ColorTag="%p",Color=(B=180,G=105,R=255,A=0))
+ColorList=(ColorName="Black",ColorTag="%x",Color=(B=0,G=0,R=0,A=0))
+# Better to keep debugging False :)
+bDebug=False
+[/code]
+
+[h1][b][u]File Names[/u][/b][/h1]
+
+- \System\AreYouVIP.u
+- \System\AreYouVIP.ucl
+- \System\AreYouVIP.ini
+
+[h1][b][u]Usage[/u][/b][/h1]
+
+1- Subscribe or download manually (Recommended)
+2- Launch the game and wait to see 'Completed'
+3- Restart the game and you can see the mutators in your list
+
+[h1][b][u]Class Names[/u][/b][/h1]
+
+- Mut: AreYouVIP.AreYouVIP
+
+[h1][b][u]Manual Download Links (Recommended)[/u][/b][/h1]
+
+Github: https://github.com/Vel-San/KF-AreYouVIP/releases/tag/v1.4
