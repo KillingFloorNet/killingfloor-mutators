@@ -1,0 +1,73 @@
+class PuppetJackInTheBox extends ZombieBloat;
+
+defaultproperties
+{
+     MeleeAnims(0)="attack_1"
+     MeleeAnims(1)="attack_1"
+     MeleeAnims(2)="attack_1"
+     HitAnims(0)="hit_reaction_F"
+     HitAnims(1)="hit_reaction_L"
+     HitAnims(2)="hit_reaction_R"
+     MoanVoice=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Talk'
+     KFHitFront="hit_reaction_F"
+     KFHitBack="hit_reaction_B"
+     KFHitLeft="hit_reaction_L"
+     KFHitRight="hit_reaction_R"
+     bCannibal=True
+     MeleeDamage=6
+     damageForce=5000
+     KFRagdollName="VentriloquistRagdoll"
+     MeleeAttackHitSound=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_HitPlayer'
+     JumpSound=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Jump'
+     CrispUpThreshhold=8
+     ColOffset=(Z=30.000000)
+     ColRadius=12.000000
+     ColHeight=6.000000
+     ExtCollAttachBoneName="Collision_Attach"
+     SeveredArmAttachScale=0.900000
+     SeveredLegAttachScale=0.900000
+     SeveredHeadAttachScale=1.000000
+     DetachedArmClass=Class'KFChar.SeveredArmGorefast'
+     DetachedLegClass=Class'KFChar.SeveredLegGorefast'
+     DetachedHeadClass=Class'KFChar.SeveredHeadGorefast'
+     OnlineHeadshotOffset=(Z=53.000000)
+     PlayerNumHeadHealthScale=0.250000
+     MotionDetectorThreat=0.500000
+     HitSound(0)=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Pain'
+     DeathSound(0)=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Death'
+     ChallengeSound(0)=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Challenge'
+     ChallengeSound(1)=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Challenge'
+     ChallengeSound(2)=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Challenge'
+     ChallengeSound(3)=SoundGroup'KF_EnemiesFinalSnd_Xmas.GoreFast.Gorefast_Challenge'
+     ScoringValue=10
+     IdleHeavyAnim="Idle"
+     IdleRifleAnim="Idle"
+     GroundSpeed=120.000000
+     WaterSpeed=100.000000
+     HealthMax=130.000000
+     Health=130
+     MenuName="Ventriloquist Dummy"
+     ControllerClass=Class'KFChar.GorefastController'
+     MovementAnims(0)="Walk_F"
+     TurnLeftAnim="Idle"
+     TurnRightAnim="Idle"
+     WalkAnims(0)="Walk_F"
+     WalkAnims(1)="Walk_B"
+     WalkAnims(2)="Walk_L"
+     WalkAnims(3)="Walk_R"
+     DodgeAnims(0)="hit_reaction_F"
+     DodgeAnims(1)="hit_reaction_B"
+     DodgeAnims(2)="hit_reaction_L"
+     DodgeAnims(3)="hit_reaction_R"
+     IdleCrouchAnim="Idle"
+     IdleWeaponAnim="Idle"
+     IdleRestAnim="Idle"
+     AmbientSound=Sound'KF_BaseGorefast_xmas.Gorefast_Idle'
+     Mesh=SkeletalMesh'KF_Puppets.puppet_ventriloquist'
+     DrawScale=1.000000
+     PrePivot=(Z=12.000000)
+     Skins(0)=Combiner'KF_Puppets_T.ventriloquist.ventriloquist_cmb'
+     CollisionRadius=20.000000
+     CollisionHeight=40.000000
+     Mass=350.000000
+}
